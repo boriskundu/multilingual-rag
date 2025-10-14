@@ -1,77 +1,184 @@
+# ============================================================================
+# MULTILINGUAL-RAG PROJECT .gitignore
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Virtual Environment (mul-rag is the environment name)
+# ----------------------------------------------------------------------------
+mul-rag/
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ----------------------------------------------------------------------------
+# Environment Variables & Secrets
+# ----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+
+# ----------------------------------------------------------------------------
 # Python
+# ----------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 *.egg-info/
+.eggs/
 dist/
 build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+MANIFEST
 
-# Virtual Environment
-venv/
-env/
-ENV/
-.venv/
-.env
+# ----------------------------------------------------------------------------
+# Jupyter Notebooks
+# ----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
-# IDE
+# ----------------------------------------------------------------------------
+# IDE & Editors
+# ----------------------------------------------------------------------------
+# VSCode
 .vscode/
+
+# PyCharm
 .idea/
+
+# Vim
 *.swp
 *.swo
+*~
 
-# OS
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------------------------------------------------------
+# Operating Systems
+# ----------------------------------------------------------------------------
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+$RECYCLE.BIN/
 
-# Data files
-*.pdf
-*.csv
-*.xlsx
-*.db
-*.pkl
-*.h5
-*.faiss
-*.parquet
+# Linux
+*~
 
-# Keep directory structure but ignore contents
+# ----------------------------------------------------------------------------
+# Project-Specific: Data Files
+# ----------------------------------------------------------------------------
+# Keep directory structure but ignore all contents
 data/raw/*
 data/processed/*
 data/embeddings/*
 !data/raw/.gitkeep
-!data/processed/.gitkeep  
+!data/processed/.gitkeep
 !data/embeddings/.gitkeep
 
-# Logs
-*.log
-logs/
+# Specific data file types
+*.pdf
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.parquet
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
+# ----------------------------------------------------------------------------
+# Project-Specific: Model Files & Vector Stores
+# ----------------------------------------------------------------------------
+models/*
+!models/.gitkeep
 
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Model files
+# Model file formats
 *.bin
 *.pt
 *.pth
 *.onnx
-models/*
-!models/.gitkeep
+*.safetensors
+*.ckpt
 
-# Temporary files
-*.tmp
-*.bak
-*.swp
-*~
+# Vector store files
+*.faiss
+*.index
+*.npy
+*.npz
 
-# Test coverage
-htmlcov/
-.coverage
+# ----------------------------------------------------------------------------
+# Project-Specific: Logs
+# ----------------------------------------------------------------------------
+logs/
+*.log
+
+# ----------------------------------------------------------------------------
+# Project-Specific: Results
+# ----------------------------------------------------------------------------
+results/
+!results/.gitkeep
+
+# ----------------------------------------------------------------------------
+# Testing & Coverage
+# ----------------------------------------------------------------------------
 .pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+coverage.xml
+*.cover
+
+# ----------------------------------------------------------------------------
+# Temporary Files
+# ----------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*~
+.cache/
+
+# ----------------------------------------------------------------------------
+# Documentation builds
+# ----------------------------------------------------------------------------
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# ----------------------------------------------------------------------------
+# Type checking
+# ----------------------------------------------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# ----------------------------------------------------------------------------
+# Profiling data
+# ----------------------------------------------------------------------------
+*.prof

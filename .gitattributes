@@ -1,0 +1,123 @@
+# ============================================================================
+# MULTILINGUAL-RAG PROJECT .gitattributes
+# Line ending normalization for cross-platform collaboration
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Default Behavior: Auto-normalize line endings
+# ----------------------------------------------------------------------------
+* text=auto
+
+# ----------------------------------------------------------------------------
+# Source Code: Force LF (Unix-style) line endings
+# ----------------------------------------------------------------------------
+# Python
+*.py text eol=lf
+*.pyx text eol=lf
+*.pyi text eol=lf
+
+# Jupyter Notebooks (JSON format, should use LF)
+*.ipynb text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# ----------------------------------------------------------------------------
+# Documentation: Force LF
+# ----------------------------------------------------------------------------
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# ----------------------------------------------------------------------------
+# Configuration Files: Force LF
+# ----------------------------------------------------------------------------
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+
+# Git files
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Python project files
+requirements.txt text eol=lf
+setup.py text eol=lf
+setup.cfg text eol=lf
+pyproject.toml text eol=lf
+MANIFEST.in text eol=lf
+
+# Environment files
+.env text eol=lf
+.env.* text eol=lf
+
+# ----------------------------------------------------------------------------
+# Windows-Specific Files: Force CRLF
+# ----------------------------------------------------------------------------
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# ----------------------------------------------------------------------------
+# Binary Files: No line ending conversion
+# ----------------------------------------------------------------------------
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+
+# Data files
+*.csv binary
+*.parquet binary
+*.h5 binary
+*.hdf5 binary
+*.pkl binary
+*.pickle binary
+
+# Model files
+*.pt binary
+*.pth binary
+*.bin binary
+*.onnx binary
+*.safetensors binary
+*.ckpt binary
+
+# Vector stores
+*.faiss binary
+*.index binary
+*.npy binary
+*.npz binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.7z binary
+
+# Database files
+*.db binary
+*.sqlite binary
+
+# ----------------------------------------------------------------------------
+# Jupyter Notebook Diff (Optional Enhancement)
+# ----------------------------------------------------------------------------
+# Use nbdiff for better notebook diffs (requires nbdime)
+# Uncomment if you install nbdime: pip install nbdime
+# *.ipynb diff=jupyternotebook
+# *.ipynb merge=jupyternotebook

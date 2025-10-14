@@ -1,0 +1,64 @@
+# Jupyter and notebook dependencies
+jupyter==1.0.0
+jupyterlab==4.0.9
+ipykernel==6.27.1
+ipywidgets==8.1.1
+notebook==7.0.6
+
+# Core RAG dependencies
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.5
+chromadb==0.4.22
+faiss-cpu==1.7.4
+
+# LLM providers (updated for compatibility)
+#openai==1.10.0
+transformers==4.36.2
+sentence-transformers==2.5.1
+torch==2.1.2
+
+# LLM providers (UPDATED FOR COMPATIBILITY)
+openai==1.35.0  # ← Changed from 1.10.0
+httpx==0.27.0   # ← Add this line
+urllib3==2.2.1  # ← Changed from 2.1.0
+
+# Document processing
+pypdf==3.17.4
+pypdf2==3.0.1
+python-docx==1.1.0
+openpyxl==3.1.2
+pandas==2.1.4
+numpy==1.26.2
+
+# Data fetching and processing
+requests==2.31.0
+beautifulsoup4==4.12.2
+aiohttp==3.9.1
+pydantic==2.5.3
+
+# Multilingual support
+langdetect==1.0.9
+
+# Visualization and analysis
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.18.0
+scikit-learn==1.3.2
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+colorama==0.4.6
+
+# Logging and monitoring
+loguru==0.7.2
+
+# Research/Experimentation tools
+datasets==2.16.1
+evaluate==0.4.1
+rouge-score==0.1.2
+bert-score==0.3.13
+
+# Translation backends
+deep-translator==1.11.4
