@@ -90,6 +90,7 @@ $RECYCLE.BIN/
 # Project-Specific: Data Files
 # ----------------------------------------------------------------------------
 # Keep directory structure but ignore all contents
+data/*
 data/raw/*
 data/processed/*
 data/embeddings/*
@@ -139,8 +140,8 @@ logs/
 # ----------------------------------------------------------------------------
 # Project-Specific: Results
 # ----------------------------------------------------------------------------
-results/
-!results/.gitkeep
+#results/
+#!results/.gitkeep
 
 # ----------------------------------------------------------------------------
 # Testing & Coverage

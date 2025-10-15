@@ -49,8 +49,10 @@ multilingual-rag/
 │   ├── .ipynb_checkpoints/
 │   ├── 1_data_collection.ipynb                # Data Collection
 │   ├── 2_data_processing.ipynb                # Data Processing & Vectorization
+│   ├── 2x_generate_validated_questions.ipynb                # Generate valid questions
 │   ├── 3_multilingual_rag_implementation.ipynb                # Multilingual RAG Implementation. # SET THE API KEY IN ENVIRONMENT OPEN_API_KEY = "<Your key>"
 │   └── 4_evaluation_and_analysis.ipynb                # Comparative Evaluation & Analysis
+│   └── 5_llm_judge_evaluation.ipynb                # LLM based evaluation
 │
 ├── results/                   # Evaluation results and figures (excluded from git)
 │   ├── figures/
@@ -108,14 +110,16 @@ python -m ipykernel install --user --name mul-rag --display-name "MUL-RAG Resear
 # Start Jupyter Lab
 (mul-rag) C:\Users\Boris\Desktop\code\multilingual-rag>jupyter lab
 
-# SET THE API KEY IN ENVIRONMENT in 3_multilingual_rag_implementation.ipynb 
+# SET THE API KEY in notebook 2x, 3, and 5
 OPEN_API_KEY = "<Your key>"
 
 # Run the notebooks in order after selecting kernel "MUL-RAG Research" from list
 1_data_collection.ipynb               
-2_data_processing.ipynb                
+2_data_processing.ipynb
+2x_generate_validated_questions.ipynb                
 3_multilingual_rag_implementation.ipynb                
-4_evaluation_and_analysis.ipynb 
+4_evaluation_and_analysis.ipynb
+5_llm_judge_evaluation.ipynb
 ```
 
 ### Environment Setup (Optional)
@@ -144,6 +148,12 @@ Execute notebooks in sequential order:
 - Build vector stores
 - **Output**: Processed medical documents and embeddings in `data/`
 
+#### **Notebook 2x: Question generation** (`2x_generate_validated_questions.ipynb`)
+- Looks at data pulled/scraped
+- Generates valid questions for the RAG expereiments
+- **Output**: Question dictionary printed in output cell to be copy-pasted into notebook 3 before running
+
+
 #### **Notebook 3: Multilingual RAG Implementation** (`3_multilingual_rag_implementation.ipynb`)
 - Implement multilingual embeddings approach
 - Implement translation pipeline approach
@@ -153,7 +163,14 @@ Execute notebooks in sequential order:
 #### **Notebook 4: Comparative Evaluation & Analysis** (`4_evaluation_and_analysis.ipynb`)
 - Compare approaches across all metrics
 - Statistical significance testing
-- Generate visualizations and reports
+- Generate visualizations and summary reports
+- Qualitative error analysis
+- **Output**: All figures and CSV files in `results/`
+
+#### **Notebook 5: LLM as a judge evaluation** (`4_evaluation_and_analysis.ipynb`)
+- Compare chunks with responses for both flows
+- Compute performance metrics like faithfulness, completeness, and appropriateness for both flows
+- Generate visualizations and summary reports
 - Qualitative error analysis
 - **Output**: All figures and CSV files in `results/`
 
@@ -283,7 +300,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Limited to Hindi language (expansion to other languages planned)
 - Medical domain only (generalization to other domains unexplored)
 - Depends on proprietary APIs (OpenAI) for core functionality
-- Small evaluation set (12 questions)
+- Small evaluation set (30 questions)
 - No human expert validation of medical accuracy yet
 
 ## 📧 Contact

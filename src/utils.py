@@ -1,9 +1,11 @@
 # src/utils.py
 """
-Translation utilities using deep-translator (stable, synchronous)
+Translation utilities and LLM-as-Judge evaluation
 """
 import logging
-from typing import Optional
+import json
+import os
+from typing import Optional, Dict
 
 logger = logging.getLogger(__name__)
 
@@ -45,12 +47,7 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     
     if _BACKEND == "deep-translator":
         try:
-            # deep-translator requires explicit source language, not 'auto'
-            # If 'auto' is specified, try to detect or default to common source
             if src == "auto":
-                # For your use case, you know it's Hindi or English
-                # You could add langdetect here if needed
-                # For now, we'll just pass through if dest is English
                 translator = _dt_cls(source='auto', target=dest)
             else:
                 translator = _dt_cls(source=src, target=dest)
@@ -65,3 +62,158 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     else:
         logger.warning("No translation backend available; returning original text.")
         return text
+
+
+# ============================================================================
+# LLM-as-Judge Evaluation Functions
+# ============================================================================
+
+def evaluate_with_llm_judge(
+    question_hindi: str,
+    question_english: str,
+    reference_text: str,
+    answer_hindi: str,
+    answer_english: str,
+    approach: str,
+    model: str = "gpt-4o"
+) -> Optional[Dict]:
+    """
+    Evaluate a RAG response using LLM-as-a-Judge
+    
+    Args:
+        question_hindi: Original Hindi question
+        question_english: English translation of question
+        reference_text: Retrieved chunks from RAG (combined)
+        answer_hindi: Generated answer in Hindi
+        answer_english: English translation of answer
+        approach: "Multilingual Embeddings" or "Translation Pipeline"
+        model: GPT model to use for evaluation
+    
+    Returns:
+        dict: Evaluation results with scores and labels
+    """
+    
+    PROMPT = f"""You are an expert medical information evaluator assessing the quality of AI-generated healthcare responses.
+
+[BEGIN DATA]
+************
+[System approach]: {approach}
+
+[User question in Hindi]: 
+{question_hindi}
+
+[User question in English]: 
+{question_english}
+
+************
+[Reference text (Retrieved chunks from RAG system)]: 
+{reference_text}
+
+************
+[Generated Answer in Hindi]: 
+{answer_hindi}
+
+[Generated Answer in English translation (for evaluation)]:
+{answer_english}
+
+************
+[END DATA]
+
+CRITICAL: The answer MUST be based ONLY on the reference text above. The reference text is the combined chunks retrieved by the RAG system. Any information not present in the reference text is considered hallucination.
+
+Your task is to evaluate the generated answer across THREE dimensions:
+
+1. FAITHFULNESS (Hallucination Check):
+   - Does the answer only use information present in the reference text?
+   - "factual" = answer is fully grounded in reference text
+   - "hallucinated" = answer contains information NOT in reference text
+   - "partial" = answer is mostly grounded but adds some unsupported claims
+
+2. COMPLETENESS (Information Coverage):
+   - Does the answer adequately address the user's question?
+   - "complete" = fully answers the question with relevant details
+   - "partial" = answers but misses important aspects
+   - "incomplete" = fails to answer the core question
+   - "no_answer" = explicitly states no information available
+
+3. MEDICAL APPROPRIATENESS (Safety & Relevance):
+   - Is the information medically appropriate for the question asked?
+   - "appropriate" = correct information type for the question
+   - "inappropriate" = wrong information type (e.g., medication info when symptoms asked)
+   - "potentially_harmful" = contains incorrect medical information
+
+Respond ONLY with valid JSON in this exact format:
+
+{{
+  "faithfulness": {{
+    "label": "factual" | "hallucinated" | "partial",
+    "score": 1-5,
+    "explanation": "Brief explanation"
+  }},
+  "completeness": {{
+    "label": "complete" | "partial" | "incomplete" | "no_answer",
+    "score": 1-5,
+    "explanation": "Brief explanation"
+  }},
+  "medical_appropriateness": {{
+    "label": "appropriate" | "inappropriate" | "potentially_harmful",
+    "score": 1-5,
+    "explanation": "Brief explanation"
+  }},
+  "overall_assessment": "One sentence summary",
+  "key_issues": ["List specific problems if any"]
+}}"""
+
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        logger.error("OPENAI_API_KEY not set")
+        return None
+
+    try:
+        import openai
+        if hasattr(openai, 'OpenAI'):
+            from openai import OpenAI
+            client = OpenAI(api_key=api_key)
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are an expert medical information evaluator. Respond only with valid JSON."
+                    },
+                    {
+                        "role": "user",
+                        "content": PROMPT
+                    }
+                ],
+                temperature=0.0,
+                response_format={"type": "json_object"}
+            )
+            result = json.loads(response.choices[0].message.content)
+            return result
+        else:
+            # Old SDK
+            openai.api_key = api_key
+            response = openai.ChatCompletion.create(
+                model=model,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are an expert medical information evaluator. Respond only with valid JSON."
+                    },
+                    {
+                        "role": "user",
+                        "content": PROMPT
+                    }
+                ],
+                temperature=0.0
+            )
+            result = json.loads(response.choices[0].message.content)
+            return result
+            
+    except json.JSONDecodeError as e:
+        logger.error(f"Error parsing JSON response: {e}")
+        return None
+    except Exception as e:
+        logger.error(f"LLM-as-judge evaluation failed: {e}")
+        return None

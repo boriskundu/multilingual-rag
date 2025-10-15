@@ -1,5 +1,5 @@
 """
-RAG system with multilingual support
+RAG system with multilingual support - UPDATED for GPT-4 and chunk saving
 """
 import os
 import time
@@ -7,20 +7,21 @@ import logging
 from typing import List, Dict, Any, Optional, Tuple
 from pathlib import Path
 
-# Embeddingsrag_system & Vector stores
+# Embeddings & Vector stores
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceEmbeddings
 from langchain.vectorstores import Chroma, FAISS
 from langchain.schema import Document
 
 import pandas as pd
 
-# 🔁 Use the sync translation wrapper (no coroutine issues)
+# Use the sync translation wrapper
 from src.utils import translate_text, translation_backend
 
 logger = logging.getLogger(__name__)
 
-def _call_openai_chat(system_prompt: str, context: str, query: str) -> str:
+def _call_openai_chat(system_prompt: str, context: str, query: str, model: str = "gpt-4o") -> str:
     """
+    Call OpenAI API with GPT-4 (or specified model).
     Works with both old and new OpenAI SDK versions.
     """
     api_key = os.getenv("OPENAI_API_KEY")
@@ -34,7 +35,7 @@ def _call_openai_chat(system_prompt: str, context: str, query: str) -> str:
             from openai import OpenAI
             client = OpenAI(api_key=api_key)
             resp = client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model=model,  # Now using GPT-4
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}"}
@@ -47,7 +48,7 @@ def _call_openai_chat(system_prompt: str, context: str, query: str) -> str:
             # Old SDK (openai < 1.0)
             openai.api_key = api_key
             resp = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model=model,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}"}
@@ -66,13 +67,15 @@ class MultilingualRAG:
         embedding_model: str = "text-embedding-ada-002",
         vector_store_type: str = "chroma",
         persist_directory: str = "./data/embeddings",
-        use_multilingual_embeddings: bool = True
+        use_multilingual_embeddings: bool = True,
+        llm_model: str = "gpt-4o"  # Default to GPT-4
     ):
         self.embedding_model = embedding_model
         self.vector_store_type = vector_store_type
         self.persist_directory = Path(persist_directory)
         self.persist_directory.mkdir(parents=True, exist_ok=True)
         self.use_multilingual_embeddings = use_multilingual_embeddings
+        self.llm_model = llm_model  # Store LLM model choice
 
         # Initialize embeddings
         if ("ada" in embedding_model) or ("openai" in embedding_model.lower()):
@@ -113,7 +116,6 @@ class MultilingualRAG:
                 embedding_function=self.embeddings
             )
         elif self.vector_store_type.lower() == "faiss":
-            # if your LC version needs it, add allow_dangerous_deserialization=True
             self.vector_store = FAISS.load_local(
                 str(self.persist_directory / "faiss"),
                 self.embeddings
@@ -152,8 +154,12 @@ class MultilingualRAG:
         retrieved_docs: List[Document],
         source_language: str = "en",
         system_prompt: Optional[str] = None
-    ) -> Tuple[str, float]:
-        """Generate response using LLM; returns (answer_in_source_language, gen_time_seconds)."""
+    ) -> Tuple[str, float, str]:
+        """
+        Generate response using LLM.
+        
+        Returns: (answer_in_source_language, gen_time_seconds, combined_chunks_text)
+        """
         start_time = time.time()
 
         if system_prompt is None:
@@ -166,26 +172,28 @@ class MultilingualRAG:
         # Prepare context from retrieved documents
         context = "\n\n".join([doc.page_content for doc in retrieved_docs])
 
-        # Call OpenAI or mock
+        # Call OpenAI with GPT-4
         try:
-            answer = _call_openai_chat(system_prompt, context, query)
-        except Exception:
-            # Allow notebook to handle mocking externally, but keep a local fallback too
-            answer = f"[Mock response] {query[:64]}..."
+            answer = _call_openai_chat(system_prompt, context, query, model=self.llm_model)
+        except Exception as e:
+            logger.error(f"LLM generation failed: {e}")
+            answer = f"[Error generating response]"
 
-        # Translate back to source language if needed (sync & robust)
+        # Translate back to source language if needed
         if source_language and source_language.lower() != "en":
             answer = translate_text(answer, src="en", dest=source_language)
 
         generation_time = time.time() - start_time
-        return answer, generation_time
+        
+        # Return chunks for LLM-as-judge evaluation
+        return answer, generation_time, context
 
-    # (Optional) Your existing batch runner kept for completeness
     def run_experiment(
         self,
         questions: List[Dict[str, str]],
         output_path: str = "results/rag_experiments.csv"
     ) -> pd.DataFrame:
+        """Run experiments and save results with retrieved chunks"""
         results: List[Dict[str, Any]] = []
 
         for q_data in questions:
@@ -194,21 +202,21 @@ class MultilingualRAG:
 
             logger.info(f"Processing question: {question}")
 
-            # Approach 1
+            # Approach 1: Multilingual Embeddings
             self.use_multilingual_embeddings = True
             docs_multi, query_multi, t_ret_multi = self.multilingual_retrieval(
                 question, language
             )
-            resp_multi, t_gen_multi = self.generate_response(
+            resp_multi, t_gen_multi, chunks_multi = self.generate_response(
                 question, docs_multi, language
             )
 
-            # Approach 2
+            # Approach 2: Translation Pipeline
             self.use_multilingual_embeddings = False
             docs_trans, query_trans, t_ret_trans = self.multilingual_retrieval(
                 question, language
             )
-            resp_trans, t_gen_trans = self.generate_response(
+            resp_trans, t_gen_trans, chunks_trans = self.generate_response(
                 query_trans, docs_trans, language
             )
 
@@ -216,8 +224,15 @@ class MultilingualRAG:
                 "question": question,
                 "language": language,
                 "translated_query": query_trans,
+                
+                # Save retrieved chunks for LLM-as-judge
+                "multilingual_chunks": chunks_multi,
+                "translation_chunks": chunks_trans,
+                
+                # Shortened version for preview
                 "multilingual_content": "\n---\n".join([d.page_content[:200] for d in docs_multi]),
                 "translation_content": "\n---\n".join([d.page_content[:200] for d in docs_trans]),
+                
                 "system_prompt": "Healthcare assistant prompt",
                 "multilingual_response": resp_multi,
                 "translation_response": resp_trans,
