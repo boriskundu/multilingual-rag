@@ -1,0 +1,880 @@
+{
+  "condition": [
+    {
+      "english": "What is insulin resistance and how does it affect glucose entry into cells?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 87,
+        "top_docs": [
+          {
+            "content": "SUMMARY: What is type 2 diabetes?Type 2diabetesis a disease in which your blood glucose, orblood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy. If you have diabete",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          },
+          {
+            "content": "Summary: Type 2diabetesis a disease in which your blood glucose, orblood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy. If you have diabetes, your body doesn't mak",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          },
+          {
+            "content": "CLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Glimepiride primarily lowers blood glucose by stimulating the release of insulin from pancreatic beta cells. Sulfonylureas bind to the sulfonylurea receptor in the pancreatic beta-cell plasma membrane, leading to closure of the",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "इंसुलिन प्रतिरोध क्या है और यह कोशिकाओं में ग्लूकोज के प्रवेश को कैसे प्रभावित करता है?"
+    },
+    {
+      "english": "How does family history influence the risk of heart disease?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 675,
+        "top_docs": [
+          {
+            "content": ". If LDL-C levels are not available then Total-C alone may be used to monitor long-term therapy. A lipoprotein analysis (including LDL-C determination) should be carried out once a year. The NCEP treatment guidelines are summarized below. Definite Atherosclerotic Disease * Two or More Other Risk Fac",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hypertension, low HDL-C, or a family history of early coronary heart disease, atorvastatin calcium tablets a",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Avoid amphetamine sulfate tablets use in patients with known structural cardiac abnormalities, cardiomyopathy, serious cardiac arrhythmia, coronary artery disease, or other serious cardiac disease. Increased Blood Pressure and Heart Rate CNS stimulants cause an increase in blood pressure (mean inc",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "हृदय रोग के जोखिम पर पारिवारिक इतिहास का क्या प्रभाव पड़ता है?"
+    },
+    {
+      "english": "What impact does smoking have on blood pressure and heart disease risk?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1558,
+        "top_docs": [
+          {
+            "content": "WARNINGS: Warnings Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAO",
+            "source": "FDA",
+            "match_count": 5
+          },
+          {
+            "content": "WARNINGS: Warnings Do not exceed recommended dosage. Do not use this product if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric, or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI drug. If you do no",
+            "source": "FDA",
+            "match_count": 5
+          },
+          {
+            "content": "WARNINGS: Warnings If you are pregnant or breast-feeding, only use this medicine on the advice of your health care provider. Smoking can seriously harm your child. Try to stop smoking without using any nicotine replacement medicine. This medicine is believed to be safer than smoking. However, the ri",
+            "source": "FDA",
+            "match_count": 5
+          }
+        ]
+      },
+      "hindi": "धूम्रपान का रक्तचाप और हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?"
+    },
+    {
+      "english": "What are the heart disease risk factors that can be changed?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 607,
+        "top_docs": [
+          {
+            "content": ". Bupropion and its metabolites exhibit linear kinetics following chronic administration of 300 to 450 mg/day. Elimination Following oral administration of 200 mg of 14 C-bupropion in humans, 87% and 10% of the radioactive dose were recovered in the urine and feces, respectively. Only 0.5% of the or",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Bupropion and its metabolites exhibit linear kinetics following chronic administration of 300 to 450 mg/day. Elimination: Following oral administration of 200 mg of 14C-bupropion in humans, 87% and 10% of the radioactive dose were recovered in the urine and feces, respectively. However, the fracti",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Bupropion and its metabolites exhibit linear kinetics following chronic administration of 300 to 450 mg/day. Elimination Following oral administration of 200 mg of 14 C-bupropion in humans, 87% and 10% of the radioactive dose were recovered in the urine and feces, respectively. Only 0.5% of the or",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "हृदय रोग के कौन से जोखिम कारक बदले जा सकते हैं?"
+    },
+    {
+      "english": "What are the differences in heart disease rates among different ethnic groups?",
+      "category": "condition",
+      "complexity": "complex",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 896,
+        "top_docs": [
+          {
+            "content": ". Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Family history and genetics.A family history of early heart disease raises your risk. And research has s",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 6
+          },
+          {
+            "content": ". The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women some protection against heart diseaseDiabetesraises the risk of heart disease more in women than in",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 5
+          },
+          {
+            "content": ". Sex and Race /Ethnicity : In analyses adjusted for body mass and height, rabeprazole pharmacokinetics showed no clinically significant differences between male and female subjects. In studies that used different formulations of rabeprazole, AUC 0 - ∞ values for healthy Japanese men were approximat",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "विभिन्न जातीय समूहों में हृदय रोग की दरों में क्या अंतर हैं?"
+    },
+    {
+      "english": "What is the effect of alcohol consumption on heart disease risk?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1223,
+        "top_docs": [
+          {
+            "content": ". The chance is higher if you: • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". The chance is higher if you: • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". The chance is higher if you: • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "शराब के सेवन का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?"
+    },
+    {
+      "english": "What is the effect of extra calories on heart disease risk?",
+      "category": "condition",
+      "complexity": "simple",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1174,
+        "top_docs": [
+          {
+            "content": ". The subjects included in the study were men aged 35 to 59 with serum cholesterol levels above 265 mg/dL and no previous history of heart disease. It is not clear to what extent these findings can be extrapolated to females and other segments of the hypercholesterolemic population. (See also PRECAU",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". This is mostly because they are linked to other heart disease risk factors, including high blood cholesterol and triglyceride levels, high blood pressure, and diabetes.Controlling your weightcan lower these risks.Eating a healthy diet.Try to limit saturatedfats, foods high insodium(salt), and adde",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          },
+          {
+            "content": ". It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Have no more than 1 drink per day if you are a woman.Not smoking.Cigarette smokingraises your blood pr",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "अतिरिक्त कैलोरी का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?"
+    },
+    {
+      "english": "How does stress relate to heart disease?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 601,
+        "top_docs": [
+          {
+            "content": ". It should be kept in mind that constant monitoring is needed in regard to drug dosage. Included in the situations which may make dosage adjustments necessary are changes in clinical status secondary to remissions or exacerbations in the disease process, the patient’s individual drug responsiveness",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": ". IT SHOULD BE EMPHASIZED THAT DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE INDIVIDUALIZED ON THE BASIS OF THE DISEASE UNDER TREATMENT AND THE RESPONSE OF THE PATIENT. After a favorable response is noted, the proper maintenance dosage should be determined by decreasing the initial drug dosage in sma",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": ". IT SHOULD BE EMPHASIZED THAT DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE INDIVIDUALIZED ON THE BASIS OF THE DISEASE UNDER TREATMENT AND THE RESPONSE OF THE PATIENT . After a favorable response is noted, the proper maintenance dosage should be determined by decreasing the initial drug dosage in sm",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "तनाव का हृदय रोग से क्या संबंध है?"
+    },
+    {
+      "english": "Which ethnic group has lower rates of heart disease compared to others?",
+      "category": "condition",
+      "complexity": "simple",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 2232,
+        "top_docs": [
+          {
+            "content": ". Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Family history and genetics.A family history of early heart disease raises your risk. And research has s",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 6
+          },
+          {
+            "content": ". But aftermenopause, a woman's risk goes up. This happens because menopause lowers levels of female hormones that may protect against high blood cholesterol.Family history.High blood cholesterol can run in families.Other health conditions.Conditions such asdiabetes,chronic kidney disease,HIV, andlu",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 5
+          },
+          {
+            "content": "SUMMARY: Heart diseaseis the leading cause of the death in the United States. It is also a major cause of disability. But you can take steps to improve your health and help prevent heart disease. The first step is understanding your risk of heart disease. Your risk depends on many factors, some of w",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 5
+          }
+        ]
+      },
+      "hindi": "कौन सा जातीय समूह अन्य की तुलना में हृदय रोग की दरों में कम है?"
+    },
+    {
+      "english": "What are the heart disease diagnosis age thresholds for family members that increase risk?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1376,
+        "top_docs": [
+          {
+            "content": ". Avoid amphetamine sulfate tablets use in patients with known structural cardiac abnormalities, cardiomyopathy, serious cardiac arrhythmia, coronary artery disease, or other serious cardiac disease. Increased Blood Pressure and Heart Rate CNS stimulants cause an increase in blood pressure (mean inc",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Avoid amphetamine sulfate tablets use in patients with known structural cardiac abnormalities, cardiomyopathy, serious cardiac arrhythmia, coronary artery disease, or other serious cardiac disease. Increased Blood Pressure and Heart Rate CNS stimulants cause an increase in blood pressure (mean inc",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Avoid amphetamine sulfate tablets use in patients with known structural cardiac abnormalities, cardiomyopathy, serious cardiac arrhythmia, coronary artery disease, or other serious cardiac disease. Increased Blood Pressure and Heart Rate CNS stimulants cause an increase in blood pressure (mean inc",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "परिवार के सदस्यों के लिए हृदय रोग निदान की आयु सीमाएं क्या हैं जो जोखिम बढ़ाती हैं?"
+    },
+    {
+      "english": "What are the effects of drinking more than recommended alcohol on heart disease risk?",
+      "category": "condition",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1335,
+        "top_docs": [
+          {
+            "content": ". The chance is higher if you: • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Patients at greatest risk of this reaction are those with impaired renal function, heart failure, liver dysfunction, those taking diuretics and ACE inhibitors, and the elderly. Discontinuation of NSAID therapy is usually followed by recovery to the pretreatment state. Advanced Renal Disease No inf",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Ask a doctor before use if you have • liver disease • heart disease • high blood pressure • thyroid disease • diabetes • glaucoma • trouble urinating due to an enlarged prostate gland • a breathing problem such as emphysema or chronic bronchitis • cough that occurs with too much phlegm (mucus) • c",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "अनुशंसित शराब से अधिक पीने के हृदय रोग जोखिम पर क्या प्रभाव होते हैं?"
+    }
+  ],
+  "treatment": [
+    {
+      "english": "What are the drinking guidelines to reduce heart disease risk for men and women?",
+      "category": "treatment",
+      "complexity": "simple",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 805,
+        "top_docs": [
+          {
+            "content": "WARNINGS: WARNINGS Heart Failure Beta blockers, like Metoprolol tartrate, can cause depression of myocardial contractility and may precipitate heart failure and cardiogenic shock. If signs or symptoms of heart failure develop, treat the patient according to recommended guidelines. It may be necessar",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "WARNINGS: WARNINGS Heart Failure Beta blockers, like Metoprolol tartrate, can cause depression of myocardial contractility and may precipitate heart failure and cardiogenic shock. If signs or symptoms of heart failure develop, treat the patient according to recommended guidelines. It may be necessar",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Family history and genetics.A family history of early heart disease raises your risk. And research has s",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "पुरुषों और महिलाओं के लिए हृदय रोग के जोखिम को कम करने के लिए पीने के दिशा-निर्देश क्या हैं?"
+    },
+    {
+      "english": "How does managing stress influence heart disease risk?",
+      "category": "treatment",
+      "complexity": "moderate",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 450,
+        "top_docs": [
+          {
+            "content": ". It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Have no more than 1 drink per day if you are a woman.Not smoking.Cigarette smokingraises your blood pr",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          },
+          {
+            "content": ". Extreme stress can be a \"trigger\" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage your stress include exercise, listening to music, focusing on something calm or peaceful, and medita",
+            "source": "MedlinePlus (NIH)",
+            "match_count": 4
+          },
+          {
+            "content": ". Bupropion and its metabolites exhibit linear kinetics following chronic administration of 300 to 450 mg/day. Elimination Following oral administration of 200 mg of 14 C-bupropion in humans, 87% and 10% of the radioactive dose were recovered in the urine and feces, respectively. Only 0.5% of the or",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "तनाव प्रबंधन हृदय रोग के जोखिम को कैसे प्रभावित करता है?"
+    },
+    {
+      "english": "What is the recommended action for smokers to lower heart disease risk?",
+      "category": "treatment",
+      "complexity": "simple",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 2375,
+        "top_docs": [
+          {
+            "content": ". Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. The following are additional adverse experiences reported in <1% of patients taking naproxen dur",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Renal toxicity has also been seen in patients in whom renal prostaglandins have a compensatory role in the maintenance of renal perfusion. In these patients, administration of a nonsteroidal anti-inflammatory drug may cause a dose-dependent reduction in prostaglandin formation and, secondarily, in",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". The recommended starting dose is 5 mg once a day. When initiating treatment with lisinopril, USP in patients with heart failure, the initial dose should be administered under medical observation, especially in those patients with low blood pressure (systolic blood pressure below 100 mmHg). The mea",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "धूम्रपान करने वालों के लिए हृदय रोग के जोखिम को कम करने के लिए क्या अनुशंसित कार्रवाई है?"
+    },
+    {
+      "english": "What is the effect of smoking cessation on heart disease risk?",
+      "category": "treatment",
+      "complexity": "simple",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1225,
+        "top_docs": [
+          {
+            "content": ". Continue treatment for an additional 12 weeks, for a total of 24 weeks. ( 2.1 ) Severe Renal Impairment (estimated creatinine clearance less than 30 mL/min): Begin with 0.5 mg once daily and titrate to 0.5 mg twice daily. For patients with end-stage renal disease undergoing hemodialysis, a maximum",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". ( 5.2 ) Interaction with Alcohol: Increased effects of alcohol have been reported. Instruct patients to reduce the amount of alcohol they consume until they know whether varenicline affects them. ( 5.3 ) Accidental Injury: Accidental injuries (e.g., traffic accidents) have been reported. Instruct ",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Continue treatment for an additional 12 weeks, for a total of 24 weeks. ( 2.1 ) Severe Renal Impairment (estimated creatinine clearance less than 30 mL/min): Begin with 0.5 mg once daily and titrate to 0.5 mg twice daily. For patients with end-stage renal disease undergoing hemodialysis, a maximum",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "धूम्रपान छोड़ने का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?"
+    },
+    {
+      "english": "What are the guidelines for alcohol consumption for women to reduce heart disease risk?",
+      "category": "treatment",
+      "complexity": "simple",
+      "expected_source": "MedlinePlus (NIH)",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 922,
+        "top_docs": [
+          {
+            "content": ". The chance is higher if you: • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". The chance is higher if you: are age 60 or older have had stomach ulcers or bleeding problems take a blood thinning (anticoagulant) or steroid drug take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) have 3 or more alcoholic drinks every day",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". The chance is higher if you: are age 60 or older have had stomach ulcers or bleeding problems take a blood thinning (anticoagulant) or steroid drug take other drugs containing prescription or nonprescription NSAIDs [aspirin, ibuprofen, naproxen, or others] have 3 or more alcoholic drinks every day",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन के दिशा-निर्देश क्या हैं?"
+    }
+  ],
+  "medication": [
+    {
+      "english": "What is mepivacaine hydrochloride used for?",
+      "category": "medication",
+      "complexity": "simple",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 7,
+        "top_docs": [
+          {
+            "content": "DOSAGE AND ADMINISTRATION: DOSAGE AND ADMINISTRATION The dose of any local anesthetic administered varies with the anesthetic procedure, the area to be anesthetized, the vascularity of the tissues, the number of neuronal segments to be blocked, the depth of anesthesia and degree of muscle relaxation",
+            "source": "FDA",
+            "match_count": 2
+          },
+          {
+            "content": ". For specific techniques and procedures, refer to standard textbooks. The recommended single adult dose (or the total of a series of doses given in one procedure) of mepivacaine hydrochloride for unsedated, healthy, normal-sized individuals should not usually exceed 400 mg. The recommended dosage i",
+            "source": "FDA",
+            "match_count": 2
+          },
+          {
+            "content": ". Solutions which are discolored or which contain particulate matter should not be administered. Recommended Concentrations and Doses of Mepivacaine Hydrochloride Procedure Concentration Total Dose Comments mL mg Cervical, brachial, intercostal, 1% 5−40 50−400 Pudendal block: one half of total dose ",
+            "source": "FDA",
+            "match_count": 2
+          }
+        ]
+      },
+      "hindi": "मेपिवाकेन हाइड्रोक्लोराइड का उपयोग किस लिए किया जाता है?"
+    },
+    {
+      "english": "What is the structural formula of meperidine hydrochloride?",
+      "category": "medication",
+      "complexity": "complex",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 395,
+        "top_docs": [
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "DESCRIPTION: 11 DESCRIPTION OXYCONTIN (oxycodone hydrochloride extended-release tablets) is an opioid analgesic supplied in 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 60 mg, and 80 mg tablets for oral administration. The tablet strengths describe the amount of oxycodone per tablet as the hydrochloride salt.",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड का संरचनात्मक सूत्र क्या है?"
+    },
+    {
+      "english": "What is the role of plasma proteins in the action of local anesthetics?",
+      "category": "medication",
+      "complexity": "complex",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 924,
+        "top_docs": [
+          {
+            "content": "ADVERSE REACTIONS: ADVERSE REACTIONS Reactions to mepivacaine are characteristic of those associated with other amide-type local anesthetics. A major cause of adverse reactions to this group of drugs is excessive plasma levels, which may be due to overdosage, inadvertent intravascular injection, or ",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The duration of anesthesia also varies depending upon the technique and type of block, the concentration, ",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Fetal/maternal ratios of local anesthetics appear to be inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Mepivacaine is approximately 75% bound to plasma proteins. The extent of placental transfer is also determined",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "स्थानीय एनेस्थेटिक्स की क्रिया में प्लाज्मा प्रोटीन की क्या भूमिका होती है?"
+    },
+    {
+      "english": "What concentration of mepivacaine hydrochloride provides complete sensory and motor block?",
+      "category": "medication",
+      "complexity": "moderate",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 512,
+        "top_docs": [
+          {
+            "content": ". A dilute concentration of epinephrine (1:200,000 or 5 μ g/mL) usually reduces the rate of absorption and plasma concentration of mepivacaine, however, it has been reported that vasoconstrictors do not significantly prolong anesthesia with mepivacaine. Onset of anesthesia with mepivacaine is rapid,",
+            "source": "FDA",
+            "match_count": 7
+          },
+          {
+            "content": ". The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The duration of anesthesia also varies depending upon the technique and type of block, the concentration, ",
+            "source": "FDA",
+            "match_count": 7
+          },
+          {
+            "content": "DOSAGE AND ADMINISTRATION: DOSAGE AND ADMINISTRATION The dose of any local anesthetic administered varies with the anesthetic procedure, the area to be anesthetized, the vascularity of the tissues, the number of neuronal segments to be blocked, the depth of anesthesia and degree of muscle relaxation",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "कौन सी मेपिवाकेन हाइड्रोक्लोराइड की सांद्रता पूर्ण संवेदी और मोटर ब्लॉक प्रदान करती है?"
+    },
+    {
+      "english": "How long is anesthesia provided by mepivacaine typically adequate for surgery?",
+      "category": "medication",
+      "complexity": "simple",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 54,
+        "top_docs": [
+          {
+            "content": ". The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The duration of anesthesia also varies depending upon the technique and type of block, the concentration, ",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "INDICATIONS AND USAGE: 1 INDICATIONS AND USAGE Tramadol hydrochloride tablets are indicated in adults for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate. Limitations of Use Because of the risks of addiction, abuse, and misuse w",
+            "source": "FDA",
+            "match_count": 2
+          },
+          {
+            "content": ". Limitations of Use (1) Because of the risks of addiction, abuse, and misuse with opioids, even at recommended doses (5.1) , reserve tramadol hydrochloride tablets for use in patients for whom alternative treatment options [e.g., non-opioid analgesics]: Have not been tolerated or are not expected t",
+            "source": "FDA",
+            "match_count": 2
+          }
+        ]
+      },
+      "hindi": "मेपिवाकेन द्वारा प्रदान की गई एनेस्थीसिया आमतौर पर सर्जरी के लिए कितनी देर तक पर्याप्त होती है?"
+    },
+    {
+      "english": "What is the pH range of Meperidine Hydrochloride Injection?",
+      "category": "medication",
+      "complexity": "simple",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 261,
+        "top_docs": [
+          {
+            "content": ". Therapy should always be initiated with intravenous or intramuscular dosing of ketorolac tromethamine, and oral ketorolac tromethamine is to be used only as continuation treatment, if necessary. The total combined duration of use of ketorolac tromethamine injection and oral ketorolac tromethamine ",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": ". Consideration should be given to supplementing these regimens with low doses of opioids \"prn\" unless otherwise contraindicated. Pharmaceutical Information for Ketorolac Tromethamine Injection Ketorolac tromethamine injection should not be mixed in a small volume (e.g., in a syringe) with morphine ",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": ". Venlafaxine hydrochloride extended-release capsules should also not be started in a patient who is being treated with MAOIs such as linezolid or intravenous methylene blue. All reports with methylene blue that provided information on the route of administration involved intravenous administration ",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन का पीएच रेंज क्या है?"
+    },
+    {
+      "english": "What are the forms of administration for Meperidine Hydrochloride Injection?",
+      "category": "medication",
+      "complexity": "simple",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 787,
+        "top_docs": [
+          {
+            "content": ". Consideration should be given to supplementing these regimens with low doses of opioids \"prn\" unless otherwise contraindicated. Pharmaceutical Information for Ketorolac Tromethamine Injection Ketorolac tromethamine injection should not be mixed in a small volume (e.g., in a syringe) with morphine ",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Therapeutic effect is often achieved with doses under 20 mg daily. Patients remaining severely disturbed or inadequately controlled may require upward titration of dosage. Daily doses up to 40 mg may be necessary; controlled clinical studies have not been performed to demonstrate safety of prolong",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Consideration should be given to supplementing these regimens with low doses of opioids \"prn\" unless otherwise contraindicated. Pharmaceutical Information for Ketorolac Tromethamine Injection Ketorolac tromethamine injection should not be mixed in a small volume (e.g., in a syringe) with morphine ",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन के प्रशासन के रूप क्या हैं?"
+    },
+    {
+      "english": "What is the melting point of meperidine hydrochloride?",
+      "category": "medication",
+      "complexity": "simple",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 75,
+        "top_docs": [
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "DESCRIPTION: 11 DESCRIPTION Paroxetine tablets, USP contains paroxetine hydrochloride USP, an SSRI. It is the hydrochloride salt of a phenylpiperidine compound identified chemically as (-)- trans -4 R -(4'-fluorophenyl)-3 S -[(3',4'- methylenedioxyphenoxy) methyl] piperidine hydrochloride anhydrous ",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड का गलनांक क्या है?"
+    },
+    {
+      "english": "What is the chemical composition of meperidine hydrochloride?",
+      "category": "medication",
+      "complexity": "complex",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 80,
+        "top_docs": [
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": ". Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition of Available Solutions In Water For Injection 1% Single Dose 30 mL Vial mg/mL 1% Multiple Dose 50 mL",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड की रासायनिक संरचना क्या है?"
+    },
+    {
+      "english": "What is the role of meperidine hydrochloride as a narcotic analgesic?",
+      "category": "medication",
+      "complexity": "moderate",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 257,
+        "top_docs": [
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Meperidine hydrochloride is a narcotic analgesic with multiple actions qualitatively similar to those of morphine; the most prominent of these involve the central nervous system and organs composed of smooth muscle. The principal actions of therapeutic va",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 4
+          }
+        ]
+      },
+      "hindi": "मपेरीडाइन हाइड्रोक्लोराइड का नारकोटिक एनाल्जेसिक के रूप में क्या भूमिका है?"
+    },
+    {
+      "english": "What are the concentrations available for Meperidine Hydrochloride Injection?",
+      "category": "medication",
+      "complexity": "simple",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 359,
+        "top_docs": [
+          {
+            "content": "DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C 15 H 22 N 2 O HCl. It is a white, crystalline odorless powder, soluble in water, but very resistant ",
+            "source": "FDA",
+            "match_count": 4
+          },
+          {
+            "content": ". Consideration should be given to supplementing these regimens with low doses of opioids \"prn\" unless otherwise contraindicated. Pharmaceutical Information for Ketorolac Tromethamine Injection Ketorolac tromethamine injection should not be mixed in a small volume (e.g., in a syringe) with morphine ",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": "DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial contains meperidine hydrochloride, either 25 mg, 50 mg, 75 mg or 100 mg in Water for Injection. Buffered",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता क्या हैं?"
+    },
+    {
+      "english": "What is the relationship between plasma concentration and drug binding in local anesthetics?",
+      "category": "medication",
+      "complexity": "complex",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 1618,
+        "top_docs": [
+          {
+            "content": "CLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Valproic acid dissociates to the valproate ion in the gastrointestinal tract. The mechanisms by which valproate exerts its antiepileptic effects have not been established. It has been suggested that its activity in epilepsy is ",
+            "source": "FDA",
+            "match_count": 5
+          },
+          {
+            "content": ". Metabolism Valproate is metabolized almost entirely by the liver. In adult patients on monotherapy, 30-50% of an administered dose appears in urine as a glucuronide conjugate. Mitochondrial β-oxidation is the other major metabolic pathway, typically accounting for over 40% of the dose. Usually, le",
+            "source": "FDA",
+            "match_count": 5
+          },
+          {
+            "content": "CLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Divalproex sodium dissociates to the valproate ion in the gastrointestinal tract. The mechanisms by which valproate exerts its therapeutic effects have not been established. It has been suggested that its activity in epilepsy i",
+            "source": "FDA",
+            "match_count": 5
+          }
+        ]
+      },
+      "hindi": "स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बाइंडिंग के बीच क्या संबंध है?"
+    }
+  ],
+  "side_effect": [
+    {
+      "english": "What are the potential renal side effects of Zoledronic Acid Injection?",
+      "category": "side_effect",
+      "complexity": "complex",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 778,
+        "top_docs": [
+          {
+            "content": "DOSAGE AND ADMINISTRATION: DOSAGE AND ADMINISTRATION Carefully consider the potential benefits and risks of etodolac and other treatment options before deciding to use etodolac. Use the lowest effective dose for the shortest duration consistent with individual patient treatment goals (see WARNINGS )",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": ". To minimize the potential risk for an adverse GI event, the lowest effective dose should be used for the shortest possible duration. Patients and physicians should remain alert for signs and symptoms of GI ulceration and bleeding during NSAID therapy and promptly initiate additional evaluation and",
+            "source": "FDA",
+            "match_count": 3
+          },
+          {
+            "content": "DOSAGE AND ADMINISTRATION: DOSAGE AND ADMINISTRATION Carefully consider the potential benefits and risks of etodolac tablets and other treatment options before deciding to use etodolac tablets. Use the lowest effective dose for the shortest duration consistent with individual patient treatment goals",
+            "source": "FDA",
+            "match_count": 3
+          }
+        ]
+      },
+      "hindi": "ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे संबंधी दुष्प्रभाव क्या हैं?"
+    },
+    {
+      "english": "What are the adverse reactions reported during postapproval use of Zoledronic Acid Injection?",
+      "category": "side_effect",
+      "complexity": "complex",
+      "expected_source": "FDA",
+      "answerable": true,
+      "validation": {
+        "answerable": true,
+        "relevant_docs_count": 4063,
+        "top_docs": [
+          {
+            "content": ". In the trials and in postmarketing experience, renal deterioration, progression to renal failure and dialysis have occurred in patients with normal and abnormal baseline renal function, including patients treated with 4 mg infused over a 15 - minute period. There have been instances of this occurr",
+            "source": "FDA",
+            "match_count": 7
+          },
+          {
+            "content": ". In the trials and in postmarketing experience, renal deterioration, progression to renal failure and dialysis have occurred in patients with normal and abnormal baseline renal function, including patients treated with 4 mg infused over a 15 - minute period. There have been instances of this occurr",
+            "source": "FDA",
+            "match_count": 7
+          },
+          {
+            "content": ". In most cases, no specific treatment is required and the symptoms subside after 24 - 48 hours. Ocular Adverse Events Ocular inflammation such as uveitis and scleritis can occur with bisphosphonate use, including Zoledronic Acid Injection. No cases of iritis, scleritis or uveitis were reported duri",
+            "source": "FDA",
+            "match_count": 6
+          }
+        ]
+      },
+      "hindi": "ज़ोलेड्रोनिक एसिड इंजेक्शन के पोस्ट-अप्रूवल उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाएं क्या हैं?"
+    }
+  ]
+}

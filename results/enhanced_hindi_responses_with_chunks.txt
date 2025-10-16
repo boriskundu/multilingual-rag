@@ -1,0 +1,1173 @@
+ENHANCED HINDI HEALTHCARE RAG - RESPONSE & CHUNK ANALYSIS
+====================================================================================================
+
+
+Question 1: इंसुलिन प्रतिरोध क्या है और यह कोशिकाओं में ग्लूकोज के प्रवेश को कैसे प्रभावित करता है?
+English: What is insulin resistance and how does it affect glucose entry into cells?
+Question ID: Hindi_Q001
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 5/5 = 100.0%
+Multilingual relevance: 0.694
+Translation relevance: 0.694
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+इंसुलिन प्रतिरोध एक ऐसी स्थिति है जिसमें आपकी कोशिकाएं इंसुलिन के प्रति सामान्य रूप से प्रतिक्रिया नहीं करती हैं। परिणामस्वरूप, ग्लूकोज को आपकी कोशिकाओं में प्रवेश करने में मदद करने के लिए आपके शरीर को अधिक इंसुलिन की आवश्यकता होती है। प्रारंभ में, आपका शरीर कोशिकाओं को प्रतिक्रिया देने के लिए अधिक इंसुलिन का उत्पादन करके क्षतिपूर्ति करता है। हालाँकि, समय के साथ, आपका शरीर पर्याप्त इंसुलिन का उत्पादन करने में सक्षम नहीं हो सकता है, जिससे रक्त शर्करा का स्तर बढ़ जाता है। इससे टाइप 2 मधुमेह विकसित होने का खतरा बढ़ सकता है।
+
+TRANSLATION PIPELINE APPROACH:
+इंसुलिन प्रतिरोध एक ऐसी स्थिति है जिसमें आपकी कोशिकाएं इंसुलिन के प्रति सामान्य रूप से प्रतिक्रिया नहीं करती हैं। परिणामस्वरूप, ग्लूकोज को आपकी कोशिकाओं में प्रवेश करने में मदद करने के लिए आपके शरीर को अधिक इंसुलिन की आवश्यकता होती है। प्रारंभ में, आपका शरीर कोशिकाओं को प्रतिक्रिया देने के लिए अधिक इंसुलिन का उत्पादन करके क्षतिपूर्ति करता है। हालाँकि, समय के साथ, आपका शरीर पर्याप्त इंसुलिन का उत्पादन करने में सक्षम नहीं हो सकता है, जिससे रक्त शर्करा का स्तर बढ़ जाता है। इससे टाइप 2 मधुमेह विकसित होने का खतरा बढ़ सकता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.869
+Time Speedup: 0.97x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (5):
+Avg relevance: 0.694
+[1] . As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insu...
+[2] Summary: Type 2diabetesis a disease in which your blood glucose, orblood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin he...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 2: हृदय रोग के जोखिम पर पारिवारिक इतिहास का क्या प्रभाव पड़ता है?
+English: How does family history influence the risk of heart disease?
+Question ID: Hindi_Q002
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.548
+Translation relevance: 0.551
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रारंभिक हृदय रोग का पारिवारिक इतिहास आपके जोखिम को बढ़ा देता है। यदि आपके परिवार में कोई करीबी सदस्य है, जैसे कि पिता या भाई, जिसका निदान 55 वर्ष की आयु से पहले हुआ है, या माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ है, तो आपके हृदय रोग विकसित होने का जोखिम अधिक है।
+
+TRANSLATION PIPELINE APPROACH:
+प्रारंभिक हृदय रोग का पारिवारिक इतिहास आपके जोखिम को बढ़ा देता है। विशेष रूप से, यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में हृदय रोग हुआ है, जैसे कि पिता या भाई को 55 वर्ष की आयु से पहले निदान हुआ, या माँ या बहन को 65 वर्ष की आयु से पहले निदान हुआ, तो आपका जोखिम अधिक है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.990
+ROUGE-L F1: 0.788
+Time Speedup: 0.84x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.579
+[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.538
+[1] WARNINGS AND CAUTIONS: 5 WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors ma...
+[2] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.534
+[1] WARNINGS AND CAUTIONS: WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors may ...
+[2] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 3: धूम्रपान का रक्तचाप और हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?
+English: What impact does smoking have on blood pressure and heart disease risk?
+Question ID: Hindi_Q003
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.651
+Translation relevance: 0.560
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+धूम्रपान से आपका रक्तचाप बढ़ता है और दिल का दौरा और स्ट्रोक का खतरा बढ़ जाता है। यदि आप धूम्रपान नहीं करते हैं, तो इसे शुरू न करने की सलाह दी जाती है। यदि आप धूम्रपान करते हैं, तो छोड़ने से हृदय रोग का खतरा कम हो सकता है।
+
+TRANSLATION PIPELINE APPROACH:
+धूम्रपान से आपका रक्तचाप बढ़ जाता है और आपको दिल का दौरा और स्ट्रोक का खतरा बढ़ जाता है। धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो सकता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.912
+ROUGE-L F1: 0.548
+Time Speedup: 0.87x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.643
+[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.653
+[1] . In the majority of the reported cases, patients had pre-existing cardiovascular disease and/or other risk factors. Although smoking is a risk factor for MI and CVA, based on temporal relationship be...
+[2] . Iclevia is contraindicated in women over 35 years of age who smoke [ see Contraindications (4) ]. Cigarette smoking increases the risk of serious cardiovascular events from COC use. This risk increa...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.536
+[1] . It may include only the lifestyle changes. These changes, such as heart-healthy eating and exercise, can be very effective. But sometimes the changes do not control or lower your high blood pressure...
+[2] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 4: हृदय रोग के कौन से जोखिम कारक बदले जा सकते हैं?
+English: What are the heart disease risk factors that can be changed?
+Question ID: Hindi_Q004
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 3/5 = 60.0%
+Multilingual relevance: 0.673
+Translation relevance: 0.661
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+हृदय रोग के लिए जिन जोखिम कारकों को बदला जा सकता है उनमें अस्वास्थ्यकर जीवनशैली की आदतें शामिल हैं जैसे कि संतृप्त वसा, परिष्कृत कार्बोहाइड्रेट और नमक से भरपूर आहार खाना, पर्याप्त शारीरिक गतिविधि न करना, बहुत अधिक शराब पीना, धूम्रपान करना और सेकेंड हैंड धुएं के संपर्क में रहना और बहुत अधिक तनाव का अनुभव करना।
+
+TRANSLATION PIPELINE APPROACH:
+हृदय रोग के लिए जिन जोखिम कारकों को बदला जा सकता है उनमें जीवनशैली की आदतें शामिल हैं जैसे संतृप्त वसा, परिष्कृत कार्बोहाइड्रेट और नमक से भरपूर आहार खाना; पर्याप्त शारीरिक गतिविधि न करना; बहुत अधिक शराब पीना; धूम्रपान और सेकेंड हैंड धुएं के संपर्क में आना; और बहुत अधिक तनाव का अनुभव कर रहे हैं। इसके अतिरिक्त, अन्य चिकित्सीय स्थितियों का प्रबंधन करने से भी हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.969
+ROUGE-L F1: 0.774
+Time Speedup: 0.73x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (3):
+Avg relevance: 0.687
+[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[2] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+
+MULTILINGUAL-ONLY CHUNKS (1):
+Avg relevance: 0.650
+[1] WARNINGS AND CAUTIONS: 5 WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors ma...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.620
+[1] . Possible treatments may include:Heart-healthy lifestyle changesMedicinesProcedures orsurgeriesCardiac rehabilitationCan heart diseases be prevented?You may be able to lower your risk of certain hear...
+[2] SUMMARY: Heart diseaseis the leading cause of the death in the United States. It is also a major cause of disability. But you can take steps to improve your health and help prevent heart disease. The ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 5: विभिन्न जातीय समूहों में हृदय रोग की दरों में क्या अंतर हैं?
+English: What are the differences in heart disease rates among different ethnic groups?
+Question ID: Hindi_Q005
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 3/5 = 60.0%
+Multilingual relevance: 0.586
+Translation relevance: 0.539
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+संदर्भ से पता चलता है कि विभिन्न जातीय समूहों के बीच हृदय रोग की दर अलग-अलग होती है। श्वेत अमेरिकियों की तुलना में अफ्रीकी अमेरिकियों के हृदय रोग से मरने की संभावना अधिक है, जबकि हिस्पैनिक अमेरिकियों के इससे मरने की संभावना कम है। एशियाई अमेरिकियों में आम तौर पर अन्य समूहों की तुलना में हृदय रोग की दर कम होती है, लेकिन दक्षिण एशियाई अमेरिकियों में हृदय रोग की दर अधिक होती है। इसके अतिरिक्त, संयुक्त राज्य अमेरिका में अधिकांश नस्लीय और जातीय समूहों में हृदय रोग मृत्यु का प्रमुख कारण है, जिसमें काले लोगों, श्वेत लोगों और अमेरिकी भारतीय/अलास्का मूल लोगों में जोखिम अधिक है।
+
+TRANSLATION PIPELINE APPROACH:
+यह संदर्भ विभिन्न जातीय समूहों के बीच हृदय रोग दर में अंतर के बारे में जानकारी प्रदान करता है। अफ़्रीकी अमेरिकियों में श्वेत लोगों की तुलना में हृदय रोग से मरने की अधिक संभावना है। हिस्पैनिक अमेरिकियों के इससे मरने की संभावना कम है। एक समूह के रूप में एशियाई अमेरिकियों में हृदय रोग की दर अन्य समूहों की तुलना में कम है, लेकिन दक्षिण एशियाई अमेरिकियों में उच्च दर है। इसके अतिरिक्त, संयुक्त राज्य अमेरिका में अधिकांश नस्लीय और जातीय समूहों में हृदय रोग मृत्यु का प्रमुख कारण है, काले लोगों, श्वेत लोगों और अमेरिकी भारतीय/अलास्का मूल लोगों सहित कुछ समूहों में दूसरों की तुलना में अधिक जोखिम होता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.975
+ROUGE-L F1: 0.759
+Time Speedup: 0.81x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (3):
+Avg relevance: 0.581
+[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.594
+[1] . Race Pharmacokinetic differences due to race have not been identified. Clinical studies included patients of many races, all of whom responded in a similar fashion. Hepatic Insufficiency Etodolac is...
+[2] . The subjects included in the study were men aged 35 to 59 with serum cholesterol levels above 265 mg/dL and no previous history of heart disease. It is not clear to what extent these findings can be...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.476
+[1] . The causes of heart disease depend on the type of disease. Some possible causes include lifestyle, genetics, infections, medicines, and other diseases. There are many different factors that can make...
+[2] Summary: Heart disease is a general term that includes many types of heart problems. It's a type of cardiovascular disease, which means heart and blood vessel disease. Heart disease is the leading cau...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 6: शराब के सेवन का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?
+English: What is the effect of alcohol consumption on heart disease risk?
+Question ID: Hindi_Q006
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.613
+Translation relevance: 0.613
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में हृदय रोग के जोखिम पर शराब के सेवन के प्रभाव के बारे में जानकारी नहीं है। हालाँकि, आम तौर पर कहें तो, मध्यम शराब का सेवन कुछ संभावित हृदय संबंधी लाभों से जुड़ा हुआ है, जैसे कि एचडीएल कोलेस्ट्रॉल में वृद्धि। इसके विपरीत, अत्यधिक शराब के सेवन से उच्च रक्तचाप, हृदय विफलता और अन्य हृदय संबंधी समस्याएं हो सकती हैं। व्यक्तिगत सलाह के लिए स्वास्थ्य सेवा प्रदाता से परामर्श करना महत्वपूर्ण है।
+
+TRANSLATION PIPELINE APPROACH:
+दिए गए संदर्भ में हृदय रोग के जोखिम पर शराब के सेवन के प्रभाव के बारे में जानकारी नहीं है। हालाँकि, आम तौर पर कहें तो, मध्यम शराब का सेवन कुछ प्रकार के हृदय रोग के कम जोखिम से जुड़ा हुआ है, जबकि अत्यधिक शराब के सेवन से हृदय रोग और अन्य स्वास्थ्य समस्याओं का खतरा बढ़ सकता है। व्यक्तिगत सलाह के लिए स्वास्थ्य सेवा प्रदाताओं से परामर्श करना महत्वपूर्ण है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.936
+ROUGE-L F1: 0.545
+Time Speedup: 0.61x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.613
+[1] . ( 5.2 ) Interaction with Alcohol: Increased effects of alcohol have been reported. Instruct patients to reduce the amount of alcohol they consume until they know whether varenicline affects them. ( ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 7: अतिरिक्त कैलोरी का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?
+English: What is the effect of extra calories on heart disease risk?
+Question ID: Hindi_Q007
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.643
+Translation relevance: 0.608
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+अतिरिक्त कैलोरी से वजन बढ़ सकता है, जिससे हृदय रोग का खतरा बढ़ जाता है।
+
+TRANSLATION PIPELINE APPROACH:
+अतिरिक्त कैलोरी से वजन बढ़ सकता है, जिससे हृदय रोग का खतरा बढ़ जाता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.929
+Time Speedup: 0.81x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.692
+[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
+[2] . This is mostly because they are linked to other heart disease risk factors, including high blood cholesterol and triglyceride levels, high blood pressure, and diabetes.Controlling your weightcan low...
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.610
+[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[2] evident coronary heart disease, atorvastatin calcium tablets are indicated to: Reduce the risk of non-fatal myocardial infarction Reduce the risk of fatal and non-fatal stroke Reduce the risk for reva...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.551
+[1] . Fluid and Electrolyte Disturbances congestive heart failure in susceptible patients, fluid retention, hypokalemia, hypokalemic alkalosis, metabolic alkalosis, hypotension or shock-like reaction, pot...
+[2] . Debilitated or malnourished patients, and those with adrenal, pituitary, or hepatic impairment are particularly susceptible to the hypoglycemic action of anti-diabetic medications. Hypoglycemia is a...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 8: तनाव का हृदय रोग से क्या संबंध है?
+English: How does stress relate to heart disease?
+Question ID: Hindi_Q008
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.681
+Translation relevance: 0.630
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+तनाव कई तरह से हृदय रोग से संबंधित है। अत्यधिक तनाव दिल के दौरे के लिए "ट्रिगर" के रूप में कार्य कर सकता है। इसके अतिरिक्त, सामान्य तनाव-निपटने के तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान हृदय स्वास्थ्य के लिए हानिकारक हैं। व्यायाम, संगीत सुनना, शांत करने वाली गतिविधियों पर ध्यान केंद्रित करना और ध्यान जैसी गतिविधियों के माध्यम से तनाव को प्रबंधित करने से हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
+
+TRANSLATION PIPELINE APPROACH:
+अत्यधिक तनाव दिल के दौरे के लिए "ट्रिगर" हो सकता है। इसके अतिरिक्त, तनाव से निपटने के कुछ सामान्य तरीके, जैसे अधिक खाना, भारी शराब पीना और धूम्रपान, आपके दिल के लिए हानिकारक हैं। व्यायाम, संगीत सुनना, किसी शांतिपूर्ण चीज़ पर ध्यान केंद्रित करना और ध्यान करने जैसी गतिविधियों के माध्यम से तनाव को प्रबंधित करने से हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.914
+ROUGE-L F1: 0.765
+Time Speedup: 0.85x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.705
+[1] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
+[2] . Sometimeswomenwill have different symptoms then men. For example, they are more likely to feel tired for no reason. The most common cause of heart attacks iscoronary artery disease(CAD). With CAD, t...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.656
+[1] WARNINGS: WARNINGS Hypertension and Angina Cardiac Failure Sympathetic stimulation is a vital component supporting circulatory function in congestive heart failure, and beta blockade carries the poten...
+[2] WARNINGS: WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta blockade carries the potential hazard of further depres...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.568
+[1] . The causes of heart disease depend on the type of disease. Some possible causes include lifestyle, genetics, infections, medicines, and other diseases. There are many different factors that can make...
+[2] . They include the following: General: fatigue, increased appetite, weight loss, heat intolerance, fever, excessive sweating Central nervous system: headache, hyperactivity, nervousness, anxiety, irri...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 9: कौन सा जातीय समूह अन्य की तुलना में हृदय रोग की दरों में कम है?
+English: Which ethnic group has lower rates of heart disease compared to others?
+Question ID: Hindi_Q009
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.591
+Translation relevance: 0.543
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+एक समूह के रूप में एशियाई अमेरिकियों में अन्य समूहों की तुलना में हृदय रोग की दर कम है।
+
+TRANSLATION PIPELINE APPROACH:
+एक समूह के रूप में एशियाई अमेरिकियों में अन्य समूहों की तुलना में हृदय रोग की दर कम है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 1.000
+Time Speedup: 0.58x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.618
+[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.587
+[1] . Relative risk reduction from blood pressure reduction is similar across populations with varying absolute risk, so the absolute benefit is greater in patients who are at higher risk independent of t...
+[2] . The subjects included in the study were men aged 35 to 59 with serum cholesterol levels above 265 mg/dL and no previous history of heart disease. It is not clear to what extent these findings can be...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.485
+[1] . The majority of patients in the SOLVD-Prevention trial had a history of ischemic heart disease. A history of myocardial infarction was present in 80 percent of patients, current angina pectoris in 3...
+[2] Summary: Heart disease is a general term that includes many types of heart problems. It's a type of cardiovascular disease, which means heart and blood vessel disease. Heart disease is the leading cau...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 10: परिवार के सदस्यों के लिए हृदय रोग निदान की आयु सीमाएं क्या हैं जो जोखिम बढ़ाती हैं?
+English: What are the heart disease diagnosis age thresholds for family members that increase risk?
+Question ID: Hindi_Q010
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 4/5 = 80.0%
+Multilingual relevance: 0.618
+Translation relevance: 0.618
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में हृदय रोग हुआ हो तो आपको हृदय रोग का खतरा अधिक होता है। विशेष रूप से, यदि आपके पिता या भाई का निदान 55 वर्ष की आयु से पहले हुआ था, या यदि आपकी माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ था।
+
+TRANSLATION PIPELINE APPROACH:
+यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में ही हृदय रोग का पता चला है तो आपको हृदय रोग का खतरा अधिक है। विशेष रूप से, यदि आपके पिता या भाई का निदान 55 वर्ष की आयु से पहले हुआ था, या यदि आपकी माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ था, तो आपका जोखिम बढ़ जाता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.990
+ROUGE-L F1: 0.769
+Time Speedup: 0.88x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (4):
+Avg relevance: 0.611
+[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 11: अनुशंसित शराब से अधिक पीने के हृदय रोग जोखिम पर क्या प्रभाव होते हैं?
+English: What are the effects of drinking more than recommended alcohol on heart disease risk?
+Question ID: Hindi_Q011
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.616
+Translation relevance: 0.626
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में अनुशंसित से अधिक शराब पीने के हृदय रोग के जोखिम पर पड़ने वाले प्रभावों के बारे में जानकारी नहीं है। हालाँकि, आम तौर पर, अत्यधिक शराब के सेवन से उच्च रक्तचाप, कार्डियोमायोपैथी, अतालता और स्ट्रोक सहित हृदय संबंधी बीमारियों के विकसित होने का खतरा बढ़ सकता है। इन जोखिमों को कम करने के लिए शराब के सेवन के लिए अनुशंसित दिशानिर्देशों का पालन करना महत्वपूर्ण है।
+
+TRANSLATION PIPELINE APPROACH:
+अनुशंसित से अधिक शराब पीने से हृदय रोग का खतरा बढ़ सकता है। यह अतिरिक्त कैलोरी जोड़ता है, जिससे वजन बढ़ सकता है और ये दोनों कारक हृदय रोग के खतरे को बढ़ाते हैं।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.853
+ROUGE-L F1: 0.318
+Time Speedup: 0.81x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.616
+[1] . ( 5.2 ) Interaction with Alcohol: Increased effects of alcohol have been reported. Instruct patients to reduce the amount of alcohol they consume until they know whether varenicline affects them. ( ...
+
+TRANSLATION-ONLY CHUNKS (1):
+Avg relevance: 0.664
+[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 12: पुरुषों और महिलाओं के लिए हृदय रोग के जोखिम को कम करने के लिए पीने के दिशा-निर्देश क्या हैं?
+English: What are the drinking guidelines to reduce heart disease risk for men and women?
+Question ID: Hindi_Q012
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 4/5 = 80.0%
+Multilingual relevance: 0.612
+Translation relevance: 0.612
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+हृदय रोग के जोखिम को कम करने के लिए पीने के दिशानिर्देश हैं: पुरुषों के लिए प्रति दिन 2 से अधिक पेय नहीं और महिलाओं के लिए प्रति दिन 1 से अधिक पेय नहीं।
+
+TRANSLATION PIPELINE APPROACH:
+हृदय रोग के जोखिम को कम करने के लिए पीने के दिशानिर्देश हैं: पुरुषों के लिए प्रति दिन 2 से अधिक पेय नहीं और महिलाओं के लिए प्रति दिन 1 से अधिक पेय नहीं।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.945
+Time Speedup: 0.51x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (4):
+Avg relevance: 0.613
+[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
+[2] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 13: तनाव प्रबंधन हृदय रोग के जोखिम को कैसे प्रभावित करता है?
+English: How does managing stress influence heart disease risk?
+Question ID: Hindi_Q013
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.690
+Translation relevance: 0.690
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+तनाव प्रबंधन हृदय रोग के जोखिम को महत्वपूर्ण रूप से प्रभावित कर सकता है। अत्यधिक तनाव दिल के दौरे को ट्रिगर कर सकता है, और तनाव से निपटने के सामान्य तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान हृदय स्वास्थ्य के लिए हानिकारक हैं। प्रभावी तनाव प्रबंधन तकनीकें, जैसे व्यायाम, संगीत सुनना, शांत या शांतिपूर्ण गतिविधियों पर ध्यान केंद्रित करना और ध्यान करना, इन जोखिमों को कम करने और बेहतर हृदय स्वास्थ्य को बढ़ावा देने में मदद कर सकती हैं।
+
+TRANSLATION PIPELINE APPROACH:
+तनाव प्रबंधन हृदय रोग के जोखिम को महत्वपूर्ण रूप से प्रभावित कर सकता है। अत्यधिक तनाव दिल के दौरे को ट्रिगर कर सकता है, और तनाव से निपटने के सामान्य तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान हृदय स्वास्थ्य के लिए हानिकारक हैं। प्रभावी तनाव प्रबंधन तकनीकें, जैसे व्यायाम, संगीत सुनना, शांत या शांतिपूर्ण गतिविधियों पर ध्यान केंद्रित करना और ध्यान करना, हृदय रोग के जोखिम को कम करने में मदद कर सकता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.998
+ROUGE-L F1: 0.831
+Time Speedup: 0.62x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.731
+[1] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
+[2] WARNINGS: WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta blockade carries the potential hazard of further depres...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 14: धूम्रपान करने वालों के लिए हृदय रोग के जोखिम को कम करने के लिए क्या अनुशंसित कार्रवाई है?
+English: What is the recommended action for smokers to lower heart disease risk?
+Question ID: Hindi_Q014
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.496
+Translation relevance: 0.545
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+संदर्भ धूम्रपान करने वालों के लिए हृदय रोग के जोखिम को कम करने के लिए स्पष्ट रूप से अनुशंसित कार्रवाई प्रदान नहीं करता है। हालाँकि, इसमें उल्लेख किया गया है कि धूम्रपान बंद करना एक महत्वपूर्ण स्वास्थ्य लाभ है और व्यापक हृदय जोखिम प्रबंधन का हिस्सा है। इसलिए, हृदय रोग के जोखिम को कम करने के लिए धूम्रपान छोड़ना एक अनुशंसित कदम है।
+
+TRANSLATION PIPELINE APPROACH:
+हृदय रोग के जोखिम को कम करने के लिए धूम्रपान करने वालों के लिए अनुशंसित कार्रवाई धूम्रपान बंद करना है। धूम्रपान छोड़ना व्यापक हृदय जोखिम प्रबंधन का एक महत्वपूर्ण हिस्सा है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.872
+ROUGE-L F1: 0.432
+Time Speedup: 0.66x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.562
+[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[2] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+
+MULTILINGUAL-ONLY CHUNKS (1):
+Avg relevance: 0.411
+[1] . Advise patients to use caution driving or operating machinery or engaging in other potentially hazardous activities until they know how varenicline may affect them. 5.5 Cardiovascular Events A compr...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.535
+[1] . Possible treatments may include:Heart-healthy lifestyle changesMedicinesProcedures orsurgeriesCardiac rehabilitationCan heart diseases be prevented?You may be able to lower your risk of certain hear...
+[2] . Treatment plans for heart disease depend on the type of heart disease you have, how serious your symptoms are, and what other health conditions you have. Possible treatments may include: You may be ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 15: धूम्रपान छोड़ने का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?
+English: What is the effect of smoking cessation on heart disease risk?
+Question ID: Hindi_Q015
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 2/5 = 40.0%
+Multilingual relevance: 0.632
+Translation relevance: 0.633
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो जाता है।
+
+TRANSLATION PIPELINE APPROACH:
+धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो जाता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.750
+Time Speedup: 0.64x
+Retrieval Overlap: 40.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (2):
+Avg relevance: 0.631
+[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
+[2] . Iclevia is contraindicated in women over 35 years of age who smoke [ see Contraindications (4) ]. Cigarette smoking increases the risk of serious cardiovascular events from COC use. This risk increa...
+
+MULTILINGUAL-ONLY CHUNKS (1):
+Avg relevance: 0.626
+[1] . In the majority of the reported cases, patients had pre-existing cardiovascular disease and/or other risk factors. Although smoking is a risk factor for MI and CVA, based on temporal relationship be...
+
+TRANSLATION-ONLY CHUNKS (1):
+Avg relevance: 0.628
+[1] INDICATIONS AND USAGE: Use • reduces withdrawal symptoms, including nicotine craving, associated with quitting smoking...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 16: हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन के दिशा-निर्देश क्या हैं?
+English: What are the guidelines for alcohol consumption for women to reduce heart disease risk?
+Question ID: Hindi_Q016
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.568
+Translation relevance: 0.568
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन दिशानिर्देशों के बारे में जानकारी शामिल नहीं है। हालाँकि, सामान्य दिशानिर्देश सुझाव देते हैं कि हृदय रोग के जोखिम को कम करने के लिए महिलाओं को शराब का सेवन प्रति दिन एक से अधिक पेय तक सीमित करना चाहिए। व्यक्तिगत सलाह के लिए स्वास्थ्य सेवा प्रदाताओं से परामर्श करना महत्वपूर्ण है।
+
+TRANSLATION PIPELINE APPROACH:
+दिए गए संदर्भ में हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन दिशानिर्देशों के बारे में जानकारी शामिल नहीं है। हालाँकि, सामान्य दिशानिर्देश सुझाव देते हैं कि हृदय रोग के जोखिम को कम करने में मदद के लिए महिलाओं को शराब का सेवन प्रति दिन एक से अधिक पेय तक सीमित करना चाहिए। व्यक्तिगत सलाह के लिए किसी स्वास्थ्य सेवा प्रदाता से परामर्श करना हमेशा सर्वोत्तम होता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.993
+ROUGE-L F1: 0.815
+Time Speedup: 0.81x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.568
+[1] . ( 5.2 ) Interaction with Alcohol: Increased effects of alcohol have been reported. Instruct patients to reduce the amount of alcohol they consume until they know whether varenicline affects them. ( ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 17: मेपिवाकेन हाइड्रोक्लोराइड का उपयोग किस लिए किया जाता है?
+English: What is mepivacaine hydrochloride used for?
+Question ID: Hindi_Q017
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.565
+Translation relevance: 0.600
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में मेपिवाकेन हाइड्रोक्लोराइड के बारे में जानकारी नहीं है। हालाँकि, मेपिवाकेन हाइड्रोक्लोराइड का उपयोग आमतौर पर दंत प्रक्रियाओं और छोटे सर्जिकल हस्तक्षेपों के लिए स्थानीय संवेदनाहारी के रूप में किया जाता है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपिवाकेन हाइड्रोक्लोराइड का उपयोग स्थानीय घुसपैठ, परिधीय तंत्रिका ब्लॉक और पुच्छीय और काठ एपिड्यूरल ब्लॉक के माध्यम से इंजेक्शन के लिए स्थानीय संवेदनाहारी के रूप में किया जाता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.560
+ROUGE-L F1: 0.392
+Time Speedup: 0.50x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.579
+[1] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) that exerts its pharmacologic effects by modulat...
+[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Amitriptyline hydrochloride is an antidepressant with sedative effects. Its mechanism of action in man is not known. It is not a monoamine oxidase inhibito...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.596
+[1] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
+[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 18: मेपेरिडाइन हाइड्रोक्लोराइड का संरचनात्मक सूत्र क्या है?
+English: What is the structural formula of meperidine hydrochloride?
+Question ID: Hindi_Q018
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.664
+Translation relevance: 0.598
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के संरचनात्मक सूत्र के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के संरचनात्मक सूत्र के बारे में जानकारी नहीं है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.929
+Time Speedup: 0.62x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.614
+[1] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.677
+[1] . It has the following structural formula: Codeine phosphate (7,8-Didehydro-4,5α-epoxy-3-methoxy-17-methylmorphinan-6α-ol phosphate (1:1)(salt) hemihydrate) is an opioid agonist. It has the following ...
+[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.591
+[1] . Hydrochlorothiazide is chemically described as 6-chloro-3,4-dihydro- 2H -1,2,4-benzothiadiazine-7-sulfonamide 1,1-dioxide. Hydrochlorothiazide is a thiazide diuretic. Its empirical formula is C 7 H ...
+[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 19: स्थानीय एनेस्थेटिक्स की क्रिया में प्लाज्मा प्रोटीन की क्या भूमिका होती है?
+English: What is the role of plasma proteins in the action of local anesthetics?
+Question ID: Hindi_Q019
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.466
+Translation relevance: 0.481
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में स्थानीय एनेस्थेटिक्स की क्रिया में प्लाज्मा प्रोटीन की भूमिका के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+प्लाज़्मा प्रोटीन प्लेसेंटल स्थानांतरण के लिए उनके वितरण और उपलब्धता को प्रभावित करके स्थानीय एनेस्थेटिक्स की कार्रवाई में महत्वपूर्ण भूमिका निभाते हैं। स्थानीय एनेस्थेटिक्स जो प्लाज्मा प्रोटीन से अत्यधिक बंधे होते हैं उनमें भ्रूण/मातृ अनुपात कम होता है क्योंकि प्लेसेंटल ट्रांसफर के लिए केवल मुफ्त, अनबाउंड दवा ही उपलब्ध होती है। उदाहरण के लिए, मेपिवाकेन लगभग 75% प्लाज्मा प्रोटीन से बंधा होता है, जो इसके प्लेसेंटल स्थानांतरण की सीमा को प्रभावित करता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.689
+ROUGE-L F1: 0.244
+Time Speedup: 0.73x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.510
+[1] . In vitro , etoposide is highly protein bound (97%) to human plasma proteins. An inverse relationship between plasma albumin levels and etoposide renal clearance is found in children. In a study dete...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.455
+[1] . chemical structure Mechanism of Action The mechanism of action of captopril tablets have not yet been fully elucidated. Its beneficial effects in hypertension and heart failure appear to result prim...
+[2] . In vitro findings suggest that CYP2B6 is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 enzymes are not involved in the formation of threohydrobupropion...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.454
+[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
+[2] . Fetal/maternal ratios of local anesthetics appear to be inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Mepivacain...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 20: कौन सी मेपिवाकेन हाइड्रोक्लोराइड की सांद्रता पूर्ण संवेदी और मोटर ब्लॉक प्रदान करती है?
+English: What concentration of mepivacaine hydrochloride provides complete sensory and motor block?
+Question ID: Hindi_Q020
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.565
+Translation relevance: 0.512
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में पूर्ण संवेदी और मोटर ब्लॉक प्रदान करने के लिए आवश्यक मेपिवाकेन हाइड्रोक्लोराइड की एकाग्रता के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपिवाकेन हाइड्रोक्लोराइड की 2% सांद्रता पूर्ण संवेदी और मोटर ब्लॉक प्रदान करती है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.676
+ROUGE-L F1: 0.687
+Time Speedup: 0.64x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.563
+[1] . N-monodesmethyl-rizatriptan, a metabolite with activity similar to that of parent compound at the 5-HT 1B/1D receptor, is formed to a minor degree. Plasma concentrations of N-monodesmethyl-rizatript...
+[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+
+TRANSLATION-ONLY CHUNKS (5):
+Avg relevance: 0.512
+[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
+[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 21: मेपिवाकेन द्वारा प्रदान की गई एनेस्थीसिया आमतौर पर सर्जरी के लिए कितनी देर तक पर्याप्त होती है?
+English: How long is anesthesia provided by mepivacaine typically adequate for surgery?
+Question ID: Hindi_Q021
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.537
+Translation relevance: 0.518
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+मेपिवाकेन द्वारा प्रदान किया गया एनेस्थीसिया आमतौर पर सर्जरी के 2 से 2 1/2 घंटे के लिए पर्याप्त होता है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपिवाकेन द्वारा प्रदान किया गया एनेस्थीसिया आमतौर पर सर्जरी के 2 से 2 1/2 घंटे के लिए पर्याप्त होता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.848
+Time Speedup: 0.37x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.560
+[1] . The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The du...
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.531
+[1] . Captopril tablets should generally be used in conjunction with a diuretic and digitalis. Captopril tablets therapy must be initiated under very close medical supervision. Left Ventricular Dysfunctio...
+[2] . Treatment should begin with the intravenous administration of 5 mg atenolol over 5 minutes followed by another 5 mg intravenous injection 10 minutes later. Atenolol injection should be administered ...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.483
+[1] CLINICAL PHARMACOLOGY: 1.2 CLINICAL PHARMACOLOGY Mechanism of action: Lidocaine stabilizes the neuronal membrane by inhibiting the ionic fluxes required for the initiation and conduction of impulses, ...
+[2] . A dilute concentration of epinephrine (1:200,000 or 5 μ g/mL) usually reduces the rate of absorption and plasma concentration of mepivacaine, however, it has been reported that vasoconstrictors do n...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 22: मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन का पीएच रेंज क्या है?
+English: What is the pH range of Meperidine Hydrochloride Injection?
+Question ID: Hindi_Q022
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.681
+Translation relevance: 0.613
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन की पीएच रेंज के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन की पीएच रेंज 3.5 से 6.0 है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.722
+ROUGE-L F1: 0.500
+Time Speedup: 0.56x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.681
+[1] . N-monodesmethyl-rizatriptan, a metabolite with activity similar to that of parent compound at the 5-HT 1B/1D receptor, is formed to a minor degree. Plasma concentrations of N-monodesmethyl-rizatript...
+[2] . Protein binding was greater than 99.5%. Metabolism Glimepiride is completely metabolized by oxidative biotransformation after either an intravenous or oral dose. The major metabolites are the cycloh...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.623
+[1] DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial cont...
+[2] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 23: मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन के प्रशासन के रूप क्या हैं?
+English: What are the forms of administration for Meperidine Hydrochloride Injection?
+Question ID: Hindi_Q023
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.627
+Translation relevance: 0.585
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन के प्रशासन के रूपों के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन को इंट्रामस्क्युलर, चमड़े के नीचे या धीमी अंतःशिरा उपयोग के माध्यम से प्रशासित किया जा सकता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.614
+ROUGE-L F1: 0.214
+Time Speedup: 0.45x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (5):
+Avg relevance: 0.627
+[1] . The pharmacological action of allopurinol is generally believed to be mediated by its oxypurinol metabolite. Effect on Hypoxanthine and Xanthine Reutilization of both hypoxanthine and xanthine for n...
+[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Amitriptyline hydrochloride is an antidepressant with sedative effects. Its mechanism of action in man is not known. It is not a monoamine oxidase inhibito...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.600
+[1] DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial cont...
+[2] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 24: मेपेरिडाइन हाइड्रोक्लोराइड का गलनांक क्या है?
+English: What is the melting point of meperidine hydrochloride?
+Question ID: Hindi_Q024
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.608
+Translation relevance: 0.617
+Winner: Translation
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के पिघलने बिंदु के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के पिघलने बिंदु के बारे में जानकारी नहीं है।
+
+EVALUATION METRICS:
+Semantic Similarity: 1.000
+ROUGE-L F1: 0.929
+Time Speedup: 0.60x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.606
+[1] . Levonorgestrel and its phase I metabolites are excreted primarily as glucuronide conjugates. Metabolic clearance rates may differ among individuals by several-fold, and this may account in part for ...
+[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.620
+[1] . Hydrochlorothiazide is chemically described as 6-chloro-3,4-dihydro- 2H -1,2,4-benzothiadiazine-7-sulfonamide 1,1-dioxide. Hydrochlorothiazide is a thiazide diuretic. Its empirical formula is C 7 H ...
+[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 25: मेपेरिडाइन हाइड्रोक्लोराइड की रासायनिक संरचना क्या है?
+English: What is the chemical composition of meperidine hydrochloride?
+Question ID: Hindi_Q025
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.681
+Translation relevance: 0.662
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड की रासायनिक संरचना के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड की रासायनिक संरचना के बारे में जानकारी नहीं है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.995
+ROUGE-L F1: 0.857
+Time Speedup: 0.61x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.663
+[1] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.694
+[1] . It has the following structural formula: Codeine phosphate (7,8-Didehydro-4,5α-epoxy-3-methoxy-17-methylmorphinan-6α-ol phosphate (1:1)(salt) hemihydrate) is an opioid agonist. It has the following ...
+[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.653
+[1] . Hydrochlorothiazide is chemically described as 6-chloro-3,4-dihydro- 2H -1,2,4-benzothiadiazine-7-sulfonamide 1,1-dioxide. Hydrochlorothiazide is a thiazide diuretic. Its empirical formula is C 7 H ...
+[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 26: मपेरीडाइन हाइड्रोक्लोराइड का नारकोटिक एनाल्जेसिक के रूप में क्या भूमिका है?
+English: What is the role of meperidine hydrochloride as a narcotic analgesic?
+Question ID: Hindi_Q026
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.626
+Translation relevance: 0.456
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड या मादक दर्दनाशक के रूप में इसकी भूमिका के बारे में जानकारी नहीं है। हालाँकि, मेपरिडीन हाइड्रोक्लोराइड, जिसे पेथिडीन भी कहा जाता है, एक मादक दर्दनाशक दवा है जिसका उपयोग मध्यम से गंभीर दर्द के इलाज के लिए किया जाता है। यह अन्य ओपिओइड के समान, मस्तिष्क में दर्द की धारणा और प्रतिक्रिया को बदलकर काम करता है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपरिडीन हाइड्रोक्लोराइड मॉर्फिन के समान कार्यों के साथ एक मादक दर्दनाशक के रूप में कार्य करता है। इसकी प्राथमिक चिकित्सीय भूमिका एनाल्जेसिया (दर्द से राहत) और बेहोश करने की क्रिया प्रदान करना है। इसका उपयोग मध्यम से गंभीर दर्द को प्रबंधित करने के लिए किया जाता है और मॉर्फिन की समतुल्य खुराक की तुलना में कम चिकनी मांसपेशियों में ऐंठन, कब्ज और कफ रिफ्लेक्स का अवसाद उत्पन्न हो सकता है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.816
+ROUGE-L F1: 0.305
+Time Speedup: 1.22x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.627
+[1] . The formation of 4’-hydroxy- diclofenac is primarily mediated by CPY2C9. Both diclofenac and its oxidative metabolites undergo glucuronidation or sulfation followed by biliary excretion. Acylglucuro...
+[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.481
+[1] DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial cont...
+[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 27: मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता क्या हैं?
+English: What are the concentrations available for Meperidine Hydrochloride Injection?
+Question ID: Hindi_Q027
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.605
+Translation relevance: 0.562
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता 25 मिलीग्राम/एमएल, 50 मिलीग्राम/एमएल, 75 मिलीग्राम/एमएल, और 100 मिलीग्राम/एमएल हैं।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.543
+ROUGE-L F1: 0.389
+Time Speedup: 0.47x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.655
+[1] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+
+MULTILINGUAL-ONLY CHUNKS (3):
+Avg relevance: 0.587
+[1] DESCRIPTION: DESCRIPTION Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) available for oral administration in film-coated tablets containing ...
+[2] . Levonorgestrel and its phase I metabolites are excreted primarily as glucuronide conjugates. Metabolic clearance rates may differ among individuals by several-fold, and this may account in part for ...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.543
+[1] DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial cont...
+[2] . For specific techniques and procedures, refer to standard textbooks. The recommended single adult dose (or the total of a series of doses given in one procedure) of mepivacaine hydrochloride for uns...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 28: स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बाइंडिंग के बीच क्या संबंध है?
+English: What is the relationship between plasma concentration and drug binding in local anesthetics?
+Question ID: Hindi_Q028
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.593
+Translation relevance: 0.467
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में प्लाज्मा सांद्रता और स्थानीय एनेस्थेटिक्स में दवा बाइंडिंग के बीच संबंध के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बंधन के बीच संबंध यह है कि आम तौर पर, दवा की प्लाज्मा सांद्रता जितनी कम होगी, प्लाज्मा प्रोटीन से बंधी दवा का प्रतिशत उतना अधिक होगा।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.746
+ROUGE-L F1: 0.431
+Time Speedup: 0.55x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.589
+[1] . Effect of ENTRESTO on Co-administered Drugs: In vitro data indicate that sacubitril inhibits OATP1B1 and OATP1B3 transporters. The effects of ENTRESTO on the pharmacokinetics of coadministered drugs...
+[2] . Dilatation of the coronary arteries also occurs. The relative importance of preload reduction, afterload reduction, and coronary dilatation remains undefined. Pharmacodynamics Dosing regimens for mo...
+
+TRANSLATION-ONLY CHUNKS (5):
+Avg relevance: 0.467
+[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
+[2] . The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The du...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 29: ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे संबंधी दुष्प्रभाव क्या हैं?
+English: What are the potential renal side effects of Zoledronic Acid Injection?
+Question ID: Hindi_Q029
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 0/5 = 0.0%
+Multilingual relevance: 0.639
+Translation relevance: 0.533
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+प्रदान किए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के गुर्दे के दुष्प्रभावों के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे संबंधी दुष्प्रभावों में गुर्दे की विषाक्तता और गुर्दे की विफलता शामिल है। जब इंजेक्शन को 15 मिनट के अंतःशिरा जलसेक के रूप में प्रशासित किया जाता है तो इन दुष्प्रभावों की घटनाओं में कमी देखी गई है। निर्जलीकरण या अन्य नेफ्रोटॉक्सिक दवाओं के उपयोग जैसे कारक रोगियों की किडनी खराब होने का कारण बन सकते हैं, और यदि संभव हो तो इनका प्रबंधन किया जाना चाहिए। गंभीर गुर्दे की हानि वाले रोगियों में ज़ोलेड्रोनिक एसिड उपचार पर जोखिमों और लाभों का मूल्यांकन करने के बाद ही विचार किया जाना चाहिए।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.576
+ROUGE-L F1: 0.165
+Time Speedup: 1.21x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+MULTILINGUAL-ONLY CHUNKS (2):
+Avg relevance: 0.599
+[1] ADVERSE REACTIONS: ADVERSE REACTIONS Most adverse reactions are caused by the drug's mineralocorticoid activity (retention of sodium and water) and include hypertension, edema, cardiac enlargement, co...
+[2] ADVERSE REACTIONS: ADVERSE REACTIONS The following adverse reactions have been identified during post-approval use of Hydroxychloroquine sulfate tablets or other 4-aminoqunoline compounds. Because the...
+
+TRANSLATION-ONLY CHUNKS (3):
+Avg relevance: 0.531
+[1] . The incidence of renal toxicity and renal failure has been shown to be reduced when Zoledronic Acid Injection 4 mg is given as a 15 - minute intravenous infusion. Zoledronic Acid Injection should be...
+[2] . Factors predisposing to renal deterioration, such as dehydration or the use of other nephrotoxic drugs, should be identified and managed, if possible. Zoledronic Acid Injection treatment in patients...
+
+----------------------------------------------------------------------------------------------------
+
+
+Question 30: ज़ोलेड्रोनिक एसिड इंजेक्शन के पोस्ट-अप्रूवल उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाएं क्या हैं?
+English: What are the adverse reactions reported during postapproval use of Zoledronic Acid Injection?
+Question ID: Hindi_Q030
+====================================================================================================
+
+CHUNK OVERLAP ANALYSIS:
+Overlap: 1/5 = 20.0%
+Multilingual relevance: 0.637
+Translation relevance: 0.636
+Winner: Multilingual
+
+MULTILINGUAL EMBEDDINGS APPROACH:
+दिए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के अनुमोदन के बाद उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाओं के बारे में जानकारी नहीं है।
+
+TRANSLATION PIPELINE APPROACH:
+प्रदान किए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के अनुमोदन के बाद उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाओं पर विशेष जानकारी नहीं है।
+
+EVALUATION METRICS:
+Semantic Similarity: 0.984
+ROUGE-L F1: 0.585
+Time Speedup: 0.55x
+Retrieval Overlap: 20.0%
+
+DETAILED CHUNK BREAKDOWN:
+
+OVERLAPPING CHUNKS (1):
+Avg relevance: 0.714
+[1] ADVERSE REACTIONS: ADVERSE REACTIONS The following adverse reactions have been identified during post-approval use of Hydroxychloroquine sulfate tablets or other 4-aminoqunoline compounds. Because the...
+
+MULTILINGUAL-ONLY CHUNKS (4):
+Avg relevance: 0.618
+[1] . 6.2 Postmarketing Experience The following adverse reactions have been identified during postapproval use of indomethacin. Because these reactions are reported voluntarily from a population of uncer...
+[2] . Laboratory Tests: Mild to moderate elevations of ALT, LDH, alkaline phosphatase, BUN and creatinine have been noted. The relationship of these abnormalities to glipizide is uncertain. 6.2 Postmarket...
+
+TRANSLATION-ONLY CHUNKS (2):
+Avg relevance: 0.617
+[1] . Less common adverse events reported more often with Zoledronic Acid Injection 4 mg than pamidronate included decreased weight, which was reported in 16% of patients in the Zoledronic Acid Injection ...
+[2] adverse events from the two controlled multicenter HCM trials (n=189) were reported by a greater percentage of patients treated with Zoledronic Acid Injection 4 mg than with pamidronate 90 mg and occu...
+
+----------------------------------------------------------------------------------------------------
+

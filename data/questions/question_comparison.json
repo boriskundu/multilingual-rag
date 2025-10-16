@@ -1,0 +1,272 @@
+[
+  {
+    "question_id": "Q001",
+    "english": "What is insulin resistance and how does it affect glucose entry into cells?",
+    "hindi": "इंसुलिन प्रतिरोध क्या है और यह कोशिकाओं में ग्लूकोज के प्रवेश को कैसे प्रभावित करता है?",
+    "chinese": "什么是胰岛素抵抗，它如何影响葡萄糖进入细胞？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q002",
+    "english": "How does family history influence the risk of heart disease?",
+    "hindi": "हृदय रोग के जोखिम पर पारिवारिक इतिहास का क्या प्रभाव पड़ता है?",
+    "chinese": "家族史如何影响心脏病的风险？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q003",
+    "english": "What are the drinking guidelines to reduce heart disease risk for men and women?",
+    "hindi": "पुरुषों और महिलाओं के लिए हृदय रोग के जोखिम को कम करने के लिए पीने के दिशा-निर्देश क्या हैं?",
+    "chinese": "男性和女性减少心脏病风险的饮酒指南是什么？",
+    "category": "treatment",
+    "complexity": "simple",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q004",
+    "english": "What impact does smoking have on blood pressure and heart disease risk?",
+    "hindi": "धूम्रपान का रक्तचाप और हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?",
+    "chinese": "吸烟对血压和心脏病风险有何影响？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q005",
+    "english": "What is mepivacaine hydrochloride used for?",
+    "hindi": "मेपिवाकेन हाइड्रोक्लोराइड का उपयोग किस लिए किया जाता है?",
+    "chinese": "盐酸甲哌卡因用于什么？",
+    "category": "medication",
+    "complexity": "simple",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q006",
+    "english": "What are the potential renal side effects of Zoledronic Acid Injection?",
+    "hindi": "ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे संबंधी दुष्प्रभाव क्या हैं?",
+    "chinese": "唑来膦酸注射液的潜在肾脏副作用有哪些？",
+    "category": "side_effect",
+    "complexity": "complex",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q007",
+    "english": "What is the structural formula of meperidine hydrochloride?",
+    "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड का संरचनात्मक सूत्र क्या है?",
+    "chinese": "哌替啶盐酸盐的结构式是什么？",
+    "category": "medication",
+    "complexity": "complex",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q008",
+    "english": "What are the heart disease risk factors that can be changed?",
+    "hindi": "हृदय रोग के कौन से जोखिम कारक बदले जा सकते हैं?",
+    "chinese": "可以改变的心脏病风险因素有哪些？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q009",
+    "english": "How does managing stress influence heart disease risk?",
+    "hindi": "तनाव प्रबंधन हृदय रोग के जोखिम को कैसे प्रभावित करता है?",
+    "chinese": "管理压力如何影响心脏病风险？",
+    "category": "treatment",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q010",
+    "english": "What is the role of plasma proteins in the action of local anesthetics?",
+    "hindi": "स्थानीय एनेस्थेटिक्स की क्रिया में प्लाज्मा प्रोटीन की क्या भूमिका होती है?",
+    "chinese": "血浆蛋白在局部麻醉药作用中的角色是什么？",
+    "category": "medication",
+    "complexity": "complex",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q011",
+    "english": "What are the differences in heart disease rates among different ethnic groups?",
+    "hindi": "विभिन्न जातीय समूहों में हृदय रोग की दरों में क्या अंतर हैं?",
+    "chinese": "不同族群之间心脏病发病率有什么差异？",
+    "category": "condition",
+    "complexity": "complex",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q012",
+    "english": "What is the effect of alcohol consumption on heart disease risk?",
+    "hindi": "शराब के सेवन का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?",
+    "chinese": "酒精摄入对心脏病风险有什么影响？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q013",
+    "english": "What is the recommended action for smokers to lower heart disease risk?",
+    "hindi": "धूम्रपान करने वालों के लिए हृदय रोग के जोखिम को कम करने के लिए क्या अनुशंसित कार्रवाई है?",
+    "chinese": "吸烟者降低心脏病风险的建议措施是什么？",
+    "category": "treatment",
+    "complexity": "simple",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q014",
+    "english": "What concentration of mepivacaine hydrochloride provides complete sensory and motor block?",
+    "hindi": "कौन सी मेपिवाकेन हाइड्रोक्लोराइड की सांद्रता पूर्ण संवेदी और मोटर ब्लॉक प्रदान करती है?",
+    "chinese": "什么浓度的盐酸甲哌卡因可以提供完全的感觉和运动阻滞？",
+    "category": "medication",
+    "complexity": "moderate",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q015",
+    "english": "How long is anesthesia provided by mepivacaine typically adequate for surgery?",
+    "hindi": "मेपिवाकेन द्वारा प्रदान की गई एनेस्थीसिया आमतौर पर सर्जरी के लिए कितनी देर तक पर्याप्त होती है?",
+    "chinese": "盐酸甲哌卡因提供的麻醉通常能维持手术多长时间？",
+    "category": "medication",
+    "complexity": "simple",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q016",
+    "english": "What are the adverse reactions reported during postapproval use of Zoledronic Acid Injection?",
+    "hindi": "ज़ोलेड्रोनिक एसिड इंजेक्शन के पोस्ट-अप्रूवल उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाएं क्या हैं?",
+    "chinese": "在唑来膦酸注射液的上市后使用中报告了哪些不良反应？",
+    "category": "side_effect",
+    "complexity": "complex",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q017",
+    "english": "What is the pH range of Meperidine Hydrochloride Injection?",
+    "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन का पीएच रेंज क्या है?",
+    "chinese": "哌替啶盐酸盐注射液的pH范围是多少？",
+    "category": "medication",
+    "complexity": "simple",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q018",
+    "english": "What is the effect of extra calories on heart disease risk?",
+    "hindi": "अतिरिक्त कैलोरी का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?",
+    "chinese": "额外的卡路里对心脏病风险有什么影响？",
+    "category": "condition",
+    "complexity": "simple",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q019",
+    "english": "What are the forms of administration for Meperidine Hydrochloride Injection?",
+    "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन के प्रशासन के रूप क्या हैं?",
+    "chinese": "哌替啶盐酸盐注射液有哪些给药形式？",
+    "category": "medication",
+    "complexity": "simple",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q020",
+    "english": "What is the melting point of meperidine hydrochloride?",
+    "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड का गलनांक क्या है?",
+    "chinese": "哌替啶盐酸盐的熔点是多少？",
+    "category": "medication",
+    "complexity": "simple",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q021",
+    "english": "What is the effect of smoking cessation on heart disease risk?",
+    "hindi": "धूम्रपान छोड़ने का हृदय रोग के जोखिम पर क्या प्रभाव पड़ता है?",
+    "chinese": "戒烟对心脏病风险有什么影响？",
+    "category": "treatment",
+    "complexity": "simple",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q022",
+    "english": "How does stress relate to heart disease?",
+    "hindi": "तनाव का हृदय रोग से क्या संबंध है?",
+    "chinese": "压力与心脏病有什么关系？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q023",
+    "english": "What is the chemical composition of meperidine hydrochloride?",
+    "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड की रासायनिक संरचना क्या है?",
+    "chinese": "盐酸哌替啶的化学成分是什么？",
+    "category": "medication",
+    "complexity": "complex",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q024",
+    "english": "Which ethnic group has lower rates of heart disease compared to others?",
+    "hindi": "कौन सा जातीय समूह अन्य की तुलना में हृदय रोग की दरों में कम है?",
+    "chinese": "哪个族群的心脏病发病率比其他族群低？",
+    "category": "condition",
+    "complexity": "simple",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q025",
+    "english": "What is the role of meperidine hydrochloride as a narcotic analgesic?",
+    "hindi": "मपेरीडाइन हाइड्रोक्लोराइड का नारकोटिक एनाल्जेसिक के रूप में क्या भूमिका है?",
+    "chinese": "盐酸哌替啶作为麻醉性镇痛药的作用是什么？",
+    "category": "medication",
+    "complexity": "moderate",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q026",
+    "english": "What are the guidelines for alcohol consumption for women to reduce heart disease risk?",
+    "hindi": "हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन के दिशा-निर्देश क्या हैं?",
+    "chinese": "女性饮酒以降低心脏病风险的指南是什么？",
+    "category": "treatment",
+    "complexity": "simple",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q027",
+    "english": "What are the heart disease diagnosis age thresholds for family members that increase risk?",
+    "hindi": "परिवार के सदस्यों के लिए हृदय रोग निदान की आयु सीमाएं क्या हैं जो जोखिम बढ़ाती हैं?",
+    "chinese": "家族成员心脏病诊断的年龄阈值是多少会增加风险？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  },
+  {
+    "question_id": "Q028",
+    "english": "What are the concentrations available for Meperidine Hydrochloride Injection?",
+    "hindi": "मेपेरिडाइन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता क्या हैं?",
+    "chinese": "盐酸哌替啶注射液有哪些浓度可用？",
+    "category": "medication",
+    "complexity": "simple",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q029",
+    "english": "What is the relationship between plasma concentration and drug binding in local anesthetics?",
+    "hindi": "स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बाइंडिंग के बीच क्या संबंध है?",
+    "chinese": "血浆浓度与局部麻醉药物结合之间的关系是什么？",
+    "category": "medication",
+    "complexity": "complex",
+    "expected_source": "FDA"
+  },
+  {
+    "question_id": "Q030",
+    "english": "What are the effects of drinking more than recommended alcohol on heart disease risk?",
+    "hindi": "अनुशंसित शराब से अधिक पीने के हृदय रोग जोखिम पर क्या प्रभाव होते हैं?",
+    "chinese": "饮酒超过推荐量对心脏病风险有什么影响？",
+    "category": "condition",
+    "complexity": "moderate",
+    "expected_source": "MedlinePlus (NIH)"
+  }
+]

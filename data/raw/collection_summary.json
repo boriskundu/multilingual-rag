@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-10-16T03:51:07.656153",
+  "data_policy": "U.S. Government sources only",
+  "sources": {
+    "FDA": {
+      "full_name": "U.S. Food and Drug Administration",
+      "website": "https://www.fda.gov",
+      "api": "https://open.fda.gov",
+      "files": 5,
+      "file_list": [
+        "diabetes_drugs.json",
+        "hypertension_drugs.json",
+        "heart_disease_drugs.json",
+        "high_blood_pressure_drugs.json",
+        "asthma_drugs.json"
+      ]
+    },
+    "MedlinePlus": {
+      "full_name": "National Library of Medicine (NIH)",
+      "website": "https://medlineplus.gov",
+      "operated_by": "National Institutes of Health",
+      "files": 10,
+      "file_list": [
+        "diabetes.json",
+        "diabetes_complications.json",
+        "type_2_diabetes.json",
+        "high_blood_pressure.json",
+        "heart_diseases.json",
+        "heart_attack.json",
+        "heart_disease_prevention.json",
+        "asthma.json",
+        "cholesterol.json",
+        "how_to_lower_cholesterol.json"
+      ]
+    }
+  },
+  "total_files": 15
+}

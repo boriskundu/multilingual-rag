@@ -7,9 +7,13 @@ import logging
 from typing import List, Dict, Any, Optional, Tuple
 from pathlib import Path
 
-# Embeddings & Vector stores
-from langchain.embeddings import OpenAIEmbeddings, HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma, FAISS
+# Suppress progress bars
+os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+
+# Updated imports for newer langchain
+from langchain_community.vectorstores import Chroma, FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.schema import Document
 
 import pandas as pd
@@ -29,7 +33,6 @@ def _call_openai_chat(system_prompt: str, context: str, query: str, model: str =
         raise RuntimeError("OPENAI_API_KEY not set")
 
     try:
-        # Try new SDK first (openai >= 1.0)
         import openai
         if hasattr(openai, 'OpenAI'):
             from openai import OpenAI
@@ -68,14 +71,14 @@ class MultilingualRAG:
         vector_store_type: str = "chroma",
         persist_directory: str = "./data/embeddings",
         use_multilingual_embeddings: bool = True,
-        llm_model: str = "gpt-4o"  # Default to GPT-4
+        llm_model: str = "gpt-4o"
     ):
         self.embedding_model = embedding_model
         self.vector_store_type = vector_store_type
         self.persist_directory = Path(persist_directory)
         self.persist_directory.mkdir(parents=True, exist_ok=True)
         self.use_multilingual_embeddings = use_multilingual_embeddings
-        self.llm_model = llm_model  # Store LLM model choice
+        self.llm_model = llm_model
 
         # Initialize embeddings
         if ("ada" in embedding_model) or ("openai" in embedding_model.lower()):
@@ -83,7 +86,7 @@ class MultilingualRAG:
         else:
             self.embeddings = HuggingFaceEmbeddings(
                 model_name=embedding_model,
-                model_kwargs={"device": "cpu"}
+                model_kwargs={"device": "cpu"}  # REMOVED show_progress_bar
             )
 
         self.vector_store = None
@@ -155,38 +158,63 @@ class MultilingualRAG:
         source_language: str = "en",
         system_prompt: Optional[str] = None
     ) -> Tuple[str, float, str]:
-        """
-        Generate response using LLM.
-        
-        Returns: (answer_in_source_language, gen_time_seconds, combined_chunks_text)
-        """
+        """Generate response using LLM."""
         start_time = time.time()
 
         if system_prompt is None:
             system_prompt = (
                 "You are a helpful healthcare information assistant. "
                 "Based on the provided context, answer the question accurately and concisely. "
-                "If the context doesn't contain relevant information, say so."
+                "CRITICAL: Always respond in English language only, regardless of the question language. "
+                "If the context doesn't contain relevant information, say so clearly in English."
             )
 
         # Prepare context from retrieved documents
         context = "\n\n".join([doc.page_content for doc in retrieved_docs])
 
-        # Call OpenAI with GPT-4
+        # FORCE English query for GPT-4
+        english_query = query
+        if source_language and source_language.lower() != "en":
+            english_query = translate_text(query, src=source_language, dest="en")
+
         try:
-            answer = _call_openai_chat(system_prompt, context, query, model=self.llm_model)
+            # Call GPT-4 with English query and explicit English instruction
+            answer = _call_openai_chat(
+                system_prompt + " Respond only in English.", 
+                context, 
+                english_query,  # Use English query
+                model=self.llm_model
+            )
+            
+            # Validate that response is actually English
+            if answer:
+                spanish_indicators = ['para ', 'del ', 'con ', 'por ', 'las ', 'los ', 'una ']
+                spanish_count = sum(1 for indicator in spanish_indicators if indicator.lower() in answer.lower())
+                
+                if spanish_count >= 2:
+                    logger.error(f"GPT-4 generated Spanish response: {answer[:100]}")
+                    logger.error("Forcing English retry...")
+                    
+                    # Retry with more explicit prompt
+                    retry_answer = _call_openai_chat(
+                        "You are a healthcare assistant. Answer in ENGLISH ONLY. Never use Spanish.",
+                        context,
+                        f"Answer this question in English: {english_query}",
+                        model=self.llm_model
+                    )
+                    answer = retry_answer if retry_answer else answer
+            
         except Exception as e:
             logger.error(f"LLM generation failed: {e}")
-            answer = f"[Error generating response]"
+            answer = "[Error generating response]"
 
         # Translate back to source language if needed
         if source_language and source_language.lower() != "en":
             answer = translate_text(answer, src="en", dest=source_language)
 
         generation_time = time.time() - start_time
-        
-        # Return chunks for LLM-as-judge evaluation
         return answer, generation_time, context
+
 
     def run_experiment(
         self,

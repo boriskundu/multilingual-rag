@@ -90,13 +90,13 @@ $RECYCLE.BIN/
 # Project-Specific: Data Files
 # ----------------------------------------------------------------------------
 # Keep directory structure but ignore all contents
-data/*
-data/raw/*
-data/processed/*
-data/embeddings/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/embeddings/.gitkeep
+#data/*
+#data/raw/*
+#data/processed/*
+#data/embeddings/*
+#!data/raw/.gitkeep
+#!data/processed/.gitkeep
+#!data/embeddings/.gitkeep
 
 # Specific data file types
 *.pdf

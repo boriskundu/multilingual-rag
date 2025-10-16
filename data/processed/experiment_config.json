@@ -1,0 +1,26 @@
+{
+  "data_stats": {
+    "total_documents": 16036,
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "sources": [
+      "FDA (fda.gov) ",
+      "MedlinePlus/NIH (nih.gov)"
+    ]
+  },
+  "vector_stores": [
+    {
+      "name": "multilingual",
+      "model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "type": "faiss",
+      "path": "C:\\Users\\Boris\\Desktop\\code\\multilingual-rag\\data\\embeddings\\multilingual"
+    }
+  ],
+  "languages": [
+    "en",
+    "hi",
+    "zh",
+    "es",
+    "fr"
+  ]
+}

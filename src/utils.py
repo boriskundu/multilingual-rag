@@ -28,12 +28,13 @@ def translation_backend() -> str:
 
 def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     """
-    Translate text using deep-translator (synchronous, reliable).
+    Translate text using deep-translator with explicit language control.
+    ONLY supports English, Hindi, Chinese - NO SPANISH allowed.
     
     Args:
         text: Text to translate
-        src: Source language code (e.g., 'hi', 'es', 'auto')
-        dest: Destination language code (e.g., 'en', 'hi')
+        src: Source language code ('hindi', 'chinese', 'en', 'auto')
+        dest: Destination language code ('hindi', 'chinese', 'en')
     
     Returns:
         Translated text, or original text if translation fails
@@ -41,22 +42,124 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     if not text or not text.strip():
         return text
     
+    # EXPLICIT language mapping to prevent Spanish contamination
+    def map_language_code(lang_code: str) -> str:
+        """Map our custom codes to deep-translator codes - ENGLISH ONLY for 'en'"""
+        lang_map = {
+            # Our project languages ONLY
+            'hindi': 'hi',
+            'chinese': 'zh-CN',  # Force Chinese Simplified
+            'english': 'en',
+            # Standard codes
+            'hi': 'hi',
+            'zh': 'zh-CN',
+            'zh-cn': 'zh-CN',
+            'zh-CN': 'zh-CN',
+            'en': 'en',
+            'auto': 'auto'
+        }
+        mapped = lang_map.get(lang_code.lower(), None)
+        if mapped is None:
+            logger.warning(f"Unsupported language code: {lang_code}, defaulting to 'en'")
+            return 'en'
+        return mapped
+    
+    # Map language codes with strict validation
+    src_mapped = map_language_code(src)
+    dest_mapped = map_language_code(dest)
+    
     # If source and dest are the same, no translation needed
-    if src == dest:
+    if src_mapped == dest_mapped:
         return text
+    
+    # CRITICAL: Validate target language
+    allowed_targets = {'hi', 'zh-CN', 'en'}
+    if dest_mapped not in allowed_targets:
+        logger.error(f"BLOCKED: Target language '{dest_mapped}' not in allowed set: {allowed_targets}")
+        return text
+    
+    logger.info(f"Translating: {src} -> {dest} (mapped: {src_mapped} -> {dest_mapped})")
+    logger.info(f"Text preview: {text[:50]}...")
     
     if _BACKEND == "deep-translator":
         try:
-            if src == "auto":
-                translator = _dt_cls(source='auto', target=dest)
+            # Method 1: Try with explicit source and target
+            if src_mapped == "auto":
+                translator = _dt_cls(source='auto', target=dest_mapped)
             else:
-                translator = _dt_cls(source=src, target=dest)
+                translator = _dt_cls(source=src_mapped, target=dest_mapped)
             
             translated = translator.translate(text)
-            return translated if translated else text
+            
+            # CRITICAL VALIDATION: Check for Spanish contamination
+            if dest_mapped == 'en' and translated:
+                # Spanish detection patterns
+                spanish_patterns = [
+                    'para ', ' para', 'para.',
+                    'del ', ' del', 'del.',
+                    'con ', ' con', 'con.',
+                    'por ', ' por', 'por.',
+                    'puede ', ' puede',
+                    'ción', 'sión',
+                    'las ', ' las',
+                    'los ', ' los',
+                    'una ', ' una',
+                    'este ', ' este',
+                    'esta ', ' esta',
+                    'muy ', ' muy'
+                ]
+                
+                text_lower = translated.lower()
+                spanish_matches = sum(1 for pattern in spanish_patterns if pattern in text_lower)
+                
+                if spanish_matches >= 2:
+                    logger.error(f"SPANISH DETECTED in English translation!")
+                    logger.error(f"Original: {text[:100]}")
+                    logger.error(f"Result: {translated[:100]}")
+                    logger.error(f"Spanish patterns found: {spanish_matches}")
+                    
+                    # Method 2: Retry with explicit English target and different approach
+                    logger.info("Retrying with different deep-translator configuration...")
+                    try:
+                        # Try with more explicit configuration
+                        if src_mapped == 'hi':
+                            retry_translator = _dt_cls(source='hindi', target='english')
+                        elif src_mapped == 'zh-CN':
+                            retry_translator = _dt_cls(source='chinese (simplified)', target='english')
+                        else:
+                            retry_translator = _dt_cls(source='auto', target='english')
+                        
+                        retry_result = retry_translator.translate(text)
+                        
+                        if retry_result:
+                            # Check if retry fixed the Spanish issue
+                            retry_lower = retry_result.lower()
+                            retry_spanish = sum(1 for pattern in spanish_patterns if pattern in retry_lower)
+                            
+                            if retry_spanish < spanish_matches:
+                                logger.info("Retry reduced Spanish contamination - using retry result")
+                                return retry_result
+                            else:
+                                logger.error("Retry still contains Spanish - returning original text")
+                                return text
+                        
+                    except Exception as retry_e:
+                        logger.error(f"Retry translation failed: {retry_e}")
+                    
+                    # Method 3: If both attempts fail, return original
+                    logger.error("Both translation attempts produced Spanish - returning original text")
+                    return text
+            
+            # If no Spanish detected or not translating to English, return result
+            if translated:
+                logger.info(f"Translation successful: {translated[:50]}...")
+                return translated
+            else:
+                logger.warning("Translation returned empty result")
+                return text
             
         except Exception as e:
-            logger.warning(f"deep-translator failed: {e}; returning original text.")
+            logger.error(f"deep-translator failed: {src_mapped} -> {dest_mapped} -> {e}")
             return text
     
     else:
@@ -69,10 +172,10 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
 # ============================================================================
 
 def evaluate_with_llm_judge(
-    question_hindi: str,
+    question_native: str,
     question_english: str,
     reference_text: str,
-    answer_hindi: str,
+    answer_native: str,
     answer_english: str,
     approach: str,
     model: str = "gpt-4o"
@@ -81,10 +184,10 @@ def evaluate_with_llm_judge(
     Evaluate a RAG response using LLM-as-a-Judge
     
     Args:
-        question_hindi: Original Hindi question
+        question_native: Original question in target language (Hindi/Chinese)
         question_english: English translation of question
         reference_text: Retrieved chunks from RAG (combined)
-        answer_hindi: Generated answer in Hindi
+        answer_native: Generated answer in target language (Hindi/Chinese)
         answer_english: English translation of answer
         approach: "Multilingual Embeddings" or "Translation Pipeline"
         model: GPT model to use for evaluation
@@ -99,8 +202,8 @@ def evaluate_with_llm_judge(
 ************
 [System approach]: {approach}
 
-[User question in Hindi]: 
-{question_hindi}
+[User question in native language]: 
+{question_native}
 
 [User question in English]: 
 {question_english}
@@ -110,8 +213,8 @@ def evaluate_with_llm_judge(
 {reference_text}
 
 ************
-[Generated Answer in Hindi]: 
-{answer_hindi}
+[Generated Answer in native language]: 
+{answer_native}
 
 [Generated Answer in English translation (for evaluation)]:
 {answer_english}
