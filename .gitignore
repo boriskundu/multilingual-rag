@@ -3,7 +3,7 @@
 # ============================================================================
 
 # ----------------------------------------------------------------------------
-# Virtual Environment (mul-rag is the environment name)
+# Virtual Environment
 # ----------------------------------------------------------------------------
 mul-rag/
 venv/
@@ -54,94 +54,47 @@ MANIFEST
 # ----------------------------------------------------------------------------
 # IDE & Editors
 # ----------------------------------------------------------------------------
-# VSCode
 .vscode/
-
-# PyCharm
 .idea/
-
-# Vim
 *.swp
 *.swo
 *~
-
-# Sublime Text
 *.sublime-project
 *.sublime-workspace
 
 # ----------------------------------------------------------------------------
 # Operating Systems
 # ----------------------------------------------------------------------------
-# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-
-# Linux
 *~
 
 # ----------------------------------------------------------------------------
-# Project-Specific: Data Files
-# ----------------------------------------------------------------------------
-# Keep directory structure but ignore all contents
-#data/*
-#data/raw/*
-#data/processed/*
-#data/embeddings/*
-#!data/raw/.gitkeep
-#!data/processed/.gitkeep
-#!data/embeddings/.gitkeep
-
-# Specific data file types
-*.pdf
-*.csv
-*.xlsx
-*.xls
-*.db
-*.sqlite
-*.pkl
-*.pickle
-*.h5
-*.hdf5
-*.parquet
-
-# ----------------------------------------------------------------------------
-# Project-Specific: Model Files & Vector Stores
+# Model & Vector Store Files
 # ----------------------------------------------------------------------------
 models/*
 !models/.gitkeep
-
-# Model file formats
 *.bin
 *.pt
 *.pth
 *.onnx
 *.safetensors
 *.ckpt
-
-# Vector store files
 *.faiss
 *.index
 *.npy
 *.npz
 
 # ----------------------------------------------------------------------------
-# Project-Specific: Logs
+# Logs
 # ----------------------------------------------------------------------------
 logs/
 *.log
-
-# ----------------------------------------------------------------------------
-# Project-Specific: Results
-# ----------------------------------------------------------------------------
-#results/
-#!results/.gitkeep
 
 # ----------------------------------------------------------------------------
 # Testing & Coverage
@@ -185,16 +138,9 @@ dmypy.json
 *.prof
 
 # ----------------------------------------------------------------------------
-# Allow key project outputs for versioning
+# Always include full data and results directories
 # ----------------------------------------------------------------------------
-
-# Allow data embeddings
-!data/embeddings/**
-!data/embeddings/
-
-# Allow all CSV results
-!results/*.csv
-!results/**/*.csv
-
-# Allow enhanced figures folder
-!results/enhanced_figures/**
+!data/
+!data/**
+!results/
+!results/**
