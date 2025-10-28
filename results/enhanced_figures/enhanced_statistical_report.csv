@@ -1,0 +1,7 @@
+Language,Metric,Multilingual,Translation,P-value,Winner
+Hindi,Average Total Time (s),4.624 ± 0.752,3.287 ± 1.248,0.0000*,Translation
+Hindi,Semantic Similarity,N/A (comparison metric),N/A (comparison metric),N/A,Mean: 0.877
+Hindi,Avg Retrieval Score,9.202 ± 2.535,12.640 ± 3.637,0.0000*,Translation
+Chinese,Average Total Time (s),4.569 ± 1.004,3.260 ± 1.296,0.0000*,Translation
+Chinese,Semantic Similarity,N/A (comparison metric),N/A (comparison metric),N/A,Mean: 0.901
+Chinese,Avg Retrieval Score,10.639 ± 2.389,13.221 ± 3.140,0.0000*,Translation

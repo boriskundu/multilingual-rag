@@ -183,3 +183,18 @@ dmypy.json
 # Profiling data
 # ----------------------------------------------------------------------------
 *.prof
+
+# ----------------------------------------------------------------------------
+# Allow key project outputs for versioning
+# ----------------------------------------------------------------------------
+
+# Allow data embeddings
+!data/embeddings/**
+!data/embeddings/
+
+# Allow all CSV results
+!results/*.csv
+!results/**/*.csv
+
+# Allow enhanced figures folder
+!results/enhanced_figures/**
