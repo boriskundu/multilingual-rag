@@ -29,7 +29,7 @@ def translation_backend() -> str:
 def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     """
     Translate text using deep-translator with explicit language control.
-    ONLY supports English, Hindi, Chinese - NO SPANISH allowed.
+    ONLY supports English, Hindi, Chinese.
     
     Args:
         text: Text to translate
@@ -42,9 +42,9 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     if not text or not text.strip():
         return text
     
-    # EXPLICIT language mapping to prevent Spanish contamination
+    # EXPLICIT language mapping
     def map_language_code(lang_code: str) -> str:
-        """Map our custom codes to deep-translator codes - ENGLISH ONLY for 'en'"""
+        """Map our custom codes to deep-translator codes"""
         lang_map = {
             # Our project languages ONLY
             'hindi': 'hi',
@@ -83,7 +83,7 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     
     if _BACKEND == "deep-translator":
         try:
-            # Method 1: Try with explicit source and target
+            # Translation with explicit source and target
             if src_mapped == "auto":
                 translator = _dt_cls(source='auto', target=dest_mapped)
             else:
@@ -91,66 +91,11 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
             
             translated = translator.translate(text)
             
-            # CRITICAL VALIDATION: Check for Spanish contamination
-            if dest_mapped == 'en' and translated:
-                # Spanish detection patterns
-                spanish_patterns = [
-                    'para ', ' para', 'para.',
-                    'del ', ' del', 'del.',
-                    'con ', ' con', 'con.',
-                    'por ', ' por', 'por.',
-                    'puede ', ' puede',
-                    'ción', 'sión',
-                    'las ', ' las',
-                    'los ', ' los',
-                    'una ', ' una',
-                    'este ', ' este',
-                    'esta ', ' esta',
-                    'muy ', ' muy'
-                ]
-                
-                text_lower = translated.lower()
-                spanish_matches = sum(1 for pattern in spanish_patterns if pattern in text_lower)
-                
-                if spanish_matches >= 2:
-                    logger.error(f"SPANISH DETECTED in English translation!")
-                    logger.error(f"Original: {text[:100]}")
-                    logger.error(f"Result: {translated[:100]}")
-                    logger.error(f"Spanish patterns found: {spanish_matches}")
-                    
-                    # Method 2: Retry with explicit English target and different approach
-                    logger.info("Retrying with different deep-translator configuration...")
-                    try:
-                        # Try with more explicit configuration
-                        if src_mapped == 'hi':
-                            retry_translator = _dt_cls(source='hindi', target='english')
-                        elif src_mapped == 'zh-CN':
-                            retry_translator = _dt_cls(source='chinese (simplified)', target='english')
-                        else:
-                            retry_translator = _dt_cls(source='auto', target='english')
-                        
-                        retry_result = retry_translator.translate(text)
-                        
-                        if retry_result:
-                            # Check if retry fixed the Spanish issue
-                            retry_lower = retry_result.lower()
-                            retry_spanish = sum(1 for pattern in spanish_patterns if pattern in retry_lower)
-                            
-                            if retry_spanish < spanish_matches:
-                                logger.info("Retry reduced Spanish contamination - using retry result")
-                                return retry_result
-                            else:
-                                logger.error("Retry still contains Spanish - returning original text")
-                                return text
-                        
-                    except Exception as retry_e:
-                        logger.error(f"Retry translation failed: {retry_e}")
-                    
-                    # Method 3: If both attempts fail, return original
-                    logger.error("Both translation attempts produced Spanish - returning original text")
-                    return text
+            # NOTE: Spanish validation DISABLED
+            # System prompts in rag_system.py already handle Spanish filtering
+            # The validation was causing false positives on valid English text
             
-            # If no Spanish detected or not translating to English, return result
+            # Return translation result
             if translated:
                 logger.info(f"Translation successful: {translated[:50]}...")
                 return translated

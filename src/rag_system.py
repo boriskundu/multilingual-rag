@@ -1,5 +1,6 @@
 """
 RAG system with multilingual support - UPDATED for GPT-4 and chunk saving
+IMPORTANT: Instructs LLM to ignore Spanish content in retrieved chunks
 """
 import os
 import time
@@ -156,64 +157,112 @@ class MultilingualRAG:
         query: str,
         retrieved_docs: List[Document],
         source_language: str = "en",
-        system_prompt: Optional[str] = None
-    ) -> Tuple[str, float, str]:
-        """Generate response using LLM."""
+        system_prompt: Optional[str] = None,
+        return_english_for_eval: bool = False
+    ) -> Tuple[str, float, str, Optional[str]]:
+        """
+        Generate response using LLM.
+        
+        Returns: (answer, generation_time, context, english_answer_for_eval)
+        - For multilingual embeddings: generates directly in target language
+        - For translation pipeline: generates in English, then translates
+        - english_answer_for_eval: English version for LLM judge evaluation
+        """
         start_time = time.time()
-
-        if system_prompt is None:
-            system_prompt = (
-                "You are a helpful healthcare information assistant. "
-                "Based on the provided context, answer the question accurately and concisely. "
-                "CRITICAL: Always respond in English language only, regardless of the question language. "
-                "If the context doesn't contain relevant information, say so clearly in English."
-            )
 
         # Prepare context from retrieved documents
         context = "\n\n".join([doc.page_content for doc in retrieved_docs])
 
-        # FORCE English query for GPT-4
-        english_query = query
-        if source_language and source_language.lower() != "en":
-            english_query = translate_text(query, src=source_language, dest="en")
-
-        try:
-            # Call GPT-4 with English query and explicit English instruction
-            answer = _call_openai_chat(
-                system_prompt + " Respond only in English.", 
-                context, 
-                english_query,  # Use English query
-                model=self.llm_model
-            )
-            
-            # Validate that response is actually English
-            if answer:
-                spanish_indicators = ['para ', 'del ', 'con ', 'por ', 'las ', 'los ', 'una ']
-                spanish_count = sum(1 for indicator in spanish_indicators if indicator.lower() in answer.lower())
+        # Determine the generation language based on approach
+        if self.use_multilingual_embeddings:
+            # MULTILINGUAL EMBEDDINGS: Generate directly in target language
+            if source_language and source_language.lower() != "en":
+                if system_prompt is None:
+                    system_prompt = (
+                        f"You are a helpful healthcare information assistant. "
+                        f"Based on the provided context from FDA and NIH medical sources, answer the question accurately and concisely. "
+                        f"CRITICAL INSTRUCTIONS:\n"
+                        f"1. IGNORE any Spanish text in the context - only use English information\n"
+                        f"2. Respond in {source_language} language to match the user's question\n"
+                        f"3. If the English content doesn't contain relevant information, say so clearly in {source_language}"
+                    )
                 
-                if spanish_count >= 2:
-                    logger.error(f"GPT-4 generated Spanish response: {answer[:100]}")
-                    logger.error("Forcing English retry...")
-                    
-                    # Retry with more explicit prompt
-                    retry_answer = _call_openai_chat(
-                        "You are a healthcare assistant. Answer in ENGLISH ONLY. Never use Spanish.",
+                try:
+                    # Generate directly in target language
+                    answer = _call_openai_chat(
+                        system_prompt,
                         context,
-                        f"Answer this question in English: {english_query}",
+                        query,  # Use original query in target language
                         model=self.llm_model
                     )
-                    answer = retry_answer if retry_answer else answer
-            
-        except Exception as e:
-            logger.error(f"LLM generation failed: {e}")
-            answer = "[Error generating response]"
+                    
+                    # For evaluation purposes, translate to English
+                    english_answer_for_eval = None
+                    if return_english_for_eval:
+                        english_answer_for_eval = translate_text(answer, src=source_language, dest="en")
+                    
+                except Exception as e:
+                    logger.error(f"LLM generation failed: {e}")
+                    answer = "[Error generating response]"
+                    english_answer_for_eval = None
+            else:
+                # English query with multilingual embeddings
+                if system_prompt is None:
+                    system_prompt = (
+                        "You are a helpful healthcare information assistant. "
+                        "Based on the provided context from FDA and NIH medical sources, answer the question accurately and concisely. "
+                        "IMPORTANT: Ignore any Spanish text in the context - only use English information. "
+                        "If the English content doesn't contain relevant information, say so clearly."
+                    )
+                
+                try:
+                    answer = _call_openai_chat(system_prompt, context, query, model=self.llm_model)
+                    english_answer_for_eval = answer if return_english_for_eval else None
+                except Exception as e:
+                    logger.error(f"LLM generation failed: {e}")
+                    answer = "[Error generating response]"
+                    english_answer_for_eval = None
+        
+        else:
+            # TRANSLATION PIPELINE: Always generate in English, then translate
+            if system_prompt is None:
+                system_prompt = (
+                    "You are a helpful healthcare information assistant. "
+                    "Based on the provided context from FDA and NIH medical sources, answer the question accurately and concisely. "
+                    "CRITICAL INSTRUCTIONS:\n"
+                    "1. IGNORE any Spanish text in the context - only use English information\n"
+                    "2. Respond ONLY in English\n"
+                    "3. If the English content doesn't contain relevant information, say so clearly"
+                )
 
-        # Translate back to source language if needed
-        if source_language and source_language.lower() != "en":
-            answer = translate_text(answer, src="en", dest=source_language)
+            # Translate query to English if needed
+            english_query = query
+            if source_language and source_language.lower() != "en":
+                english_query = translate_text(query, src=source_language, dest="en")
+
+            try:
+                # Generate in English
+                answer = _call_openai_chat(
+                    system_prompt,
+                    context,
+                    english_query,
+                    model=self.llm_model
+                )
+                
+                # Store English answer for evaluation
+                english_answer_for_eval = answer if return_english_for_eval else None
+                
+                # Translate to target language
+                if source_language and source_language.lower() != "en":
+                    answer = translate_text(answer, src="en", dest=source_language)
+                
+            except Exception as e:
+                logger.error(f"LLM generation failed: {e}")
+                answer = "[Error generating response]"
+                english_answer_for_eval = None
 
         generation_time = time.time() - start_time
-        return answer, generation_time, context
+        return answer, generation_time, context, english_answer_for_eval
 
 
     def run_experiment(
@@ -235,8 +284,9 @@ class MultilingualRAG:
             docs_multi, query_multi, t_ret_multi = self.multilingual_retrieval(
                 question, language
             )
-            resp_multi, t_gen_multi, chunks_multi = self.generate_response(
-                question, docs_multi, language
+            # No translation steps in multilingual embeddings
+            resp_multi, t_gen_multi, chunks_multi, english_multi = self.generate_response(
+                question, docs_multi, language, return_english_for_eval=True
             )
 
             # Approach 2: Translation Pipeline
@@ -244,8 +294,9 @@ class MultilingualRAG:
             docs_trans, query_trans, t_ret_trans = self.multilingual_retrieval(
                 question, language
             )
-            resp_trans, t_gen_trans, chunks_trans = self.generate_response(
-                query_trans, docs_trans, language
+            # Translation pipeline includes query translation + back translation
+            resp_trans, t_gen_trans, chunks_trans, english_trans = self.generate_response(
+                query_trans, docs_trans, language, return_english_for_eval=True
             )
 
             results.append({
@@ -256,6 +307,10 @@ class MultilingualRAG:
                 # Save retrieved chunks for LLM-as-judge
                 "multilingual_chunks": chunks_multi,
                 "translation_chunks": chunks_trans,
+                
+                # Save English versions for evaluation
+                "multilingual_english": english_multi,
+                "translation_english": english_trans,
                 
                 # Shortened version for preview
                 "multilingual_content": "\n---\n".join([d.page_content[:200] for d in docs_multi]),

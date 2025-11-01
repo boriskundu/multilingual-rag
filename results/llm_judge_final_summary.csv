@@ -1,3 +1,3 @@
 Language,Total_Questions,Multilingual_Overall,Translation_Overall,Winner,Margin,Multi_Hallucination_Rate,Trans_Hallucination_Rate
-Hindi,30,4.33,4.69,Translation Pipeline,0.36,16.7%,6.7%
-Chinese,30,4.59,4.46,Multilingual Embeddings,0.13,6.7%,10.0%
+Hindi,30,4.76,4.78,Translation Pipeline,0.02,3.3%,3.3%
+Chinese,30,4.70,4.86,Translation Pipeline,0.16,6.7%,0.0%

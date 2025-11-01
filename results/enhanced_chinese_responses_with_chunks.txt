@@ -14,23 +14,23 @@ Translation relevance: 0.677
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-胰岛素抵抗是细胞对胰岛素无法正常反应的一种情况。因此，您的身体需要更多的胰岛素来帮助葡萄糖进入细胞。最初，您的身体会通过产生更多的胰岛素来尝试让细胞做出反应来进行补偿。然而，随着时间的推移，这可能会导致胰岛素产生不足，导致血糖水平升高。这种受损的反应会影响葡萄糖有效进入细胞的能力，导致血糖水平升高。
+胰岛素抵抗是一种情况，在这种情况下，你的细胞对胰岛素的反应不正常。结果是，你的身体需要更多的胰岛素来帮助葡萄糖进入细胞。最初，你的身体会产生更多的胰岛素以试图让细胞作出反应。然而，随着时间的推移，你的身体可能无法产生足够的胰岛素，导致血糖水平升高。胰岛素抵抗会导致葡萄糖无法有效进入细胞，从而在血液中积聚，导致血糖水平过高。
 
 TRANSLATION PIPELINE APPROACH:
 胰岛素抵抗是细胞对胰岛素无法正常反应的一种情况。因此，您的身体需要更多的胰岛素来帮助葡萄糖进入细胞。最初，您的身体会通过产生更多的胰岛素来尝试让细胞做出反应来进行补偿。然而，随着时间的推移，您的身体可能无法产生足够的胰岛素，导致血糖水平升高。这会增加患 2 型糖尿病的风险，因为葡萄糖保留在血液中，而不是进入需要能量的细胞。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.984
-ROUGE-L F1: 0.576
-Time Speedup: 0.99x
+Semantic Similarity: 0.971
+ROUGE-L F1: 0.607
+Time Speedup: 1.36x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.693
-[1] . This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to t...
-[2] . As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insu...
+[1] . As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insu...
+[2] . This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to t...
 
 MULTILINGUAL-ONLY CHUNKS (1):
 Avg relevance: 0.646
@@ -55,23 +55,23 @@ Translation relevance: 0.554
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-如果您的亲密家庭成员早年患有心脏病，家族史会增加患心脏病的风险。具体来说，如果您的父亲或兄弟在 55 岁之前被诊断，或者您的母亲或姐妹在 65 岁之前被诊断，您的风险会更高。这表明可能导致心脏病发生的遗传倾向。
+家族史会增加心脏病的风险。如果你有近亲在早期患有心脏病，例如父亲或兄弟在55岁之前被诊断出心脏病，或母亲或姐妹在65岁之前被诊断出心脏病，你的风险会更高。
 
 TRANSLATION PIPELINE APPROACH:
-家族史会增加患心脏病的风险，特别是如果您有一个亲密的家庭成员在很小的时候就患有心脏病。例如，如果您的父亲或兄弟在 55 岁之前被诊断，或者您的母亲或姐妹在 65 岁之前被诊断，您的风险会更大。这表明存在心脏病的遗传倾向。
+早期心脏病家族史会增加您的风险。如果您有一位亲密的家庭成员在很小的时候就患有心脏病，例如您的父亲或兄弟在 55 岁之前被诊断出来，或者您的母亲或姐妹在 65 岁之前被诊断出来，您的风险就会更大。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.985
-ROUGE-L F1: 0.727
-Time Speedup: 1.29x
+Semantic Similarity: 0.964
+ROUGE-L F1: 0.742
+Time Speedup: 1.22x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.568
-[1] WARNINGS AND CAUTIONS: WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors may ...
-[2] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[1] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
+[2] WARNINGS AND CAUTIONS: WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors may ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -88,23 +88,23 @@ Translation relevance: 0.614
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-吸烟会导致血压升高，并增加心脏病发作和中风的风险。戒烟可以降低患心脏病的风险。如果您不吸烟，建议不要开始。
+吸烟会提高血压，并增加心脏病发作和中风的风险。如果您不吸烟，建议不要开始吸烟。如果您吸烟，戒烟将降低您患心脏病的风险。您可以与您的医疗保健提供者讨论，以找到适合您的戒烟方法。
 
 TRANSLATION PIPELINE APPROACH:
-吸烟会升高血压，增加心脏病发作和中风的风险，从而提高患心脏病的总体风险。戒烟可以降低患心脏病的风险。
+吸烟会导致血压升高，并增加心脏病发作和中风的风险。它是心脏病的一个重要危险因素。戒烟可以降低患心脏病的风险。如果你不吸烟，最好不要开始。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.938
-ROUGE-L F1: 0.625
-Time Speedup: 0.76x
+Semantic Similarity: 0.936
+ROUGE-L F1: 0.449
+Time Speedup: 1.18x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.614
-[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
-[2] . Elevated systolic or diastolic pressure causes increased cardiovascular risk, and the absolute risk increase per mmHg is greater at higher blood pressures, so that even modest reductions of severe h...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[2] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -121,28 +121,32 @@ Translation relevance: 0.659
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-可以改变的心脏病危险因素包括：
+可以改变的心脏病风险因素包括：
 
-- 饮食富含饱和脂肪、精制碳水化合物和盐。
-- 没有进行足够的体力活动。
-- 喝太多酒。
-- 吸烟和接触二手烟。
-- 压力太大。
+1. 饮食：高饱和脂肪、精制碳水化合物和盐的饮食。
+2. 身体活动：缺乏足够的身体活动。
+3. 酒精：过量饮酒。
+4. 吸烟：吸烟和接触二手烟。
+5. 压力：过多的压力。
+
+这些生活习惯可以通过改变来降低心脏病的风险。
 
 TRANSLATION PIPELINE APPROACH:
 可以改变的心脏病危险因素包括：
 
-- 饮食富含饱和脂肪、精制碳水化合物和盐。
-- 没有进行足够的体力活动。
-- 喝太多酒。
-- 吸烟和接触二手烟。
-- 承受太多压力。
-- 管理其他可能增加患心脏病风险的医疗状况。
+1. 饮食富含饱和脂肪、精制碳水化合物和盐。
+2.没有进行足够的体力活动。
+3.饮酒过多。
+4. 吸烟和接触二手烟。
+5、压力太大。
+6. 患有其他可以降低心脏病风险的健康状况。 
+
+改变有利于心脏健康的生活方式有助于降低患某些心脏病的风险。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.988
-ROUGE-L F1: 0.682
-Time Speedup: 0.86x
+Semantic Similarity: 0.983
+ROUGE-L F1: 0.585
+Time Speedup: 1.28x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -159,7 +163,7 @@ Avg relevance: 0.668
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.636
 [1] . Possible treatments may include:Heart-healthy lifestyle changesMedicinesProcedures orsurgeriesCardiac rehabilitationCan heart diseases be prevented?You may be able to lower your risk of certain hear...
-[2] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[2] evident coronary heart disease, atorvastatin calcium tablets are indicated to: Reduce the risk of non-fatal myocardial infarction Reduce the risk of fatal and non-fatal stroke Reduce the risk for reva...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -176,23 +180,30 @@ Translation relevance: 0.596
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-背景表明不同种族群体的心脏病发病率有所不同。非裔美国人比白人更有可能死于心脏病。与白人相比，西班牙裔美国人死于心脏病的可能性较小。作为一个群体，亚裔美国人的心脏病发病率低于其他群体，但南亚裔美国人的心脏病发病率较高。此外，心脏病是美国大多数种族和族裔群体的主要原因，其中黑人、白人和美洲印第安人/阿拉斯加原住民等某些群体的风险更高。
+不同族群之间的心脏病发病率存在差异。例如，非裔美国人比白人更容易死于心脏病，而西班牙裔美国人则较少死于心脏病。亚裔美国人整体上心脏病发病率较低，但南亚裔美国人的发病率较高。不同种族和族裔群体在美国的心脏病风险也有所不同。
 
 TRANSLATION PIPELINE APPROACH:
-背景表明不同种族群体的心脏病发病率有所不同。非裔美国人比白人更有可能死于心脏病。西班牙裔美国人死于此病的可能性较小。与其他群体相比，亚裔美国人作为一个群体，心脏病发病率通常较低，但南亚裔美国人的心脏病发病率较高。此外，心脏病是美国大多数种族和族裔群体的主要原因，其中黑人、白人和美洲印第安人/阿拉斯加原住民的风险高于其他人。
+上下文提供了有关美国不同种族之间心脏病发病率差异的信息：
+
+1. **非裔美国人**：他们比白人更有可能死于心脏病。
+2. **西班牙裔美国人**：与白人相比，他们死于心脏病的可能性较小。
+3. **亚裔美国人**：作为一个群体，他们的心脏病发病率低于其他群体。然而，南亚裔美国人的心脏病发病率较高。
+4. **黑人、白人和美洲印第安人/阿拉斯加原住民**：与其他群体相比，这些群体患心脏病的风险更高。
+
+这些差异凸显了心脏病对不同种族的不同影响，受遗传、生活方式和社会经济因素的综合影响。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.994
-ROUGE-L F1: 0.710
-Time Speedup: 0.86x
+Semantic Similarity: 0.915
+ROUGE-L F1: 0.457
+Time Speedup: 2.21x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.603
-[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
-[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+[1] . The causes of heart disease depend on the type of disease. Some possible causes include lifestyle, genetics, infections, medicines, and other diseases. There are many different factors that can make...
+[2] Summary: Heart disease is a general term that includes many types of heart problems. It's a type of cardiovascular disease, which means heart and blood vessel disease. Heart disease is the leading cau...
 
 MULTILINGUAL-ONLY CHUNKS (1):
 Avg relevance: 0.613
@@ -217,15 +228,15 @@ Translation relevance: 0.605
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关饮酒对心脏病风险影响的具体信息。然而，一般来说，适量饮酒可能会降低患心脏病的风险，而过量饮酒则会增加患心脏病和其他健康问题的风险。咨询医疗保健提供者以获得个性化建议非常重要。
+对不起，提供的英文内容没有关于酒精摄入对心脏病风险的具体信息。
 
 TRANSLATION PIPELINE APPROACH:
-提供的上下文不包含有关饮酒对心脏病风险影响的信息。然而，一般来说，过量饮酒会增加患心脏病的风险，而适量饮酒可能对某些人有一定的保护作用。咨询医疗保健提供者以获得个性化建议非常重要。
+所提供的上下文不包含有关饮酒对心脏病风险影响的具体信息。它讨论了酒精与伐尼克兰的相互作用，但没有直接讨论心脏病风险。有关酒精和心脏病的信息，建议咨询医疗保健专业人士或可靠的医疗来源。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.973
-ROUGE-L F1: 0.582
-Time Speedup: 0.76x
+Semantic Similarity: 0.781
+ROUGE-L F1: 0.348
+Time Speedup: 1.36x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -249,15 +260,15 @@ Translation relevance: 0.568
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-额外的卡路里会导致体重增加，从而增加患心脏病的风险。
+摄入额外的卡路里可能导致体重增加，这会增加心脏病的风险。体重增加与高血压、高胆固醇和糖尿病等心脏病风险因素有关。限制酒精摄入和保持健康体重可以降低这些风险。
 
 TRANSLATION PIPELINE APPROACH:
-额外的卡路里会导致体重增加，从而增加患心脏病的风险。
+额外的卡路里会导致体重增加，进而增加患心脏病的风险。体重增加与其他心脏病危险因素有关，例如高胆固醇、高甘油三酯水平、高血压和糖尿病。因此，控制热量摄入对于降低心脏病风险非常重要。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.857
-Time Speedup: 0.44x
+Semantic Similarity: 0.950
+ROUGE-L F1: 0.646
+Time Speedup: 0.97x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -291,15 +302,15 @@ Translation relevance: 0.624
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-极度的压力可能会引发心脏病。此外，常见的应对压力的方式，如暴饮暴食、酗酒和吸烟，都对心脏有害。通过运动、听音乐、专注于平静或平和的事情以及冥想等方法来控制压力可以帮助降低患心脏病的风险。
+压力可能会触发心脏病发作。此外，一些常见的应对压力的方法，如暴饮暴食、酗酒和吸烟，对心脏有害。管理压力的方法包括锻炼、听音乐、专注于平静或宁静的事物以及冥想。
 
 TRANSLATION PIPELINE APPROACH:
-极度压力可能是心脏病发作的“触发因素”。此外，暴饮暴食、酗酒和吸烟等应对压力的常见方式也不利于心脏健康。通过锻炼、听音乐、专注于平静或平和的活动以及冥想来控制压力可以帮助降低患心脏病的风险。
+极度的压力可能会引发心脏病。此外，暴饮暴食、酗酒和吸烟等应对压力的常见方式也有害心脏健康。通过锻炼、听音乐、专注于平静或平和的活动以及冥想来控制压力可以帮助降低患心脏病的风险。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.973
-ROUGE-L F1: 0.843
-Time Speedup: 0.52x
+Semantic Similarity: 0.949
+ROUGE-L F1: 0.716
+Time Speedup: 1.39x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -334,15 +345,15 @@ Translation relevance: 0.576
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-亚裔美国人作为一个群体，心脏病发病率低于其他群体。
+根据提供的内容，亚裔美国人作为一个群体的心脏病发病率比其他族群低。
 
 TRANSLATION PIPELINE APPROACH:
 亚裔美国人作为一个群体，心脏病发病率低于其他群体。然而，值得注意的是，南亚裔美国人的心脏病发病率较高。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.951
-ROUGE-L F1: 0.636
-Time Speedup: 0.61x
+Semantic Similarity: 0.946
+ROUGE-L F1: 0.583
+Time Speedup: 1.61x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -358,7 +369,7 @@ Avg relevance: 0.654
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.543
 [1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
-[2] . The majority of patients in the SOLVD-Prevention trial had a history of ischemic heart disease. A history of myocardial infarction was present in 80 percent of patients, current angina pectoris in 3...
+[2] Summary: Heart disease is a general term that includes many types of heart problems. It's a type of cardiovascular disease, which means heart and blood vessel disease. Heart disease is the leading cau...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -375,23 +386,23 @@ Translation relevance: 0.620
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-家庭成员患心脏病的年龄阈值会增加风险，即您的父亲或兄弟在 55 岁之前被诊断出，或者您的母亲或姐妹在 65 岁之前被诊断出。
+如果您的父亲或兄弟在55岁之前被诊断出患有心脏病，或者您的母亲或姐妹在65岁之前被诊断出患有心脏病，您患心脏病的风险会更高。
 
 TRANSLATION PIPELINE APPROACH:
 家庭成员患心脏病的年龄阈值会增加风险，即您的父亲或兄弟在 55 岁之前被诊断出，或者您的母亲或姐妹在 65 岁之前被诊断出。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.686
-Time Speedup: 0.39x
+Semantic Similarity: 0.910
+ROUGE-L F1: 0.762
+Time Speedup: 1.54x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.610
-[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
-[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+[1] . 5.5 Age-related Considerations The risk for cardiovascular disease and prevalence of risk factors for cardiovascular disease increase with age. Certain conditions, such as smoking and migraine heada...
+[2] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -408,15 +419,15 @@ Translation relevance: 0.597
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-饮酒超过建议量会增加患心脏病的风险。它会增加额外的卡路里，可能导致体重增加，进一步增加患心脏病的风险。
+饮酒超过推荐量会增加心脏病的风险。饮酒会增加额外的卡路里摄入，可能导致体重增加，而体重增加是心脏病的风险因素之一。因此，最好不要饮酒。如果饮酒，男性每天不应超过两杯，女性每天不应超过一杯。
 
 TRANSLATION PIPELINE APPROACH:
 饮酒超过建议量会增加患心脏病的风险。它会增加额外的热量，这可能会导致体重增加，而这两个因素都会增加患心脏病的风险。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.980
-ROUGE-L F1: 0.719
-Time Speedup: 1.03x
+Semantic Similarity: 0.902
+ROUGE-L F1: 0.429
+Time Speedup: 0.88x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -448,23 +459,23 @@ Translation relevance: 0.598
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-降低心脏病风险的饮酒指南是：男性每天饮酒量不超过2杯，女性每天饮酒量不超过1杯。
+男性和女性减少心脏病风险的饮酒指南是：男性每天不超过2杯酒，女性每天不超过1杯酒。
 
 TRANSLATION PIPELINE APPROACH:
-降低心脏病风险的饮酒指南是：男性每天饮酒量不超过2杯，女性每天饮酒量不超过1杯。
+降低心脏病风险的饮酒指南如下：男性每天饮酒量不应超过2杯，女性每天饮酒量不应超过1杯。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.915
-Time Speedup: 0.41x
+Semantic Similarity: 0.977
+ROUGE-L F1: 0.687
+Time Speedup: 1.13x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (3):
 Avg relevance: 0.614
-[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
-[2] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[2] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
 
 MULTILINGUAL-ONLY CHUNKS (1):
 Avg relevance: 0.548
@@ -489,23 +500,23 @@ Translation relevance: 0.666
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-管理压力可以积极影响心脏病风险。极端压力会引发心脏病，而暴饮暴食、酗酒和吸烟等常见的压力应对机制对心脏健康有害。有效的压力管理技巧，例如锻炼、听音乐、专注于平静或平和的活动以及冥想，可以帮助降低患心脏病的风险。
+管理压力可以显著影响心脏病的风险。极度的压力可能成为心脏病发作的“触发因素”。此外，某些常见的应对压力的方法，如暴饮暴食、酗酒和吸烟，对心脏有害。通过锻炼、听音乐、专注于平静或宁静的事物以及冥想来管理压力，可以帮助降低心脏病的风险。
 
 TRANSLATION PIPELINE APPROACH:
-管理压力可以减少采取有害应对机制（如暴饮暴食、酗酒和吸烟）的可能性，从而对心脏病风险产生积极影响，这些对心脏健康有害。有效的压力管理技巧，例如锻炼、听音乐、专注于平静的活动和冥想，可以帮助降低压力水平，进而降低患心脏病的风险。
+管理压力可以显着影响心脏病风险。极端压力会引发心脏病，而暴饮暴食、酗酒和吸烟等常见的压力应对机制对心脏健康有害。有效的压力管理技巧，例如锻炼、听音乐、专注于平静或平和的活动以及冥想，可以通过促进更健康的生活方式选择和减少有害的压力反应来帮助降低患心脏病的风险。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.923
-ROUGE-L F1: 0.695
-Time Speedup: 0.45x
+Semantic Similarity: 0.971
+ROUGE-L F1: 0.651
+Time Speedup: 1.29x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (2):
 Avg relevance: 0.691
-[1] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
-[2] WARNINGS: WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta blockade carries the potential hazard of further depres...
+[1] WARNINGS: WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta blockade carries the potential hazard of further depres...
+[2] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -522,34 +533,38 @@ Translation relevance: 0.585
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-吸烟者降低心脏病风险的建议措施包括戒烟，因为吸烟会升高血压并增加心脏病发作和中风的风险。如果您不吸烟，建议不要开始。对于吸烟者来说，戒烟可以降低患心脏病的风险。与医疗保健提供者交谈以寻求最佳戒烟方法的帮助是有益的。
+吸烟者降低心脏病风险的建议措施包括戒烟。吸烟会提高血压，并增加心脏病发作和中风的风险。如果您不吸烟，请不要开始吸烟。如果您吸烟，戒烟将降低心脏病的风险。您可以与您的医疗保健提供者讨论，以找到适合您的戒烟方法。
 
 TRANSLATION PIPELINE APPROACH:
 吸烟者降低患心脏病风险的建议步骤包括：
 
-1. **戒烟**：戒烟是降低心脏病风险最有效的方法之一。它可以显着降低心肌梗塞和中风的风险。
+1. **戒烟**：戒烟是降低心脏病风险的最重要步骤之一。它有助于改善心脏健康并降低心血管事件的风险。
 
-2. **采取有益于心脏健康的生活方式**：这包括定期进行体力活动、低饱和脂肪、胆固醇和钠的均衡饮食，以及保持健康的体重。
+2. **采取有益于心脏健康的生活方式**：这包括均衡饮食，富含水果、蔬菜、全谷物和瘦肉蛋白。限制饱和脂肪、反式脂肪和钠也很重要。
 
-3. **管理其他健康状况**：通过改变生活方式和必要时服用药物来控制高血压、糖尿病和高胆固醇。
+3. **定期锻炼**：定期进行体育活动有助于改善心血管健康并有助于保持健康的体重。
 
-4. **定期体检**：定期去看医疗保健提供者可以帮助监测心脏健康并有效管理风险因素。
+4. **管理血压和胆固醇**：控制血压和胆固醇水平至关重要。这可能涉及生活方式的改变以及可能的药物治疗。
 
-5. **压力管理**：通过冥想、瑜伽或其他放松方法等技巧来减轻压力也可能是有益的。
+5. **控制糖尿病**：如果适用，有效管理糖尿病对于降低心脏病风险非常重要。
 
-这些步骤与医疗建议和支持相结合，可以帮助显着降低吸烟者患心脏病的风险。
+6. **限制饮酒**：减少饮酒也有助于改善心脏健康。
+
+7. **定期健康检查**：定期拜访医疗保健提供者进行监测和指导有助于及早发现和管理风险因素。
+
+这些步骤与专业的医疗建议和支持相结合，可以显着降低吸烟者患心脏病的风险。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.912
-ROUGE-L F1: 0.269
-Time Speedup: 1.25x
+Semantic Similarity: 0.903
+ROUGE-L F1: 0.225
+Time Speedup: 3.01x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (3):
 Avg relevance: 0.601
-[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
 [2] . Possible treatments may include:Heart-healthy lifestyle changesMedicinesProcedures orsurgeriesCardiac rehabilitationCan heart diseases be prevented?You may be able to lower your risk of certain hear...
 
 MULTILINGUAL-ONLY CHUNKS (1):
@@ -575,15 +590,15 @@ Translation relevance: 0.635
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-戒烟可以降低患心脏病的风险。
+戒烟可以降低心脏病的风险。吸烟会提高血压，并增加心脏病发作和中风的风险。如果您不吸烟，建议不要开始吸烟；如果您已经吸烟，戒烟将有助于降低心脏病的风险。
 
 TRANSLATION PIPELINE APPROACH:
 戒烟可以降低患心脏病的风险。吸烟会导致血压升高，并增加心脏病发作和中风的风险，因此戒烟可以显着降低这些风险。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.910
-ROUGE-L F1: 0.359
-Time Speedup: 1.04x
+Semantic Similarity: 0.966
+ROUGE-L F1: 0.579
+Time Speedup: 0.90x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -616,15 +631,15 @@ Translation relevance: 0.528
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-女性饮酒以降低患心脏病风险的指南建议每天饮酒量不超过 1 杯。
+女性饮酒以降低心脏病风险的指南是每天不超过一杯酒。
 
 TRANSLATION PIPELINE APPROACH:
-所提供的上下文不包含针对女性饮酒以降低患心脏病风险的具体指南。对于一般准则，建议女性将饮酒量限制在适度水平，通常定义为每天最多喝一杯。然而，咨询医疗保健提供者以获得个性化建议很重要。
+所提供的上下文不包含针对女性饮酒以降低患心脏病风险的具体指南。如需准确信息，建议咨询医疗保健专业人员或参考信誉良好的卫生组织的指南。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.869
-ROUGE-L F1: 0.416
-Time Speedup: 0.75x
+Semantic Similarity: 0.751
+ROUGE-L F1: 0.475
+Time Speedup: 2.25x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -635,8 +650,8 @@ Avg relevance: 0.603
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.578
-[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
-[2] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[2] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
 
 TRANSLATION-ONLY CHUNKS (1):
 Avg relevance: 0.510
@@ -657,15 +672,15 @@ Translation relevance: 0.463
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-提供的上下文不包含有关盐酸甲哌卡因的信息。盐酸甲哌卡因是一种局部麻醉剂，常用于牙科和医疗手术中的局部或区域麻醉。
+I'm sorry, the provided English content does not contain information about the use of mepivacaine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
-盐酸甲哌卡因用作局部麻醉剂，用于涉及局部浸润、周围神经阻滞以及尾部和腰部硬膜外阻滞的手术。
+盐酸甲哌卡因用作局部麻醉剂。它有注射用无菌等渗溶液，用于局部浸润、周围神经阻滞以及尾部和腰部硬膜外阻滞。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.748
-ROUGE-L F1: 0.360
-Time Speedup: 0.51x
+Semantic Similarity: 0.363
+ROUGE-L F1: 0.082
+Time Speedup: 1.04x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -677,8 +692,8 @@ Avg relevance: 0.641
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.460
-[1] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
-[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+[1] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
+[2] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -695,23 +710,23 @@ Translation relevance: 0.565
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关盐酸哌替啶结构式的信息。
+The English content provided does not contain information about the structural formula of pethidine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
 所提供的上下文不包含有关盐酸哌替啶结构式的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 1.000
-Time Speedup: 0.64x
+Semantic Similarity: 0.723
+ROUGE-L F1: 0.897
+Time Speedup: 1.08x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.643
-[1] DESCRIPTION: 11 DESCRIPTION Divalproex sodium is a stable co-ordination compound comprised of sodium valproate and valproic acid in a 1:1 molar relationship and formed during the partial neutralizatio...
-[2] . Sulfuric acid and, if necessary, sodium hydroxide may be added to adjust pH (4.0 – 5.5). Preservative: benzalkonium chloride 0.004% Trimethoprim sulfate (Structural formula) Polymyxin B Sulfate, the...
+[1] . Sulfuric acid and, if necessary, sodium hydroxide may be added to adjust pH (4.0 – 5.5). Preservative: benzalkonium chloride 0.004% Trimethoprim sulfate (Structural formula) Polymyxin B Sulfate, the...
+[2] DESCRIPTION: 11 DESCRIPTION Divalproex sodium is a stable co-ordination compound comprised of sodium valproate and valproic acid in a 1:1 molar relationship and formed during the partial neutralizatio...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.565
@@ -733,27 +748,27 @@ Translation relevance: 0.525
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关血浆蛋白在局部麻醉药作用中的作用的信息。
+The provided English content does not contain information relevant to the role of plasma proteins in the action of local anesthetics.
 
 TRANSLATION PIPELINE APPROACH:
-血浆蛋白通过影响局部麻醉剂的分布和胎盘转移，在局部麻醉剂的作用中发挥重要作用。局部麻醉剂与血浆蛋白有不同程度的结合，这种结合的程度影响它们在体内的可用性。游离的、未结合的药物可发挥作用，包括穿过胎盘。局部麻醉剂的胎儿/母体比率与血浆蛋白结合程度成反比，这意味着较高的蛋白结合导致较少的胎盘转移。此外，血浆蛋白结合的程度以及电离和脂溶性控制着局部麻醉剂的扩散速率和程度。
+血浆蛋白通过影响局部麻醉剂的分布和胎盘转移，在局部麻醉剂的作用中发挥着至关重要的作用。局部麻醉剂不同程度地与血浆蛋白结合，这种结合会影响血流中游离的、未结合的药物的浓度。只有游离的、未结合的药物可用于胎盘移植，这意味着局部麻醉剂的胎儿/母体比率与血浆蛋白结合程度成反比。此外，血浆蛋白结合程度以及电离程度和脂溶性决定了局部麻醉剂穿过胎盘的扩散速率和程度。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.475
-ROUGE-L F1: 0.161
-Time Speedup: 1.22x
+Semantic Similarity: 0.432
+ROUGE-L F1: 0.163
+Time Speedup: 1.87x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.586
-[1] . Approximately 70% of circulating inhibitory activity for HMG-CoA reductase is attributed to active metabolites. In vitro studies suggest the importance of atorvastatin metabolism by cytochrome P450 ...
-[2] . The metabolites are observed in the urine. The primary metabolic pathway is hydroxylation on the indole ring followed by subsequent glucuronide or sulfate conjugation. In vitro metabolism studies ha...
+[1] . The metabolites are observed in the urine. The primary metabolic pathway is hydroxylation on the indole ring followed by subsequent glucuronide or sulfate conjugation. In vitro metabolism studies ha...
+[2] CLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Atorvastatin is a selective, competitive inhibitor of HMG-CoA reductase, the rate-limiting enzyme that converts 3-hydroxy-3-met...
 
 TRANSLATION-ONLY CHUNKS (5):
 Avg relevance: 0.525
-[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
+[1] . Fetal/maternal ratios of local anesthetics appear to be inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Mepivacain...
 [2] . In vitro , etoposide is highly protein bound (97%) to human plasma proteins. An inverse relationship between plasma albumin levels and etoposide renal clearance is found in children. In a study dete...
 
 ----------------------------------------------------------------------------------------------------
@@ -771,28 +786,28 @@ Translation relevance: 0.391
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-上下文没有提供有关实现完全感觉和运动封锁所需的盐酸甲哌卡因浓度的信息。
+The provided English context does not contain information about the concentration of mepivacaine hydrochloride required to provide complete sensory and motor block.
 
 TRANSLATION PIPELINE APPROACH:
 2%浓度的盐酸甲哌卡因提供完全的感觉和运动阻滞。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.587
-ROUGE-L F1: 0.645
-Time Speedup: 0.52x
+Semantic Similarity: 0.342
+ROUGE-L F1: 0.588
+Time Speedup: 0.78x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.508
-[1] . These reactions are characterized by signs such as urticaria, pruritus, erythema, angioneurotic edema (including laryngeal edema), tachycardia, sneezing, nausea, vomiting, dizziness, syncope, excess...
-[2] . These effects are less likely to occur with the synthetic derivatives except when used in large doses. However, since fludrocortisone acetate is a potent mineralocorticoid, both the dosage and salt ...
+[1] . These effects are less likely to occur with the synthetic derivatives except when used in large doses. However, since fludrocortisone acetate is a potent mineralocorticoid, both the dosage and salt ...
+[2] . These reactions are characterized by signs such as urticaria, pruritus, erythema, angioneurotic edema (including laryngeal edema), tachycardia, sneezing, nausea, vomiting, dizziness, syncope, excess...
 
 TRANSLATION-ONLY CHUNKS (5):
 Avg relevance: 0.391
-[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
-[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+[1] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
+[2] . The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The du...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -809,15 +824,15 @@ Translation relevance: 0.480
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关手术期间盐酸甲哌卡因提供的麻醉持续时间的信息。
+I'm sorry, but the provided English content does not contain relevant information about the duration of anesthesia provided by mepivacaine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
-盐酸甲哌卡因提供的麻醉通常足以进行 2 至 2 1/2 小时的手术。
+手术期间，盐酸甲哌卡因提供的麻醉通常持续 2 至 2 1/2 小时。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.562
-ROUGE-L F1: 0.389
-Time Speedup: 0.63x
+Semantic Similarity: 0.592
+ROUGE-L F1: 0.308
+Time Speedup: 1.07x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -829,8 +844,8 @@ Avg relevance: 0.654
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.509
-[1] . A dilute concentration of epinephrine (1:200,000 or 5 μ g/mL) usually reduces the rate of absorption and plasma concentration of mepivacaine, however, it has been reported that vasoconstrictors do n...
-[2] INDICATIONS AND USAGE: 1.3 INDICATIONS AND USAGE 4% Lidocaine Hydrochloride Injection, USP is indicated for the production of topical anesthesia of the mucous membranes of the respiratory tract or the...
+[1] INDICATIONS AND USAGE: 1.3 INDICATIONS AND USAGE 4% Lidocaine Hydrochloride Injection, USP is indicated for the production of topical anesthesia of the mucous membranes of the respiratory tract or the...
+[2] . The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The du...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -847,28 +862,28 @@ Translation relevance: 0.612
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-上下文没有提供盐酸哌替啶注射液pH范围的信息。
+哌替啶盐酸盐注射液的pH范围是6.9到7.9。
 
 TRANSLATION PIPELINE APPROACH:
 所提供的上下文不包含有关盐酸哌替啶注射液 pH 范围的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.910
-ROUGE-L F1: 0.828
-Time Speedup: 0.68x
+Semantic Similarity: 0.592
+ROUGE-L F1: 0.500
+Time Speedup: 3.29x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.680
-[1] . In healthy volunteers administered intravenous lanthanum as the soluble chloride salt (120 µg), renal clearance was less than 2% of total plasma clearance. Drug Interactions FOSRENOL has a low poten...
-[2] . The solutions contain 10% (w/v) alcohol,USP, and 8.70 mg of sodium chloride in sterile water. The pH range is 6.9 to 7.9 and is adjusted with sodium hydroxide and/or hydrochloric acid. The sterile s...
+[1] . The solutions contain 10% (w/v) alcohol,USP, and 8.70 mg of sodium chloride in sterile water. The pH range is 6.9 to 7.9 and is adjusted with sodium hydroxide and/or hydrochloric acid. The sterile s...
+[2] . In healthy volunteers administered intravenous lanthanum as the soluble chloride salt (120 µg), renal clearance was less than 2% of total plasma clearance. Drug Interactions FOSRENOL has a low poten...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.597
-[1] . The product is formulated at pH 5.2 and each 30 mL vial contains 300 mg of eculizumab-aeeb, sorbitol (E420) (1500 mg), acetic acid (18.0 mg), polysorbate 80 (3.0 mg) (vegetable origin), edetate diso...
-[2] . Sertraline hydrochloride is supplied for oral administration as film-coated tablets containing sertraline hydrochloride equivalent to 25, 50 and 100 mg of sertraline and the following inactive ingre...
+[1] . Sertraline hydrochloride is supplied for oral administration as film-coated tablets containing sertraline hydrochloride equivalent to 25, 50 and 100 mg of sertraline and the following inactive ingre...
+[2] . The product is formulated at pH 5.2 and each 30 mL vial contains 300 mg of eculizumab-aeeb, sorbitol (E420) (1500 mg), acetic acid (18.0 mg), polysorbate 80 (3.0 mg) (vegetable origin), edetate diso...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -885,15 +900,15 @@ Translation relevance: 0.552
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关盐酸哌替啶注射液给药形式的信息。
+I'm sorry, but the provided English content does not contain information about the dosage forms of pethidine hydrochloride injection.
 
 TRANSLATION PIPELINE APPROACH:
 所提供的上下文不包含有关盐酸哌替啶注射液给药形式的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.933
-Time Speedup: 0.70x
+Semantic Similarity: 0.601
+ROUGE-L F1: 0.743
+Time Speedup: 1.09x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -905,7 +920,7 @@ Avg relevance: 0.663
 
 TRANSLATION-ONLY CHUNKS (5):
 Avg relevance: 0.552
-[1] . 2.2 Instructions for Intravenous Administration Palonosetron hydrochloride injection is supplied ready for intravenous administration at a concentration of 0.05 mg per mL (50 mcg per mL). Do not mix...
+[1] . Sertraline hydrochloride is supplied for oral administration as film-coated tablets containing sertraline hydrochloride equivalent to 25, 50 and 100 mg of sertraline and the following inactive ingre...
 [2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Ipratropium Bromide and Albuterol Sulfate Inhalation Solution is a combination of the β ​2 -adrenergic bronchodilator, albuterol sulfate, and the anticholi...
 
 ----------------------------------------------------------------------------------------------------
@@ -923,15 +938,15 @@ Translation relevance: 0.495
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关盐酸哌替啶熔点的信息。
+I'm sorry, the provided English content does not contain information about the melting point of pethidine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
-所提供的上下文不包含有关盐酸哌替啶熔点的信息。
+提供的上下文不包含有关盐酸哌替啶熔点的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 1.000
-Time Speedup: 0.49x
+Semantic Similarity: 0.572
+ROUGE-L F1: 0.813
+Time Speedup: 1.56x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -939,7 +954,7 @@ DETAILED CHUNK BREAKDOWN:
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.625
 [1] . Sulfuric acid and, if necessary, sodium hydroxide may be added to adjust pH (4.0 – 5.5). Preservative: benzalkonium chloride 0.004% Trimethoprim sulfate (Structural formula) Polymyxin B Sulfate, the...
-[2] . The solutions contain 10% (w/v) alcohol,USP, and 8.70 mg of sodium chloride in sterile water. The pH range is 6.9 to 7.9 and is adjusted with sodium hydroxide and/or hydrochloric acid. The sterile s...
+[2] . The tannate salt of pyrilamine has the empirical formula C 93 H 75 N 3 0 47 and MW = 1986.28. Chlor-Tan A 12 is a decongestant antihistamine suspension, which is red/pink in color with a raspberry f...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.501
@@ -961,23 +976,23 @@ Translation relevance: 0.591
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关盐酸哌替啶化学成分的信息。
+I'm sorry, the provided English content does not contain information about the chemical composition of pethidine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
 所提供的上下文不包含有关盐酸哌替啶化学成分的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.929
-Time Speedup: 0.68x
+Semantic Similarity: 0.585
+ROUGE-L F1: 0.813
+Time Speedup: 1.61x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.654
-[1] DESCRIPTION: 11 DESCRIPTION Divalproex sodium is a stable co-ordination compound comprised of sodium valproate and valproic acid in a 1:1 molar relationship and formed during the partial neutralizatio...
-[2] . Sulfuric acid and, if necessary, sodium hydroxide may be added to adjust pH (4.0 – 5.5). Preservative: benzalkonium chloride 0.004% Trimethoprim sulfate (Structural formula) Polymyxin B Sulfate, the...
+[1] . Sulfuric acid and, if necessary, sodium hydroxide may be added to adjust pH (4.0 – 5.5). Preservative: benzalkonium chloride 0.004% Trimethoprim sulfate (Structural formula) Polymyxin B Sulfate, the...
+[2] . The tannate salt of pyrilamine has the empirical formula C 93 H 75 N 3 0 47 and MW = 1986.28. Chlor-Tan A 12 is a decongestant antihistamine suspension, which is red/pink in color with a raspberry f...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.591
@@ -999,15 +1014,15 @@ Translation relevance: 0.546
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关盐酸哌替啶作为麻醉镇痛药的信息。
+对不起，提供的英文内容中没有关于盐酸哌替啶（pethidine hydrochloride）作为麻醉性镇痛药的作用的信息。
 
 TRANSLATION PIPELINE APPROACH:
-提供的上下文不包含有关盐酸哌替啶的信息。然而，盐酸哌替啶，也称为哌替啶，是一种麻醉镇痛药，用于治疗中度至重度疼痛。它通过与大脑和神经系统中的阿片受体结合来减少疼痛感。
+提供的上下文不包含有关盐酸哌替啶的信息。因此，我无法根据这种情况提供其作为麻醉镇痛药的作用的详细信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.732
-ROUGE-L F1: 0.426
-Time Speedup: 1.27x
+Semantic Similarity: 0.785
+ROUGE-L F1: 0.489
+Time Speedup: 1.73x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -1019,8 +1034,8 @@ Avg relevance: 0.645
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.552
-[1] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Hydrocodone is a semisynthetic narcotic analgesic and antitussive with multiple actions qualitatively similar to those of codeine. Most of these involve th...
-[2] CLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Tramadol hydrochloride tablets contain tramadol, an opioid agonist and inhibitor of norepinephrine and serotonin re- uptake. Al...
+[1] CLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Tramadol hydrochloride tablets contain tramadol, an opioid agonist and inhibitor of norepinephrine and serotonin re- uptake. Al...
+[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Amitriptyline hydrochloride is an antidepressant with sedative effects. Its mechanism of action in man is not known. It is not a monoamine oxidase inhibito...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -1037,28 +1052,28 @@ Translation relevance: 0.588
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关盐酸哌替啶注射液浓度的信息。
+The English content provided does not contain relevant information about the concentrations available for pethidine hydrochloride injection.
 
 TRANSLATION PIPELINE APPROACH:
 所提供的上下文不包含有关盐酸哌替啶注射液浓度的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.929
-Time Speedup: 0.53x
+Semantic Similarity: 0.755
+ROUGE-L F1: 0.774
+Time Speedup: 0.74x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.658
-[1] . These effects are less likely to occur with the synthetic derivatives except when used in large doses. However, since fludrocortisone acetate is a potent mineralocorticoid, both the dosage and salt ...
-[2] . 12.3 Pharmacokinetics Absorption/Bioavailability Equivalent oral doses of divalproex sodium products and valproic acid capsules deliver equivalent quantities of valproate ion systemically. Although ...
+[1] . 12.3 Pharmacokinetics Absorption/Bioavailability Equivalent oral doses of divalproex sodium products and valproic acid capsules deliver equivalent quantities of valproate ion systemically. Although ...
+[2] . These effects are less likely to occur with the synthetic derivatives except when used in large doses. However, since fludrocortisone acetate is a potent mineralocorticoid, both the dosage and salt ...
 
 TRANSLATION-ONLY CHUNKS (5):
 Avg relevance: 0.588
-[1] . Solutions which are discolored or which contain particulate matter should not be administered. Recommended Concentrations and Doses of Mepivacaine Hydrochloride Procedure Concentration Total Dose Co...
-[2] . 2.2 Instructions for Intravenous Administration Palonosetron hydrochloride injection is supplied ready for intravenous administration at a concentration of 0.05 mg per mL (50 mcg per mL). Do not mix...
+[1] . Sertraline hydrochloride is supplied for oral administration as film-coated tablets containing sertraline hydrochloride equivalent to 25, 50 and 100 mg of sertraline and the following inactive ingre...
+[2] . Palonosetron Hydrochloride Injection is available as a 5 mL single-dose vial. Each 5 mL vial contains: 0.25 mg palonosetron (equivalent to 0.28 mg palonosetron HCl), 207.5 mg mannitol, disodium edet...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -1075,15 +1090,15 @@ Translation relevance: 0.612
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-血浆浓度与局麻药结合的关系是，局麻药胎儿/母体比例与血浆蛋白结合程度成反比。这意味着只有游离的、未结合的药物可用于胎盘转移。例如，甲哌卡因大约 75% 与血浆蛋白结合，这会影响其胎盘转移。
+血浆浓度与局部麻醉药物结合之间的关系是，局部麻醉药物的胎儿/母体比率似乎与血浆蛋白结合的程度成反比，因为只有游离的、未结合的药物可以进行胎盘转移。
 
 TRANSLATION PIPELINE APPROACH:
-血浆浓度与局麻药结合的关系是，胎儿/母体局麻药的比例与血浆蛋白结合程度成反比。这意味着只有游离的、未结合的药物可用于胎盘转移。因此，血浆蛋白结合越高，可用于转移的药物量就越低。
+血浆浓度与局麻药结合的关系是，局麻药胎儿/母体比例与血浆蛋白结合程度成反比。这意味着只有游离的、未结合的药物可用于胎盘转移。因此，局麻药与血浆蛋白的结合越多，可用于穿过胎盘的转移就越少。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.968
-ROUGE-L F1: 0.708
-Time Speedup: 0.56x
+Semantic Similarity: 0.927
+ROUGE-L F1: 0.667
+Time Speedup: 1.28x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -1094,8 +1109,8 @@ Avg relevance: 0.626
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.614
-[1] . Bleeding events related to drugs that interfere with serotonin reuptake have ranged from ecchymoses, hematomas, epistaxis, and petechiae to life-threatening hemorrhages. Inform patients about the in...
-[2] . At blood concentrations achieved with normal therapeutic doses, changes in cardiac conduction, excitability, refractoriness, contractility, and peripheral vascular resistance are minimal. However, t...
+[1] . At blood concentrations achieved with normal therapeutic doses, changes in cardiac conduction, excitability, refractoriness, contractility, and peripheral vascular resistance are minimal. However, t...
+[2] . Bleeding events related to drugs that interfere with serotonin reuptake have ranged from ecchymoses, hematomas, epistaxis, and petechiae to life-threatening hemorrhages. Inform patients about the in...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.580
@@ -1117,15 +1132,15 @@ Translation relevance: 0.609
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关唑来膦酸注射液潜在肾脏副作用的具体信息。如果您担心唑来膦酸的肾脏副作用，最好查阅药物的处方信息或咨询医疗保健专业人员。
+唑来膦酸注射液的潜在肾脏副作用包括肾毒性，尤其是在肾脏前列腺素在维持肾灌注中起补偿作用的患者中。这些患者在使用非甾体抗炎药（NSAID）时可能会导致前列腺素生成减少，从而导致肾血流量减少，可能引发明显的肾功能失代偿。风险较高的患者包括肾功能受损、心力衰竭、肝功能障碍、正在服用利尿剂和ACE抑制剂的患者，以及老年人。通常在停止NSAID治疗后，患者的肾功能可以恢复到治疗前的状态。
 
 TRANSLATION PIPELINE APPROACH:
-唑来膦酸注射液的潜在肾脏副作用包括肾功能恶化、进展为肾功能衰竭以及需要透析。在基线肾功能正常和异常的患者中都观察到了这些影响，甚至在初始剂量唑来膦酸注射液后也发生过这种情况。
+唑来膦酸注射液的潜在肾脏副作用包括肾功能恶化、进展为肾功能衰竭以及需要透析。这些影响已在基线肾功能正常和异常的患者中观察到，并且在初始剂量唑来膦酸注射液后发生，即使输注时间​​超过 15 分钟。
 
 EVALUATION METRICS:
-Semantic Similarity: 0.673
-ROUGE-L F1: 0.277
-Time Speedup: 0.73x
+Semantic Similarity: 0.874
+ROUGE-L F1: 0.268
+Time Speedup: 0.95x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -1136,8 +1151,8 @@ Avg relevance: 0.702
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.607
-[1] . The incidence of renal toxicity and renal failure has been shown to be reduced when Zoledronic Acid Injection 4 mg is given as a 15 - minute intravenous infusion. Zoledronic Acid Injection should be...
-[2] . The following are data on the incidence of renal deterioration in patients receiving Zoledronic Acid Injection 4 mg over 15 minutes in these trials (see Table 9 ). Table 9: Percentage of Patients wi...
+[1] . The following are data on the incidence of renal deterioration in patients receiving Zoledronic Acid Injection 4 mg over 15 minutes in these trials (see Table 9 ). Table 9: Percentage of Patients wi...
+[2] . The incidence of renal toxicity and renal failure has been shown to be reduced when Zoledronic Acid Injection 4 mg is given as a 15 - minute intravenous infusion. Zoledronic Acid Injection should be...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -1154,23 +1169,23 @@ Translation relevance: 0.564
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-所提供的上下文不包含有关唑来膦酸注射液上市后使用期间报告的不良反应的信息。
+The English content provided does not contain information about the postmarketing adverse reactions of zoledronic acid injection.
 
 TRANSLATION PIPELINE APPROACH:
 所提供的上下文不包含有关唑来膦酸注射液上市后使用期间报告的不良反应的信息。
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.872
-Time Speedup: 0.42x
+Semantic Similarity: 0.761
+ROUGE-L F1: 0.757
+Time Speedup: 1.26x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (5):
 Avg relevance: 0.618
-[1] . 6.2 Postmarketing Experience The following adverse reactions have been identified during postapproval use of indomethacin. Because these reactions are reported voluntarily from a population of uncer...
-[2] . Laboratory Tests: Mild to moderate elevations of ALT, LDH, alkaline phosphatase, BUN and creatinine have been noted. The relationship of these abnormalities to glipizide is uncertain. 6.2 Postmarket...
+[1] ADVERSE REACTIONS: ADVERSE REACTIONS The following adverse reactions have been identified during post-approval use of Hydroxychloroquine sulfate tablets or other 4-aminoqunoline compounds. Because the...
+[2] . Henoch- Schonlein vasculitis, angioedema RENAL Acute renal failure (see PRECAUTIONS ), decreased creatinine clearance, polyuria, azotemia, cystitis, Hematuria Renal papillary necrosis MISCELLANEOUS ...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.550

@@ -14,23 +14,23 @@ Translation relevance: 0.694
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-इंसुलिन प्रतिरोध एक ऐसी स्थिति है जिसमें आपकी कोशिकाएं इंसुलिन के प्रति सामान्य रूप से प्रतिक्रिया नहीं करती हैं। परिणामस्वरूप, ग्लूकोज को आपकी कोशिकाओं में प्रवेश करने में मदद करने के लिए आपके शरीर को अधिक इंसुलिन की आवश्यकता होती है। प्रारंभ में, आपका शरीर कोशिकाओं को प्रतिक्रिया देने के लिए अधिक इंसुलिन का उत्पादन करके क्षतिपूर्ति करता है। हालाँकि, समय के साथ, आपका शरीर पर्याप्त इंसुलिन का उत्पादन करने में सक्षम नहीं हो सकता है, जिससे रक्त शर्करा का स्तर बढ़ जाता है। इससे टाइप 2 मधुमेह विकसित होने का खतरा बढ़ सकता है।
+इंसुलिन प्रतिरोध एक ऐसी स्थिति है जिसमें आपकी कोशिकाएं इंसुलिन के प्रति सामान्य रूप से प्रतिक्रिया नहीं करती हैं। इसके परिणामस्वरूप, आपके शरीर को कोशिकाओं में ग्लूकोज के प्रवेश में मदद के लिए अधिक इंसुलिन की आवश्यकता होती है। शुरू में, आपका शरीर कोशिकाओं को प्रतिक्रिया देने के लिए अधिक इंसुलिन बनाता है, लेकिन समय के साथ, आपका शरीर पर्याप्त इंसुलिन नहीं बना पाता, जिससे आपके रक्त में ग्लूकोज का स्तर बढ़ जाता है।
 
 TRANSLATION PIPELINE APPROACH:
-इंसुलिन प्रतिरोध एक ऐसी स्थिति है जिसमें आपकी कोशिकाएं इंसुलिन के प्रति सामान्य रूप से प्रतिक्रिया नहीं करती हैं। परिणामस्वरूप, ग्लूकोज को आपकी कोशिकाओं में प्रवेश करने में मदद करने के लिए आपके शरीर को अधिक इंसुलिन की आवश्यकता होती है। प्रारंभ में, आपका शरीर कोशिकाओं को प्रतिक्रिया देने के लिए अधिक इंसुलिन का उत्पादन करके क्षतिपूर्ति करता है। हालाँकि, समय के साथ, आपका शरीर पर्याप्त इंसुलिन का उत्पादन करने में सक्षम नहीं हो सकता है, जिससे रक्त शर्करा का स्तर बढ़ जाता है। इससे टाइप 2 मधुमेह विकसित होने का खतरा बढ़ सकता है।
+इंसुलिन प्रतिरोध एक ऐसी स्थिति है जिसमें आपकी कोशिकाएं इंसुलिन के प्रति सामान्य रूप से प्रतिक्रिया नहीं करती हैं। परिणामस्वरूप, ग्लूकोज को आपकी कोशिकाओं में प्रवेश करने में मदद करने के लिए आपके शरीर को अधिक इंसुलिन की आवश्यकता होती है। प्रारंभ में, आपका शरीर कोशिकाओं को प्रतिक्रिया देने के लिए अधिक इंसुलिन का उत्पादन करके क्षतिपूर्ति करता है। हालाँकि, समय के साथ, शरीर पर्याप्त इंसुलिन का उत्पादन करने में सक्षम नहीं हो सकता है, जिससे रक्त शर्करा का स्तर बढ़ जाता है। इससे टाइप 2 मधुमेह विकसित होने का खतरा बढ़ सकता है, क्योंकि ग्लूकोज ऊर्जा के लिए कोशिकाओं द्वारा अवशोषित होने के बजाय रक्तप्रवाह में रहता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.869
-Time Speedup: 0.97x
+Semantic Similarity: 0.975
+ROUGE-L F1: 0.599
+Time Speedup: 1.12x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (5):
 Avg relevance: 0.694
-[1] . As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insu...
-[2] Summary: Type 2diabetesis a disease in which your blood glucose, orblood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin he...
+[1] . This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to t...
+[2] Summary: Diabetes, also known as diabetes mellitus, is a disease in which yourblood glucose, or blood sugar, levels are too high. Glucose is your body's main source of energy. Your body can make gluco...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -47,15 +47,15 @@ Translation relevance: 0.551
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रारंभिक हृदय रोग का पारिवारिक इतिहास आपके जोखिम को बढ़ा देता है। यदि आपके परिवार में कोई करीबी सदस्य है, जैसे कि पिता या भाई, जिसका निदान 55 वर्ष की आयु से पहले हुआ है, या माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ है, तो आपके हृदय रोग विकसित होने का जोखिम अधिक है।
+पारिवारिक इतिहास का हृदय रोग के जोखिम पर महत्वपूर्ण प्रभाव पड़ता है। यदि आपके परिवार में किसी करीबी सदस्य को जल्दी उम्र में हृदय रोग हुआ है, तो आपका जोखिम बढ़ जाता है। उदाहरण के लिए, यदि आपके पिता या भाई को 55 वर्ष की उम्र से पहले हृदय रोग का निदान हुआ है, या आपकी माता या बहन को 65 वर्ष की उम्र से पहले, तो आपका जोखिम अधिक होता है।
 
 TRANSLATION PIPELINE APPROACH:
-प्रारंभिक हृदय रोग का पारिवारिक इतिहास आपके जोखिम को बढ़ा देता है। विशेष रूप से, यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में हृदय रोग हुआ है, जैसे कि पिता या भाई को 55 वर्ष की आयु से पहले निदान हुआ, या माँ या बहन को 65 वर्ष की आयु से पहले निदान हुआ, तो आपका जोखिम अधिक है।
+प्रारंभिक हृदय रोग का पारिवारिक इतिहास आपके जोखिम को बढ़ा देता है। यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में हृदय रोग हुआ है, तो आपको अधिक जोखिम है, जैसे कि यदि आपके पिता या भाई को 55 वर्ष की आयु से पहले निदान किया गया था, या आपकी माँ या बहन को 65 वर्ष की आयु से पहले निदान किया गया था।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.990
-ROUGE-L F1: 0.788
-Time Speedup: 0.84x
+Semantic Similarity: 0.953
+ROUGE-L F1: 0.686
+Time Speedup: 0.95x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -72,8 +72,8 @@ Avg relevance: 0.538
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.534
-[1] WARNINGS AND CAUTIONS: WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors may ...
-[2] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
+[1] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
+[2] WARNINGS AND CAUTIONS: WARNINGS AND PRECAUTIONS Serious and potentially fatal cardiovascular (CV) thrombotic events, myocardial infarction, and stroke. Patients with known CV disease/risk factors may ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -90,15 +90,15 @@ Translation relevance: 0.560
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-धूम्रपान से आपका रक्तचाप बढ़ता है और दिल का दौरा और स्ट्रोक का खतरा बढ़ जाता है। यदि आप धूम्रपान नहीं करते हैं, तो इसे शुरू न करने की सलाह दी जाती है। यदि आप धूम्रपान करते हैं, तो छोड़ने से हृदय रोग का खतरा कम हो सकता है।
+धूम्रपान आपके रक्तचाप को बढ़ाता है और आपको दिल के दौरे और स्ट्रोक का अधिक जोखिम बनाता है। यदि आप धूम्रपान नहीं करते हैं, तो इसे शुरू न करें। यदि आप धूम्रपान करते हैं, तो छोड़ने से आपके हृदय रोग का जोखिम कम होगा।
 
 TRANSLATION PIPELINE APPROACH:
-धूम्रपान से आपका रक्तचाप बढ़ जाता है और आपको दिल का दौरा और स्ट्रोक का खतरा बढ़ जाता है। धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो सकता है।
+धूम्रपान से आपका रक्तचाप बढ़ता है और दिल का दौरा और स्ट्रोक का खतरा बढ़ जाता है, जिससे हृदय रोग का खतरा बढ़ जाता है। यदि आप धूम्रपान नहीं करते हैं, तो इसे शुरू न करने की सलाह दी जाती है, और यदि आप धूम्रपान करते हैं, तो छोड़ने से हृदय रोग का खतरा कम हो सकता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.912
-ROUGE-L F1: 0.548
-Time Speedup: 0.87x
+Semantic Similarity: 0.970
+ROUGE-L F1: 0.600
+Time Speedup: 1.07x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -114,8 +114,8 @@ Avg relevance: 0.653
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.536
-[1] . It may include only the lifestyle changes. These changes, such as heart-healthy eating and exercise, can be very effective. But sometimes the changes do not control or lower your high blood pressure...
-[2] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[2] . The risk of hypertension is increased if bupropion is used concomitantly with MAOIs or other drugs that increase dopaminergic or noradrenergic activity [see Contraindications (4) ] . Data from a com...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -132,23 +132,40 @@ Translation relevance: 0.661
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-हृदय रोग के लिए जिन जोखिम कारकों को बदला जा सकता है उनमें अस्वास्थ्यकर जीवनशैली की आदतें शामिल हैं जैसे कि संतृप्त वसा, परिष्कृत कार्बोहाइड्रेट और नमक से भरपूर आहार खाना, पर्याप्त शारीरिक गतिविधि न करना, बहुत अधिक शराब पीना, धूम्रपान करना और सेकेंड हैंड धुएं के संपर्क में रहना और बहुत अधिक तनाव का अनुभव करना।
+हृदय रोग के कुछ जोखिम कारक जो बदले जा सकते हैं, उनमें शामिल हैं:
+
+1. अस्वास्थ्यकर आहार: संतृप्त वसा, परिष्कृत कार्बोहाइड्रेट और नमक की उच्च मात्रा वाले आहार का सेवन।
+2. शारीरिक गतिविधि की कमी: पर्याप्त शारीरिक गतिविधि न करना।
+3. अत्यधिक शराब का सेवन: बहुत अधिक शराब पीना।
+4. धूम्रपान और सेकंडहैंड धुएं के संपर्क में आना: धूम्रपान करना और दूसरों के धुएं के संपर्क में आना।
+5. अत्यधिक तनाव: बहुत अधिक तनाव का होना।
+
+इन कारकों को बदलकर हृदय रोग का जोखिम कम किया जा सकता है।
 
 TRANSLATION PIPELINE APPROACH:
-हृदय रोग के लिए जिन जोखिम कारकों को बदला जा सकता है उनमें जीवनशैली की आदतें शामिल हैं जैसे संतृप्त वसा, परिष्कृत कार्बोहाइड्रेट और नमक से भरपूर आहार खाना; पर्याप्त शारीरिक गतिविधि न करना; बहुत अधिक शराब पीना; धूम्रपान और सेकेंड हैंड धुएं के संपर्क में आना; और बहुत अधिक तनाव का अनुभव कर रहे हैं। इसके अतिरिक्त, अन्य चिकित्सीय स्थितियों का प्रबंधन करने से भी हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
+हृदय रोग के जोखिम कारक जिन्हें बदला जा सकता है उनमें शामिल हैं:
+
+1. जीवनशैली की आदतें:
+   - संतृप्त वसा, परिष्कृत कार्बोहाइड्रेट और नमक से भरपूर आहार लेना।
+   -पर्याप्त शारीरिक गतिविधि न करना.
+   - बहुत अधिक शराब पीना.
+   - धूम्रपान और सेकेंड हैंड धुएं के संपर्क में आना।
+   - बहुत ज्यादा तनाव.
+
+2. अन्य चिकित्सीय स्थितियों का प्रबंधन करना जो हृदय रोग के खतरे को बढ़ा सकती हैं।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.969
-ROUGE-L F1: 0.774
-Time Speedup: 0.73x
+Semantic Similarity: 0.973
+ROUGE-L F1: 0.641
+Time Speedup: 0.88x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (3):
 Avg relevance: 0.687
-[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
-[2] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
+[2] . The causes of heart disease depend on the type of disease. Some possible causes include lifestyle, genetics, infections, medicines, and other diseases. There are many different factors that can make...
 
 MULTILINGUAL-ONLY CHUNKS (1):
 Avg relevance: 0.650
@@ -174,28 +191,28 @@ Translation relevance: 0.539
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-संदर्भ से पता चलता है कि विभिन्न जातीय समूहों के बीच हृदय रोग की दर अलग-अलग होती है। श्वेत अमेरिकियों की तुलना में अफ्रीकी अमेरिकियों के हृदय रोग से मरने की संभावना अधिक है, जबकि हिस्पैनिक अमेरिकियों के इससे मरने की संभावना कम है। एशियाई अमेरिकियों में आम तौर पर अन्य समूहों की तुलना में हृदय रोग की दर कम होती है, लेकिन दक्षिण एशियाई अमेरिकियों में हृदय रोग की दर अधिक होती है। इसके अतिरिक्त, संयुक्त राज्य अमेरिका में अधिकांश नस्लीय और जातीय समूहों में हृदय रोग मृत्यु का प्रमुख कारण है, जिसमें काले लोगों, श्वेत लोगों और अमेरिकी भारतीय/अलास्का मूल लोगों में जोखिम अधिक है।
+अलग-अलग जातीय समूहों में हृदय रोग की दरों में अंतर होता है। उदाहरण के लिए, अफ्रीकी अमेरिकी लोगों में हृदय रोग से मरने की संभावना श्वेत लोगों की तुलना में अधिक होती है, जबकि हिस्पैनिक अमेरिकी लोगों में इसकी संभावना कम होती है। एशियाई अमेरिकी समूह के रूप में अन्य समूहों की तुलना में हृदय रोग की दरें कम होती हैं, लेकिन दक्षिण एशियाई अमेरिकी लोगों में यह दरें अधिक होती हैं।
 
 TRANSLATION PIPELINE APPROACH:
-यह संदर्भ विभिन्न जातीय समूहों के बीच हृदय रोग दर में अंतर के बारे में जानकारी प्रदान करता है। अफ़्रीकी अमेरिकियों में श्वेत लोगों की तुलना में हृदय रोग से मरने की अधिक संभावना है। हिस्पैनिक अमेरिकियों के इससे मरने की संभावना कम है। एक समूह के रूप में एशियाई अमेरिकियों में हृदय रोग की दर अन्य समूहों की तुलना में कम है, लेकिन दक्षिण एशियाई अमेरिकियों में उच्च दर है। इसके अतिरिक्त, संयुक्त राज्य अमेरिका में अधिकांश नस्लीय और जातीय समूहों में हृदय रोग मृत्यु का प्रमुख कारण है, काले लोगों, श्वेत लोगों और अमेरिकी भारतीय/अलास्का मूल लोगों सहित कुछ समूहों में दूसरों की तुलना में अधिक जोखिम होता है।
+विभिन्न जातीय समूहों में हृदय रोग की दर भिन्न-भिन्न होती है। अफ़्रीकी अमेरिकियों में श्वेत लोगों की तुलना में हृदय रोग से मरने की अधिक संभावना है। श्वेतों की तुलना में हिस्पैनिक अमेरिकियों के इससे मरने की संभावना कम है। एक समूह के रूप में एशियाई अमेरिकियों में हृदय रोग की दर अन्य समूहों की तुलना में कम है, लेकिन दक्षिण एशियाई अमेरिकियों में उच्च दर है। इसके अतिरिक्त, संयुक्त राज्य अमेरिका में अधिकांश नस्लीय और जातीय समूहों में हृदय रोग मृत्यु का प्रमुख कारण है, काले लोगों, श्वेत लोगों और अमेरिकी भारतीय/अलास्का मूल निवासियों में दूसरों की तुलना में अधिक जोखिम होता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.975
-ROUGE-L F1: 0.759
-Time Speedup: 0.81x
+Semantic Similarity: 0.941
+ROUGE-L F1: 0.596
+Time Speedup: 1.56x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (3):
 Avg relevance: 0.581
-[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
-[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+[1] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
+[2] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.594
-[1] . Race Pharmacokinetic differences due to race have not been identified. Clinical studies included patients of many races, all of whom responded in a similar fashion. Hepatic Insufficiency Etodolac is...
-[2] . The subjects included in the study were men aged 35 to 59 with serum cholesterol levels above 265 mg/dL and no previous history of heart disease. It is not clear to what extent these findings can be...
+[1] . The subjects included in the study were men aged 35 to 59 with serum cholesterol levels above 265 mg/dL and no previous history of heart disease. It is not clear to what extent these findings can be...
+[2] . Race Pharmacokinetic differences due to race have not been identified. Clinical studies included patients of many races, all of whom responded in a similar fashion. Hepatic Insufficiency Etodolac is...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.476
@@ -217,15 +234,15 @@ Translation relevance: 0.613
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में हृदय रोग के जोखिम पर शराब के सेवन के प्रभाव के बारे में जानकारी नहीं है। हालाँकि, आम तौर पर कहें तो, मध्यम शराब का सेवन कुछ संभावित हृदय संबंधी लाभों से जुड़ा हुआ है, जैसे कि एचडीएल कोलेस्ट्रॉल में वृद्धि। इसके विपरीत, अत्यधिक शराब के सेवन से उच्च रक्तचाप, हृदय विफलता और अन्य हृदय संबंधी समस्याएं हो सकती हैं। व्यक्तिगत सलाह के लिए स्वास्थ्य सेवा प्रदाता से परामर्श करना महत्वपूर्ण है।
+मुझे खेद है, लेकिन दिए गए अंग्रेजी संदर्भ में शराब के सेवन का हृदय रोग के जोखिम पर प्रभाव के बारे में कोई जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-दिए गए संदर्भ में हृदय रोग के जोखिम पर शराब के सेवन के प्रभाव के बारे में जानकारी नहीं है। हालाँकि, आम तौर पर कहें तो, मध्यम शराब का सेवन कुछ प्रकार के हृदय रोग के कम जोखिम से जुड़ा हुआ है, जबकि अत्यधिक शराब के सेवन से हृदय रोग और अन्य स्वास्थ्य समस्याओं का खतरा बढ़ सकता है। व्यक्तिगत सलाह के लिए स्वास्थ्य सेवा प्रदाताओं से परामर्श करना महत्वपूर्ण है।
+दिए गए संदर्भ में हृदय रोग के जोखिम पर शराब के सेवन के प्रभाव के बारे में विशेष जानकारी नहीं है। इसमें वैरेनिकलाइन लेने पर शराब के बढ़ते प्रभाव का उल्लेख है, लेकिन हृदय रोग पर शराब के सीधे प्रभाव का नहीं। शराब और हृदय रोग के जोखिम के बारे में विस्तृत जानकारी के लिए किसी स्वास्थ्य सेवा प्रदाता या चिकित्सा साहित्य से परामर्श करना उचित होगा।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.936
-ROUGE-L F1: 0.545
-Time Speedup: 0.61x
+Semantic Similarity: 0.851
+ROUGE-L F1: 0.304
+Time Speedup: 1.42x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -249,15 +266,15 @@ Translation relevance: 0.608
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-अतिरिक्त कैलोरी से वजन बढ़ सकता है, जिससे हृदय रोग का खतरा बढ़ जाता है।
+अतिरिक्त कैलोरी का सेवन वजन बढ़ा सकता है, जो हृदय रोग के जोखिम को बढ़ाता है। वजन बढ़ने से उच्च रक्तचाप और उच्च कोलेस्ट्रॉल जैसे अन्य हृदय रोग के जोखिम कारकों से जुड़ाव होता है।
 
 TRANSLATION PIPELINE APPROACH:
 अतिरिक्त कैलोरी से वजन बढ़ सकता है, जिससे हृदय रोग का खतरा बढ़ जाता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.929
-Time Speedup: 0.81x
+Semantic Similarity: 0.946
+ROUGE-L F1: 0.565
+Time Speedup: 1.01x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -269,13 +286,13 @@ Avg relevance: 0.692
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.610
-[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[1] WARNINGS: WARNINGS SPECIAL WARNING ON INCREASED RISK OF CARDIOVASCULAR MORTALITY The administration of oral hypoglycemic drugs has been reported to be associated with increased cardiovascular mortalit...
 [2] evident coronary heart disease, atorvastatin calcium tablets are indicated to: Reduce the risk of non-fatal myocardial infarction Reduce the risk of fatal and non-fatal stroke Reduce the risk for reva...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.551
-[1] . Fluid and Electrolyte Disturbances congestive heart failure in susceptible patients, fluid retention, hypokalemia, hypokalemic alkalosis, metabolic alkalosis, hypotension or shock-like reaction, pot...
-[2] . Debilitated or malnourished patients, and those with adrenal, pituitary, or hepatic impairment are particularly susceptible to the hypoglycemic action of anti-diabetic medications. Hypoglycemia is a...
+[1] . Debilitated or malnourished patients, and those with adrenal, pituitary, or hepatic impairment are particularly susceptible to the hypoglycemic action of anti-diabetic medications. Hypoglycemia is a...
+[2] . Fluid and Electrolyte Disturbances congestive heart failure in susceptible patients, fluid retention, hypokalemia, hypokalemic alkalosis, metabolic alkalosis, hypotension or shock-like reaction, pot...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -292,23 +309,23 @@ Translation relevance: 0.630
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-तनाव कई तरह से हृदय रोग से संबंधित है। अत्यधिक तनाव दिल के दौरे के लिए "ट्रिगर" के रूप में कार्य कर सकता है। इसके अतिरिक्त, सामान्य तनाव-निपटने के तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान हृदय स्वास्थ्य के लिए हानिकारक हैं। व्यायाम, संगीत सुनना, शांत करने वाली गतिविधियों पर ध्यान केंद्रित करना और ध्यान जैसी गतिविधियों के माध्यम से तनाव को प्रबंधित करने से हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
+तनाव का हृदय रोग से सीधा संबंध है। अत्यधिक तनाव दिल के दौरे का "ट्रिगर" बन सकता है। तनाव से निपटने के कुछ आम तरीकों जैसे अधिक खाना, भारी मात्रा में शराब पीना और धूम्रपान करना, आपके दिल के लिए हानिकारक होते हैं। तनाव को प्रबंधित करने के लिए व्यायाम, संगीत सुनना, किसी शांत या सुखदायक चीज़ पर ध्यान केंद्रित करना और ध्यान लगाना मददगार हो सकता है।
 
 TRANSLATION PIPELINE APPROACH:
-अत्यधिक तनाव दिल के दौरे के लिए "ट्रिगर" हो सकता है। इसके अतिरिक्त, तनाव से निपटने के कुछ सामान्य तरीके, जैसे अधिक खाना, भारी शराब पीना और धूम्रपान, आपके दिल के लिए हानिकारक हैं। व्यायाम, संगीत सुनना, किसी शांतिपूर्ण चीज़ पर ध्यान केंद्रित करना और ध्यान करने जैसी गतिविधियों के माध्यम से तनाव को प्रबंधित करने से हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
+तनाव कई तरह से हृदय रोग से संबंधित है। अत्यधिक तनाव दिल के दौरे के लिए "ट्रिगर" के रूप में कार्य कर सकता है। इसके अतिरिक्त, तनाव से निपटने के सामान्य तंत्र, जैसे अधिक खाना, भारी शराब पीना और धूम्रपान, हृदय स्वास्थ्य के लिए हानिकारक हैं। व्यायाम, संगीत सुनना, शांत विचारों पर ध्यान केंद्रित करना और ध्यान करने जैसी गतिविधियों के माध्यम से तनाव को प्रबंधित करने से हृदय रोग के जोखिम को कम करने में मदद मिल सकती है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.914
-ROUGE-L F1: 0.765
-Time Speedup: 0.85x
+Semantic Similarity: 0.979
+ROUGE-L F1: 0.598
+Time Speedup: 1.15x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (2):
 Avg relevance: 0.705
-[1] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
-[2] . Sometimeswomenwill have different symptoms then men. For example, they are more likely to feel tired for no reason. The most common cause of heart attacks iscoronary artery disease(CAD). With CAD, t...
+[1] . Sometimeswomenwill have different symptoms then men. For example, they are more likely to feel tired for no reason. The most common cause of heart attacks iscoronary artery disease(CAD). With CAD, t...
+[2] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.656
@@ -335,15 +352,15 @@ Translation relevance: 0.543
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-एक समूह के रूप में एशियाई अमेरिकियों में अन्य समूहों की तुलना में हृदय रोग की दर कम है।
+एशियाई अमेरिकी समूह के रूप में अन्य समूहों की तुलना में हृदय रोग की दरें कम हैं।
 
 TRANSLATION PIPELINE APPROACH:
-एक समूह के रूप में एशियाई अमेरिकियों में अन्य समूहों की तुलना में हृदय रोग की दर कम है।
+एक समूह के रूप में एशियाई अमेरिकियों में अन्य समूहों की तुलना में हृदय रोग की दर कम है। हालाँकि, यह ध्यान रखना महत्वपूर्ण है कि दक्षिण एशियाई अमेरिकियों में अन्य एशियाई उपसमूहों की तुलना में हृदय रोग की दर अधिक है।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 1.000
-Time Speedup: 0.58x
+Semantic Similarity: 0.949
+ROUGE-L F1: 0.571
+Time Speedup: 2.86x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -360,8 +377,8 @@ Avg relevance: 0.587
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.485
-[1] . The majority of patients in the SOLVD-Prevention trial had a history of ischemic heart disease. A history of myocardial infarction was present in 80 percent of patients, current angina pectoris in 3...
-[2] Summary: Heart disease is a general term that includes many types of heart problems. It's a type of cardiovascular disease, which means heart and blood vessel disease. Heart disease is the leading cau...
+[1] Summary: Heart disease is a general term that includes many types of heart problems. It's a type of cardiovascular disease, which means heart and blood vessel disease. Heart disease is the leading cau...
+[2] . The majority of patients in the SOLVD-Prevention trial had a history of ischemic heart disease. A history of myocardial infarction was present in 80 percent of patients, current angina pectoris in 3...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -378,23 +395,23 @@ Translation relevance: 0.618
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में हृदय रोग हुआ हो तो आपको हृदय रोग का खतरा अधिक होता है। विशेष रूप से, यदि आपके पिता या भाई का निदान 55 वर्ष की आयु से पहले हुआ था, या यदि आपकी माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ था।
+परिवार के सदस्यों के लिए हृदय रोग निदान की आयु सीमाएं जो जोखिम बढ़ाती हैं, निम्नलिखित हैं: यदि आपके पिता या भाई को 55 वर्ष की आयु से पहले हृदय रोग का निदान हुआ है, या आपकी मां या बहन को 65 वर्ष की आयु से पहले निदान हुआ है, तो आपका जोखिम बढ़ जाता है।
 
 TRANSLATION PIPELINE APPROACH:
-यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में ही हृदय रोग का पता चला है तो आपको हृदय रोग का खतरा अधिक है। विशेष रूप से, यदि आपके पिता या भाई का निदान 55 वर्ष की आयु से पहले हुआ था, या यदि आपकी माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ था, तो आपका जोखिम बढ़ जाता है।
+यदि आपके परिवार के किसी करीबी सदस्य को कम उम्र में हृदय रोग का पता चला है तो आपको हृदय रोग का खतरा अधिक है। विशेष रूप से, यदि आपके पिता या भाई का निदान 55 वर्ष की आयु से पहले हुआ था, या यदि आपकी माँ या बहन का निदान 65 वर्ष की आयु से पहले हुआ था।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.990
-ROUGE-L F1: 0.769
-Time Speedup: 0.88x
+Semantic Similarity: 0.905
+ROUGE-L F1: 0.500
+Time Speedup: 1.15x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.611
-[1] . Some of these factors you can change, but others you cannot.Age.Your risk of heart disease goes up as you get older.Sex.Some factors may affect heart disease risk differently inwomenthan in men.Fami...
-[2] . For example:African Americans are more likely than Whites to die of heart disease, while Hispanic Americans are less likely to die of itAsian Americans as a group have lower rates of heart disease t...
+[1] . 5.5 Age-related Considerations The risk for cardiovascular disease and prevalence of risk factors for cardiovascular disease increase with age. Certain conditions, such as smoking and migraine heada...
+[2] . The risk is higher in:Men age 45 and olderWomen age 55 and olderYour sex.Some risk factors may affect heart disease risk differently inwomenthan in men. For example:Thehormoneestrogen provides women...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -411,15 +428,15 @@ Translation relevance: 0.626
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में अनुशंसित से अधिक शराब पीने के हृदय रोग के जोखिम पर पड़ने वाले प्रभावों के बारे में जानकारी नहीं है। हालाँकि, आम तौर पर, अत्यधिक शराब के सेवन से उच्च रक्तचाप, कार्डियोमायोपैथी, अतालता और स्ट्रोक सहित हृदय संबंधी बीमारियों के विकसित होने का खतरा बढ़ सकता है। इन जोखिमों को कम करने के लिए शराब के सेवन के लिए अनुशंसित दिशानिर्देशों का पालन करना महत्वपूर्ण है।
+मुझे खेद है, लेकिन दिए गए अंग्रेजी संदर्भ में शराब के अत्यधिक सेवन और हृदय रोग जोखिम के प्रभावों के बारे में जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-अनुशंसित से अधिक शराब पीने से हृदय रोग का खतरा बढ़ सकता है। यह अतिरिक्त कैलोरी जोड़ता है, जिससे वजन बढ़ सकता है और ये दोनों कारक हृदय रोग के खतरे को बढ़ाते हैं।
+अनुशंसित से अधिक शराब पीने से हृदय रोग का खतरा बढ़ सकता है। अत्यधिक शराब के सेवन से अतिरिक्त कैलोरी बढ़ती है, जिससे वजन बढ़ सकता है और ये दोनों कारक हृदय रोग के खतरे को बढ़ाते हैं। यह सलाह दी जाती है कि शराब न पियें, लेकिन यदि आप ऐसा करते हैं, तो जोखिम को कम करने के लिए पुरुषों को प्रति दिन 2 से अधिक पेय नहीं लेना चाहिए और महिलाओं को प्रति दिन 1 से अधिक पेय नहीं पीना चाहिए।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.853
-ROUGE-L F1: 0.318
-Time Speedup: 0.81x
+Semantic Similarity: 0.609
+ROUGE-L F1: 0.176
+Time Speedup: 1.59x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -447,23 +464,23 @@ Translation relevance: 0.612
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-हृदय रोग के जोखिम को कम करने के लिए पीने के दिशानिर्देश हैं: पुरुषों के लिए प्रति दिन 2 से अधिक पेय नहीं और महिलाओं के लिए प्रति दिन 1 से अधिक पेय नहीं।
+हृदय रोग के जोखिम को कम करने के लिए पीने के दिशा-निर्देश इस प्रकार हैं: यदि आप पुरुष हैं, तो दिन में 2 से अधिक पेय न लें। यदि आप महिला हैं, तो दिन में 1 से अधिक पेय न लें।
 
 TRANSLATION PIPELINE APPROACH:
-हृदय रोग के जोखिम को कम करने के लिए पीने के दिशानिर्देश हैं: पुरुषों के लिए प्रति दिन 2 से अधिक पेय नहीं और महिलाओं के लिए प्रति दिन 1 से अधिक पेय नहीं।
+हृदय रोग के जोखिम को कम करने के लिए पीने के दिशानिर्देश इस प्रकार हैं: पुरुषों को प्रति दिन 2 से अधिक पेय नहीं लेना चाहिए, और महिलाओं को प्रति दिन 1 से अधिक पेय नहीं लेना चाहिए।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.945
-Time Speedup: 0.51x
+Semantic Similarity: 0.966
+ROUGE-L F1: 0.687
+Time Speedup: 1.04x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (4):
 Avg relevance: 0.613
-[1] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
-[2] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[2] . It also adds extra calories, which may cause weight gain. Both of those raise your risk of heart disease. It's best not to drink, but if you do:Have no more than 2 drinks per day if you are a man.Ha...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -480,23 +497,23 @@ Translation relevance: 0.690
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-तनाव प्रबंधन हृदय रोग के जोखिम को महत्वपूर्ण रूप से प्रभावित कर सकता है। अत्यधिक तनाव दिल के दौरे को ट्रिगर कर सकता है, और तनाव से निपटने के सामान्य तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान हृदय स्वास्थ्य के लिए हानिकारक हैं। प्रभावी तनाव प्रबंधन तकनीकें, जैसे व्यायाम, संगीत सुनना, शांत या शांतिपूर्ण गतिविधियों पर ध्यान केंद्रित करना और ध्यान करना, इन जोखिमों को कम करने और बेहतर हृदय स्वास्थ्य को बढ़ावा देने में मदद कर सकती हैं।
+तनाव प्रबंधन हृदय रोग के जोखिम को कम करने में मदद कर सकता है। अत्यधिक तनाव हृदयाघात का "ट्रिगर" हो सकता है और तनाव से निपटने के कुछ सामान्य तरीके, जैसे अधिक खाना, भारी शराब पीना और धूम्रपान करना, आपके हृदय के लिए हानिकारक होते हैं। तनाव को प्रबंधित करने के कुछ तरीके हैं: व्यायाम करना, संगीत सुनना, किसी शांत या शांतिपूर्ण चीज़ पर ध्यान केंद्रित करना और ध्यान लगाना। इन तरीकों से तनाव को कम करके, आप अपने हृदय रोग के जोखिम को भी कम कर सकते हैं।
 
 TRANSLATION PIPELINE APPROACH:
-तनाव प्रबंधन हृदय रोग के जोखिम को महत्वपूर्ण रूप से प्रभावित कर सकता है। अत्यधिक तनाव दिल के दौरे को ट्रिगर कर सकता है, और तनाव से निपटने के सामान्य तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान हृदय स्वास्थ्य के लिए हानिकारक हैं। प्रभावी तनाव प्रबंधन तकनीकें, जैसे व्यायाम, संगीत सुनना, शांत या शांतिपूर्ण गतिविधियों पर ध्यान केंद्रित करना और ध्यान करना, हृदय रोग के जोखिम को कम करने में मदद कर सकता है।
+तनाव को प्रभावी ढंग से प्रबंधित करने से हृदय रोग के जोखिम को कम करने में मदद मिल सकती है। अत्यधिक तनाव दिल के दौरे को ट्रिगर कर सकता है, और सामान्य मुकाबला तंत्र जैसे अधिक खाना, भारी शराब पीना और धूम्रपान दिल के स्वास्थ्य के लिए हानिकारक हैं। तनाव को प्रबंधित करने के लिए व्यायाम, संगीत सुनना, शांत विचारों पर ध्यान केंद्रित करना और ध्यान करना जैसी गतिविधियों में शामिल होना फायदेमंद हो सकता है। ये अभ्यास तनाव के स्तर को कम करने में मदद कर सकते हैं और बदले में, हृदय रोग के जोखिम को कम कर सकते हैं।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.998
-ROUGE-L F1: 0.831
-Time Speedup: 0.62x
+Semantic Similarity: 0.932
+ROUGE-L F1: 0.621
+Time Speedup: 0.87x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (2):
 Avg relevance: 0.731
-[1] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
-[2] WARNINGS: WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta blockade carries the potential hazard of further depres...
+[1] WARNINGS: WARNINGS Cardiac Failure Sympathetic stimulation is necessary in supporting circulatory function in congestive heart failure, and beta blockade carries the potential hazard of further depres...
+[2] . Extreme stress can be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, heavy drinking, and smoking, are bad for your heart. Some ways to help manage ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -513,23 +530,23 @@ Translation relevance: 0.545
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-संदर्भ धूम्रपान करने वालों के लिए हृदय रोग के जोखिम को कम करने के लिए स्पष्ट रूप से अनुशंसित कार्रवाई प्रदान नहीं करता है। हालाँकि, इसमें उल्लेख किया गया है कि धूम्रपान बंद करना एक महत्वपूर्ण स्वास्थ्य लाभ है और व्यापक हृदय जोखिम प्रबंधन का हिस्सा है। इसलिए, हृदय रोग के जोखिम को कम करने के लिए धूम्रपान छोड़ना एक अनुशंसित कदम है।
+धूम्रपान करने वालों के लिए हृदय रोग के जोखिम को कम करने के लिए अनुशंसित कार्रवाई धूम्रपान छोड़ना है। धूम्रपान छोड़ने से हृदय स्वास्थ्य में सुधार हो सकता है और हृदय संबंधी घटनाओं का जोखिम कम हो सकता है।
 
 TRANSLATION PIPELINE APPROACH:
 हृदय रोग के जोखिम को कम करने के लिए धूम्रपान करने वालों के लिए अनुशंसित कार्रवाई धूम्रपान बंद करना है। धूम्रपान छोड़ना व्यापक हृदय जोखिम प्रबंधन का एक महत्वपूर्ण हिस्सा है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.872
-ROUGE-L F1: 0.432
-Time Speedup: 0.66x
+Semantic Similarity: 0.945
+ROUGE-L F1: 0.655
+Time Speedup: 0.99x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 OVERLAPPING CHUNKS (2):
 Avg relevance: 0.562
-[1] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
-[2] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[1] . Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions. These benefits have been seen in controlled trials of antihyperten...
+[2] . 1.1 Prevention of Cardiovascular Disease In adult patients without clinically evident coronary heart disease, but with multiple risk factors for coronary heart disease such as age, smoking, hyperten...
 
 MULTILINGUAL-ONLY CHUNKS (1):
 Avg relevance: 0.411
@@ -555,15 +572,15 @@ Translation relevance: 0.633
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो जाता है।
+धूम्रपान छोड़ने से हृदय रोग के जोखिम में कमी आती है। धूम्रपान रक्तचाप को बढ़ाता है और दिल के दौरे और स्ट्रोक का जोखिम बढ़ाता है। धूम्रपान छोड़ने से ये जोखिम कम हो जाते हैं। अपने स्वास्थ्य सेवा प्रदाता से बात करके आप धूम्रपान छोड़ने के लिए सबसे अच्छा तरीका खोज सकते हैं।
 
 TRANSLATION PIPELINE APPROACH:
-धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो जाता है।
+धूम्रपान छोड़ने से हृदय रोग का खतरा कम हो जाता है। धूम्रपान आपके रक्तचाप को बढ़ाता है और आपको दिल के दौरे और स्ट्रोक के उच्च जोखिम में डालता है, इसलिए धूम्रपान बंद करने से इन जोखिमों को काफी कम किया जा सकता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.750
-Time Speedup: 0.64x
+Semantic Similarity: 0.904
+ROUGE-L F1: 0.560
+Time Speedup: 0.99x
 Retrieval Overlap: 40.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -596,15 +613,15 @@ Translation relevance: 0.568
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन दिशानिर्देशों के बारे में जानकारी शामिल नहीं है। हालाँकि, सामान्य दिशानिर्देश सुझाव देते हैं कि हृदय रोग के जोखिम को कम करने के लिए महिलाओं को शराब का सेवन प्रति दिन एक से अधिक पेय तक सीमित करना चाहिए। व्यक्तिगत सलाह के लिए स्वास्थ्य सेवा प्रदाताओं से परामर्श करना महत्वपूर्ण है।
+मुझे खेद है, लेकिन दिए गए संदर्भ में महिलाओं के लिए हृदय रोग के जोखिम को कम करने के लिए शराब सेवन के दिशा-निर्देशों के बारे में कोई जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-दिए गए संदर्भ में हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन दिशानिर्देशों के बारे में जानकारी शामिल नहीं है। हालाँकि, सामान्य दिशानिर्देश सुझाव देते हैं कि हृदय रोग के जोखिम को कम करने में मदद के लिए महिलाओं को शराब का सेवन प्रति दिन एक से अधिक पेय तक सीमित करना चाहिए। व्यक्तिगत सलाह के लिए किसी स्वास्थ्य सेवा प्रदाता से परामर्श करना हमेशा सर्वोत्तम होता है।
+दिए गए संदर्भ में हृदय रोग के जोखिम को कम करने के लिए महिलाओं के लिए शराब सेवन दिशानिर्देशों के बारे में जानकारी शामिल नहीं है। सामान्य मार्गदर्शन के लिए, अमेरिकन हार्ट एसोसिएशन का सुझाव है कि हृदय रोग के जोखिम को कम करने में मदद के लिए महिलाओं को शराब का सेवन प्रति दिन एक से अधिक पेय तक सीमित करना चाहिए। हालाँकि, व्यक्तिगत सलाह के लिए किसी स्वास्थ्य सेवा प्रदाता से परामर्श करना हमेशा सर्वोत्तम होता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.993
-ROUGE-L F1: 0.815
-Time Speedup: 0.81x
+Semantic Similarity: 0.840
+ROUGE-L F1: 0.306
+Time Speedup: 1.53x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -628,28 +645,28 @@ Translation relevance: 0.600
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में मेपिवाकेन हाइड्रोक्लोराइड के बारे में जानकारी नहीं है। हालाँकि, मेपिवाकेन हाइड्रोक्लोराइड का उपयोग आमतौर पर दंत प्रक्रियाओं और छोटे सर्जिकल हस्तक्षेपों के लिए स्थानीय संवेदनाहारी के रूप में किया जाता है।
+The provided English content does not contain information about the use of mepivacaine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
-मेपिवाकेन हाइड्रोक्लोराइड का उपयोग स्थानीय घुसपैठ, परिधीय तंत्रिका ब्लॉक और पुच्छीय और काठ एपिड्यूरल ब्लॉक के माध्यम से इंजेक्शन के लिए स्थानीय संवेदनाहारी के रूप में किया जाता है।
+मेपिवाकेन हाइड्रोक्लोराइड का उपयोग स्थानीय संवेदनाहारी के रूप में किया जाता है। यह इंजेक्शन के लिए बाँझ आइसोटोनिक समाधान में उपलब्ध है और इसका उपयोग स्थानीय घुसपैठ, परिधीय तंत्रिका ब्लॉक, और पुच्छीय और काठ एपिड्यूरल ब्लॉक के लिए किया जाता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.560
-ROUGE-L F1: 0.392
-Time Speedup: 0.50x
+Semantic Similarity: 0.353
+ROUGE-L F1: 0.087
+Time Speedup: 2.14x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.579
-[1] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) that exerts its pharmacologic effects by modulat...
-[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Amitriptyline hydrochloride is an antidepressant with sedative effects. Its mechanism of action in man is not known. It is not a monoamine oxidase inhibito...
+[1] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Amitriptyline hydrochloride is an antidepressant with sedative effects. Its mechanism of action in man is not known. It is not a monoamine oxidase inhibito...
+[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) that exerts its pharmacologic effects by modulat...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.596
-[1] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
-[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+[1] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
+[2] DESCRIPTION: 1.1 DESCRIPTION 4% Lidocaine Hydrochloride Injection, USP is a sterile, nonpyrogenic solution containing lidocaine hydrochloride, anhydrous 40 mg/mL in water for injection. May contain so...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -666,15 +683,15 @@ Translation relevance: 0.598
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के संरचनात्मक सूत्र के बारे में जानकारी नहीं है।
+मुझे खेद है, लेकिन दिए गए संदर्भ में मेपेरिडाइन हाइड्रोक्लोराइड के संरचनात्मक सूत्र के बारे में जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के संरचनात्मक सूत्र के बारे में जानकारी नहीं है।
+दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के संरचनात्मक सूत्र के बारे में जानकारी नहीं है। इसमें केवल मेपिवाकेन हाइड्रोक्लोराइड और हाइड्रोक्लोरोथियाजाइड के बारे में विवरण शामिल हैं।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.929
-Time Speedup: 0.62x
+Semantic Similarity: 0.867
+ROUGE-L F1: 0.585
+Time Speedup: 1.91x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -685,7 +702,7 @@ Avg relevance: 0.614
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.677
-[1] . It has the following structural formula: Codeine phosphate (7,8-Didehydro-4,5α-epoxy-3-methoxy-17-methylmorphinan-6α-ol phosphate (1:1)(salt) hemihydrate) is an opioid agonist. It has the following ...
+[1] . In vitro findings suggest that CYP2B6 is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 enzymes are not involved in the formation of threohydrobupropion...
 [2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
 
 TRANSLATION-ONLY CHUNKS (2):
@@ -708,15 +725,15 @@ Translation relevance: 0.481
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में स्थानीय एनेस्थेटिक्स की क्रिया में प्लाज्मा प्रोटीन की भूमिका के बारे में जानकारी नहीं है।
+मुझे खेद है, लेकिन दिए गए संदर्भ में स्थानीय एनेस्थेटिक्स की क्रिया में प्लाज्मा प्रोटीन की भूमिका के बारे में जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-प्लाज़्मा प्रोटीन प्लेसेंटल स्थानांतरण के लिए उनके वितरण और उपलब्धता को प्रभावित करके स्थानीय एनेस्थेटिक्स की कार्रवाई में महत्वपूर्ण भूमिका निभाते हैं। स्थानीय एनेस्थेटिक्स जो प्लाज्मा प्रोटीन से अत्यधिक बंधे होते हैं उनमें भ्रूण/मातृ अनुपात कम होता है क्योंकि प्लेसेंटल ट्रांसफर के लिए केवल मुफ्त, अनबाउंड दवा ही उपलब्ध होती है। उदाहरण के लिए, मेपिवाकेन लगभग 75% प्लाज्मा प्रोटीन से बंधा होता है, जो इसके प्लेसेंटल स्थानांतरण की सीमा को प्रभावित करता है।
+प्लाज़्मा प्रोटीन प्लेसेंटल स्थानांतरण के लिए उनके वितरण और उपलब्धता को प्रभावित करके स्थानीय एनेस्थेटिक्स की कार्रवाई में महत्वपूर्ण भूमिका निभाते हैं। स्थानीय एनेस्थेटिक्स प्लाज्मा प्रोटीन से बंधते हैं, और प्लेसेंटा में स्थानांतरण के लिए केवल मुफ्त, अनबाउंड दवा ही उपलब्ध होती है। स्थानीय एनेस्थेटिक्स का भ्रूण/मातृ अनुपात प्लाज्मा प्रोटीन बाइंडिंग की डिग्री से विपरीत रूप से संबंधित होता है। इसका मतलब यह है कि प्लाज्मा प्रोटीन बाइंडिंग जितनी अधिक होगी, प्लेसेंटल ट्रांसफर के लिए उतनी ही कम मुफ्त दवा उपलब्ध होगी। उदाहरण के लिए, मेपिवाकेन लगभग 75% प्लाज्मा प्रोटीन से बंधा होता है, जो इसके वितरण और अपरा स्थानांतरण की सीमा को प्रभावित करता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.689
-ROUGE-L F1: 0.244
-Time Speedup: 0.73x
+Semantic Similarity: 0.764
+ROUGE-L F1: 0.153
+Time Speedup: 1.91x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -727,13 +744,13 @@ Avg relevance: 0.510
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.455
-[1] . chemical structure Mechanism of Action The mechanism of action of captopril tablets have not yet been fully elucidated. Its beneficial effects in hypertension and heart failure appear to result prim...
-[2] . In vitro findings suggest that CYP2B6 is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 enzymes are not involved in the formation of threohydrobupropion...
+[1] . In vitro findings suggest that CYP2B6 is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 enzymes are not involved in the formation of threohydrobupropion...
+[2] . chemical structure Mechanism of Action The mechanism of action of captopril tablets have not yet been fully elucidated. Its beneficial effects in hypertension and heart failure appear to result prim...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.454
-[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
-[2] . Fetal/maternal ratios of local anesthetics appear to be inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Mepivacain...
+[1] . Fetal/maternal ratios of local anesthetics appear to be inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Mepivacain...
+[2] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -750,28 +767,28 @@ Translation relevance: 0.512
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में पूर्ण संवेदी और मोटर ब्लॉक प्रदान करने के लिए आवश्यक मेपिवाकेन हाइड्रोक्लोराइड की एकाग्रता के बारे में जानकारी नहीं है।
+The English content provided does not contain information about the concentration of mepivacaine hydrochloride required to provide complete sensory and motor block.
 
 TRANSLATION PIPELINE APPROACH:
-मेपिवाकेन हाइड्रोक्लोराइड की 2% सांद्रता पूर्ण संवेदी और मोटर ब्लॉक प्रदान करती है।
+मेपिवाकेन हाइड्रोक्लोराइड की 2% सांद्रता किसी भी तंत्रिका समूह की पूर्ण संवेदी और मोटर ब्लॉक प्रदान करती है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.676
-ROUGE-L F1: 0.687
-Time Speedup: 0.64x
+Semantic Similarity: 0.430
+ROUGE-L F1: 0.579
+Time Speedup: 1.63x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.563
-[1] . N-monodesmethyl-rizatriptan, a metabolite with activity similar to that of parent compound at the 5-HT 1B/1D receptor, is formed to a minor degree. Plasma concentrations of N-monodesmethyl-rizatript...
-[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[1] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[2] . N-monodesmethyl-rizatriptan, a metabolite with activity similar to that of parent compound at the 5-HT 1B/1D receptor, is formed to a minor degree. Plasma concentrations of N-monodesmethyl-rizatript...
 
 TRANSLATION-ONLY CHUNKS (5):
 Avg relevance: 0.512
-[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
-[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+[1] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
+[2] . The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The du...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -788,15 +805,15 @@ Translation relevance: 0.518
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-मेपिवाकेन द्वारा प्रदान किया गया एनेस्थीसिया आमतौर पर सर्जरी के 2 से 2 1/2 घंटे के लिए पर्याप्त होता है।
+मेपिवाकेन द्वारा प्रदान की गई एनेस्थीसिया आमतौर पर 2 से 2 1/2 घंटे तक सर्जरी के लिए पर्याप्त होती है।
 
 TRANSLATION PIPELINE APPROACH:
 मेपिवाकेन द्वारा प्रदान किया गया एनेस्थीसिया आमतौर पर सर्जरी के 2 से 2 1/2 घंटे के लिए पर्याप्त होता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.848
-Time Speedup: 0.37x
+Semantic Similarity: 0.996
+ROUGE-L F1: 0.824
+Time Speedup: 1.84x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -807,13 +824,13 @@ Avg relevance: 0.560
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.531
-[1] . Captopril tablets should generally be used in conjunction with a diuretic and digitalis. Captopril tablets therapy must be initiated under very close medical supervision. Left Ventricular Dysfunctio...
-[2] . Treatment should begin with the intravenous administration of 5 mg atenolol over 5 minutes followed by another 5 mg intravenous injection 10 minutes later. Atenolol injection should be administered ...
+[1] . Treatment should begin with the intravenous administration of 5 mg atenolol over 5 minutes followed by another 5 mg intravenous injection 10 minutes later. Atenolol injection should be administered ...
+[2] . Captopril tablets should generally be used in conjunction with a diuretic and digitalis. Captopril tablets therapy must be initiated under very close medical supervision. Left Ventricular Dysfunctio...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.483
 [1] CLINICAL PHARMACOLOGY: 1.2 CLINICAL PHARMACOLOGY Mechanism of action: Lidocaine stabilizes the neuronal membrane by inhibiting the ionic fluxes required for the initiation and conduction of impulses, ...
-[2] . A dilute concentration of epinephrine (1:200,000 or 5 μ g/mL) usually reduces the rate of absorption and plasma concentration of mepivacaine, however, it has been reported that vasoconstrictors do n...
+[2] . For Support of Anesthesia Repeated slow intravenous injections of fractional doses (e.g., 10 mg/mL) or by a continuous intravenous infusion of a more dilute solution (e.g., 1 mg/mL) should be used. ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -830,15 +847,15 @@ Translation relevance: 0.613
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन की पीएच रेंज के बारे में जानकारी नहीं है।
+The provided English content does not contain information about the pH range of Meperidine Hydrochloride Injection.
 
 TRANSLATION PIPELINE APPROACH:
 मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन की पीएच रेंज 3.5 से 6.0 है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.722
-ROUGE-L F1: 0.500
-Time Speedup: 0.56x
+Semantic Similarity: 0.579
+ROUGE-L F1: 0.483
+Time Speedup: 1.66x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -868,23 +885,23 @@ Translation relevance: 0.585
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन के प्रशासन के रूपों के बारे में जानकारी नहीं है।
+The English content provided does not contain information about the administration forms of meperidine hydrochloride injection.
 
 TRANSLATION PIPELINE APPROACH:
-मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन को इंट्रामस्क्युलर, चमड़े के नीचे या धीमी अंतःशिरा उपयोग के माध्यम से प्रशासित किया जा सकता है।
+मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन को इंट्रामस्क्युलर, चमड़े के नीचे या धीरे-धीरे अंतःशिरा में दिया जा सकता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.614
-ROUGE-L F1: 0.214
-Time Speedup: 0.45x
+Semantic Similarity: 0.536
+ROUGE-L F1: 0.222
+Time Speedup: 2.04x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (5):
 Avg relevance: 0.627
-[1] . The pharmacological action of allopurinol is generally believed to be mediated by its oxypurinol metabolite. Effect on Hypoxanthine and Xanthine Reutilization of both hypoxanthine and xanthine for n...
-[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Amitriptyline hydrochloride is an antidepressant with sedative effects. Its mechanism of action in man is not known. It is not a monoamine oxidase inhibito...
+[1] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) that exerts its pharmacologic effects by modulat...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.600
@@ -906,15 +923,15 @@ Translation relevance: 0.617
 Winner: Translation
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के पिघलने बिंदु के बारे में जानकारी नहीं है।
+The provided context does not contain information about the melting point of Meperidine Hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के पिघलने बिंदु के बारे में जानकारी नहीं है।
+दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड के गलनांक के बारे में जानकारी नहीं है।
 
 EVALUATION METRICS:
-Semantic Similarity: 1.000
-ROUGE-L F1: 0.929
-Time Speedup: 0.60x
+Semantic Similarity: 0.769
+ROUGE-L F1: 1.000
+Time Speedup: 0.84x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -927,7 +944,7 @@ Avg relevance: 0.606
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.620
 [1] . Hydrochlorothiazide is chemically described as 6-chloro-3,4-dihydro- 2H -1,2,4-benzothiadiazine-7-sulfonamide 1,1-dioxide. Hydrochlorothiazide is a thiazide diuretic. Its empirical formula is C 7 H ...
-[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+[2] DESCRIPTION: DESCRIPTION Mepivacaine hydrochloride is 2-Piperidinecarboxamide, N-(2,6-dimethylphenyl)-1-methyl-, monohydrochloride and has the following structural formula: The molecular formula is C ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -944,15 +961,15 @@ Translation relevance: 0.662
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड की रासायनिक संरचना के बारे में जानकारी नहीं है।
+The provided context does not contain information about the chemical structure of Meperidine hydrochloride.
 
 TRANSLATION PIPELINE APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड की रासायनिक संरचना के बारे में जानकारी नहीं है।
+दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड की रासायनिक संरचना के बारे में जानकारी नहीं है। यह केवल मेपिवाकेन हाइड्रोक्लोराइड और हाइड्रोक्लोरोथियाजाइड पर चर्चा करता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.995
-ROUGE-L F1: 0.857
-Time Speedup: 0.61x
+Semantic Similarity: 0.778
+ROUGE-L F1: 0.800
+Time Speedup: 1.55x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -963,8 +980,8 @@ Avg relevance: 0.663
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.694
-[1] . It has the following structural formula: Codeine phosphate (7,8-Didehydro-4,5α-epoxy-3-methoxy-17-methylmorphinan-6α-ol phosphate (1:1)(salt) hemihydrate) is an opioid agonist. It has the following ...
-[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[1] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[2] . In vitro findings suggest that CYP2B6 is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 enzymes are not involved in the formation of threohydrobupropion...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.653
@@ -986,28 +1003,28 @@ Translation relevance: 0.456
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड या मादक दर्दनाशक के रूप में इसकी भूमिका के बारे में जानकारी नहीं है। हालाँकि, मेपरिडीन हाइड्रोक्लोराइड, जिसे पेथिडीन भी कहा जाता है, एक मादक दर्दनाशक दवा है जिसका उपयोग मध्यम से गंभीर दर्द के इलाज के लिए किया जाता है। यह अन्य ओपिओइड के समान, मस्तिष्क में दर्द की धारणा और प्रतिक्रिया को बदलकर काम करता है।
+I'm sorry, but the provided English content does not contain relevant information about the role of meperidine hydrochloride as a narcotic analgesic.
 
 TRANSLATION PIPELINE APPROACH:
-मेपरिडीन हाइड्रोक्लोराइड मॉर्फिन के समान कार्यों के साथ एक मादक दर्दनाशक के रूप में कार्य करता है। इसकी प्राथमिक चिकित्सीय भूमिका एनाल्जेसिया (दर्द से राहत) और बेहोश करने की क्रिया प्रदान करना है। इसका उपयोग मध्यम से गंभीर दर्द को प्रबंधित करने के लिए किया जाता है और मॉर्फिन की समतुल्य खुराक की तुलना में कम चिकनी मांसपेशियों में ऐंठन, कब्ज और कफ रिफ्लेक्स का अवसाद उत्पन्न हो सकता है।
+मेपरिडीन हाइड्रोक्लोराइड मॉर्फिन के समान कार्यों के साथ एक मादक दर्दनाशक के रूप में कार्य करता है। इसकी प्राथमिक चिकित्सीय भूमिका एनाल्जेसिया (दर्द से राहत) और बेहोश करने की क्रिया प्रदान करना है। इसका उपयोग मध्यम से गंभीर दर्द को प्रबंधित करने के लिए किया जाता है और मॉर्फिन की तुलना में इसकी कार्रवाई थोड़ी अधिक तेज होती है, हालांकि इसकी कार्रवाई की अवधि कुछ कम होती है। इसके अतिरिक्त, मेपरिडीन मॉर्फिन की समतुल्य खुराक की तुलना में कम चिकनी मांसपेशियों में ऐंठन, कब्ज और कफ रिफ्लेक्स के अवसाद का कारण बन सकता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.816
-ROUGE-L F1: 0.305
-Time Speedup: 1.22x
+Semantic Similarity: 0.597
+ROUGE-L F1: 0.122
+Time Speedup: 2.12x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.627
-[1] . The formation of 4’-hydroxy- diclofenac is primarily mediated by CPY2C9. Both diclofenac and its oxidative metabolites undergo glucuronidation or sulfation followed by biliary excretion. Acylglucuro...
-[2] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[1] . In vitro findings suggest that cytochrome P450IIB6 (CYP2B6) is the principal isoenzyme involved in the formation of hydroxybupropion, while cytochrome P450 isoenzymes are not involved in the formati...
+[2] . The formation of 4’-hydroxy- diclofenac is primarily mediated by CPY2C9. Both diclofenac and its oxidative metabolites undergo glucuronidation or sulfation followed by biliary excretion. Acylglucuro...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.481
 [1] DESCRIPTION: DESCRIPTION Meperidine Hydrochloride Injection, USP is a sterile solution for intramuscular, subcutaneous or slow intravenous use as a narcotic analgesic. Each mL of the DOSETTE vial cont...
-[2] . Mepivacaine hydrochloride is related chemically and pharmacologically to the amide-type local anesthetics. It contains an amide linkage between the aromatic nucleus and the amino group. Composition ...
+[2] CLINICAL PHARMACOLOGY: CLINICAL PHARMACOLOGY Meperidine hydrochloride is a narcotic analgesic with multiple actions qualitatively similar to those of morphine; the most prominent of these involve the ...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -1024,15 +1041,15 @@ Translation relevance: 0.562
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता के बारे में जानकारी नहीं है।
+The provided context does not contain information about the concentrations of meperidine hydrochloride injection.
 
 TRANSLATION PIPELINE APPROACH:
 मेपरिडीन हाइड्रोक्लोराइड इंजेक्शन के लिए उपलब्ध सांद्रता 25 मिलीग्राम/एमएल, 50 मिलीग्राम/एमएल, 75 मिलीग्राम/एमएल, और 100 मिलीग्राम/एमएल हैं।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.543
-ROUGE-L F1: 0.389
-Time Speedup: 0.47x
+Semantic Similarity: 0.484
+ROUGE-L F1: 0.286
+Time Speedup: 1.74x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -1043,8 +1060,8 @@ Avg relevance: 0.655
 
 MULTILINGUAL-ONLY CHUNKS (3):
 Avg relevance: 0.587
-[1] DESCRIPTION: DESCRIPTION Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) available for oral administration in film-coated tablets containing ...
-[2] . Levonorgestrel and its phase I metabolites are excreted primarily as glucuronide conjugates. Metabolic clearance rates may differ among individuals by several-fold, and this may account in part for ...
+[1] . An in vitro study indicated that buspirone did not displace highly protein-bound drugs such as phenytoin, warfarin, and propranolol from plasma protein, and that buspirone may displace digoxin. Busp...
+[2] DESCRIPTION: DESCRIPTION Verapamil hydrochloride is a calcium ion influx inhibitor (slow-channel blocker or calcium ion antagonist) available for oral administration in film-coated tablets containing ...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.543
@@ -1066,28 +1083,28 @@ Translation relevance: 0.467
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में प्लाज्मा सांद्रता और स्थानीय एनेस्थेटिक्स में दवा बाइंडिंग के बीच संबंध के बारे में जानकारी नहीं है।
+स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बाइंडिंग के बीच संबंध यह है कि प्लाज्मा में उच्च सांद्रता होने पर दवा का बाइंडिंग बढ़ सकता है। जब प्लाज्मा प्रोटीन के साथ बाइंडिंग अधिक होती है, तो दवा की फ्री (मुक्त) सांद्रता कम हो सकती है, जिससे दवा की प्रभावशीलता और वितरण पर असर पड़ सकता है। यह बाइंडिंग दवा की फार्माकोडायनामिक्स और फार्माकोकाइनेटिक्स को प्रभावित करती है।
 
 TRANSLATION PIPELINE APPROACH:
-स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बंधन के बीच संबंध यह है कि आम तौर पर, दवा की प्लाज्मा सांद्रता जितनी कम होगी, प्लाज्मा प्रोटीन से बंधी दवा का प्रतिशत उतना अधिक होगा।
+स्थानीय एनेस्थेटिक्स में प्लाज्मा सांद्रता और दवा बाइंडिंग के बीच संबंध ऐसा है कि आम तौर पर, दवा की प्लाज्मा सांद्रता जितनी कम होगी, दवा का प्लाज्मा प्रोटीन से बंधने का प्रतिशत उतना अधिक होगा। इसका मतलब यह है कि जैसे-जैसे प्लाज्मा में दवा की सांद्रता कम होती जाती है, दवा का एक बड़ा हिस्सा प्लाज्मा प्रोटीन से बंध जाता है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.746
-ROUGE-L F1: 0.431
-Time Speedup: 0.55x
+Semantic Similarity: 0.897
+ROUGE-L F1: 0.470
+Time Speedup: 0.88x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.589
-[1] . Effect of ENTRESTO on Co-administered Drugs: In vitro data indicate that sacubitril inhibits OATP1B1 and OATP1B3 transporters. The effects of ENTRESTO on the pharmacokinetics of coadministered drugs...
-[2] . Dilatation of the coronary arteries also occurs. The relative importance of preload reduction, afterload reduction, and coronary dilatation remains undefined. Pharmacodynamics Dosing regimens for mo...
+[1] . Dilatation of the coronary arteries also occurs. The relative importance of preload reduction, afterload reduction, and coronary dilatation remains undefined. Pharmacodynamics Dosing regimens for mo...
+[2] . Effect of ENTRESTO on Co-administered Drugs: In vitro data indicate that sacubitril inhibits OATP1B1 and OATP1B3 transporters. The effects of ENTRESTO on the pharmacokinetics of coadministered drugs...
 
 TRANSLATION-ONLY CHUNKS (5):
 Avg relevance: 0.467
-[1] . It has been shown that hydroxylation and N-demethylation, which are detoxification reactions, play important roles in the metabolism of the anesthetic. Three metabolites of mepivacaine have been ide...
-[2] . The 1.5% solution will provide extensive and often complete motor block and the 2% concentration of mepivacaine hydrochloride will produce complete sensory and motor block of any nerve group. The du...
+[1] . Fetal/maternal ratios of local anesthetics appear to be inversely related to the degree of plasma protein binding, because only the free, unbound drug is available for placental transfer. Mepivacain...
+[2] . Local anesthetic solutions containing antimicrobial preservatives (ie, those supplied in multiple-dose vials) should not be used for epidural or caudal anesthesia because safety has not been establi...
 
 ----------------------------------------------------------------------------------------------------
 
@@ -1104,27 +1121,27 @@ Translation relevance: 0.533
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-प्रदान किए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के गुर्दे के दुष्प्रभावों के बारे में जानकारी नहीं है।
+मुझे खेद है, लेकिन दिए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे संबंधी दुष्प्रभावों के बारे में जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे संबंधी दुष्प्रभावों में गुर्दे की विषाक्तता और गुर्दे की विफलता शामिल है। जब इंजेक्शन को 15 मिनट के अंतःशिरा जलसेक के रूप में प्रशासित किया जाता है तो इन दुष्प्रभावों की घटनाओं में कमी देखी गई है। निर्जलीकरण या अन्य नेफ्रोटॉक्सिक दवाओं के उपयोग जैसे कारक रोगियों की किडनी खराब होने का कारण बन सकते हैं, और यदि संभव हो तो इनका प्रबंधन किया जाना चाहिए। गंभीर गुर्दे की हानि वाले रोगियों में ज़ोलेड्रोनिक एसिड उपचार पर जोखिमों और लाभों का मूल्यांकन करने के बाद ही विचार किया जाना चाहिए।
+ज़ोलेड्रोनिक एसिड इंजेक्शन के संभावित गुर्दे के दुष्प्रभावों में गुर्दे की विषाक्तता और गुर्दे की विफलता शामिल है। जब इंजेक्शन को 15 मिनट के अंतःशिरा जलसेक के रूप में प्रशासित किया जाता है तो इन दुष्प्रभावों की घटनाओं को कम किया जा सकता है। निर्जलीकरण या अन्य नेफ्रोटॉक्सिक दवाओं के उपयोग जैसे कारक रोगियों की किडनी खराब होने का खतरा पैदा कर सकते हैं। गंभीर गुर्दे की हानि वाले रोगियों में उपचार के जोखिमों और लाभों का मूल्यांकन करना महत्वपूर्ण है, क्योंकि अस्थि मेटास्टेस और गंभीर गुर्दे की हानि वाले रोगियों के लिए ज़ोलेड्रोनिक एसिड इंजेक्शन की सिफारिश नहीं की जाती है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.576
-ROUGE-L F1: 0.165
-Time Speedup: 1.21x
+Semantic Similarity: 0.647
+ROUGE-L F1: 0.171
+Time Speedup: 2.18x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
 
 MULTILINGUAL-ONLY CHUNKS (2):
 Avg relevance: 0.599
-[1] ADVERSE REACTIONS: ADVERSE REACTIONS Most adverse reactions are caused by the drug's mineralocorticoid activity (retention of sodium and water) and include hypertension, edema, cardiac enlargement, co...
-[2] ADVERSE REACTIONS: ADVERSE REACTIONS The following adverse reactions have been identified during post-approval use of Hydroxychloroquine sulfate tablets or other 4-aminoqunoline compounds. Because the...
+[1] ADVERSE REACTIONS: ADVERSE REACTIONS The following adverse reactions have been identified during post-approval use of Hydroxychloroquine sulfate tablets or other 4-aminoqunoline compounds. Because the...
+[2] ADVERSE REACTIONS: ADVERSE REACTIONS Most adverse reactions are caused by the drug's mineralocorticoid activity (retention of sodium and water) and include hypertension, edema, cardiac enlargement, co...
 
 TRANSLATION-ONLY CHUNKS (3):
 Avg relevance: 0.531
-[1] . The incidence of renal toxicity and renal failure has been shown to be reduced when Zoledronic Acid Injection 4 mg is given as a 15 - minute intravenous infusion. Zoledronic Acid Injection should be...
+[1] . The following are data on the incidence of renal deterioration in patients receiving Zoledronic Acid Injection 4 mg over 15 minutes in these trials (see Table 9 ). Table 9: Percentage of Patients wi...
 [2] . Factors predisposing to renal deterioration, such as dehydration or the use of other nephrotoxic drugs, should be identified and managed, if possible. Zoledronic Acid Injection treatment in patients...
 
 ----------------------------------------------------------------------------------------------------
@@ -1142,15 +1159,15 @@ Translation relevance: 0.636
 Winner: Multilingual
 
 MULTILINGUAL EMBEDDINGS APPROACH:
-दिए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के अनुमोदन के बाद उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाओं के बारे में जानकारी नहीं है।
+मुझे खेद है, लेकिन दिए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के पोस्ट-अप्रूवल उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाओं के बारे में कोई जानकारी नहीं है।
 
 TRANSLATION PIPELINE APPROACH:
-प्रदान किए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के अनुमोदन के बाद उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाओं पर विशेष जानकारी नहीं है।
+दिए गए संदर्भ में ज़ोलेड्रोनिक एसिड इंजेक्शन के अनुमोदन के बाद उपयोग के दौरान रिपोर्ट की गई प्रतिकूल प्रतिक्रियाओं के बारे में जानकारी नहीं है।
 
 EVALUATION METRICS:
-Semantic Similarity: 0.984
-ROUGE-L F1: 0.585
-Time Speedup: 0.55x
+Semantic Similarity: 0.885
+ROUGE-L F1: 0.591
+Time Speedup: 1.22x
 Retrieval Overlap: 20.0%
 
 DETAILED CHUNK BREAKDOWN:
@@ -1161,8 +1178,8 @@ Avg relevance: 0.714
 
 MULTILINGUAL-ONLY CHUNKS (4):
 Avg relevance: 0.618
-[1] . 6.2 Postmarketing Experience The following adverse reactions have been identified during postapproval use of indomethacin. Because these reactions are reported voluntarily from a population of uncer...
-[2] . Laboratory Tests: Mild to moderate elevations of ALT, LDH, alkaline phosphatase, BUN and creatinine have been noted. The relationship of these abnormalities to glipizide is uncertain. 6.2 Postmarket...
+[1] . Laboratory Tests: Mild to moderate elevations of ALT, LDH, alkaline phosphatase, BUN and creatinine have been noted. The relationship of these abnormalities to glipizide is uncertain. 6.2 Postmarket...
+[2] ADVERSE REACTIONS: ADVERSE REACTIONS Clinical Trials and Post-marketing Surveillance The adverse reactions listed below reflect the experience from investigational studies of Amnesteem, and the post-m...
 
 TRANSLATION-ONLY CHUNKS (2):
 Avg relevance: 0.617
