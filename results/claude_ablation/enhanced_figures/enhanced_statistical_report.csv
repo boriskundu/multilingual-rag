@@ -1,0 +1,5 @@
+Language,Metric,Multilingual,Translation,P-value,Winner
+Hindi,Avg Total Time (s),13.497 ± 16.049,7.780 ± 1.512,0.0589,Translation
+Hindi,Avg Retrieval Score,0.000,0.000,nan,Translation
+Chinese,Avg Total Time (s),8.590 ± 3.271,7.376 ± 1.484,0.0690,Translation
+Chinese,Avg Retrieval Score,0.000,0.000,nan,Translation

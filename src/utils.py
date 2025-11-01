@@ -5,7 +5,7 @@ Translation utilities and LLM-as-Judge evaluation
 import logging
 import json
 import os
-from typing import Optional, Dict
+from typing import Optional, Dict, Any
 
 logger = logging.getLogger(__name__)
 
@@ -15,6 +15,7 @@ _dt_cls = None
 # Use deep-translator (sync, stable, no conflicts)
 try:
     from deep_translator import GoogleTranslator as _DeepTranslator
+
     _dt_cls = _DeepTranslator
     _BACKEND = "deep-translator"
     logger.info("Translation backend: deep-translator")
@@ -22,146 +23,85 @@ except Exception as e:
     logger.warning(f"deep-translator not available: {e}")
     _BACKEND = "none"
 
+
 def translation_backend() -> str:
     """Return the active translation backend"""
     return _BACKEND or "none"
 
+
 def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
     """
     Translate text using deep-translator with explicit language control.
-    ONLY supports English, Hindi, Chinese - NO SPANISH allowed.
-    
-    Args:
-        text: Text to translate
-        src: Source language code ('hindi', 'chinese', 'en', 'auto')
-        dest: Destination language code ('hindi', 'chinese', 'en')
-    
-    Returns:
-        Translated text, or original text if translation fails
+    ONLY supports English, Hindi, Chinese.
     """
     if not text or not text.strip():
         return text
-    
-    # EXPLICIT language mapping to prevent Spanish contamination
+
+    # EXPLICIT language mapping
     def map_language_code(lang_code: str) -> str:
-        """Map our custom codes to deep-translator codes - ENGLISH ONLY for 'en'"""
+        """Map our custom codes to deep-translator codes"""
         lang_map = {
             # Our project languages ONLY
-            'hindi': 'hi',
-            'chinese': 'zh-CN',  # Force Chinese Simplified
-            'english': 'en',
+            "hindi": "hi",
+            "chinese": "zh-CN",  # Force Chinese Simplified
+            "english": "en",
             # Standard codes
-            'hi': 'hi',
-            'zh': 'zh-CN',
-            'zh-cn': 'zh-CN',
-            'zh-CN': 'zh-CN',
-            'en': 'en',
-            'auto': 'auto'
+            "hi": "hi",
+            "zh": "zh-CN",
+            "zh-cn": "zh-CN",
+            "zh-CN": "zh-CN",
+            "en": "en",
+            "auto": "auto",
         }
         mapped = lang_map.get(lang_code.lower(), None)
         if mapped is None:
             logger.warning(f"Unsupported language code: {lang_code}, defaulting to 'en'")
-            return 'en'
+            return "en"
         return mapped
-    
+
     # Map language codes with strict validation
     src_mapped = map_language_code(src)
     dest_mapped = map_language_code(dest)
-    
+
     # If source and dest are the same, no translation needed
     if src_mapped == dest_mapped:
         return text
-    
+
     # CRITICAL: Validate target language
-    allowed_targets = {'hi', 'zh-CN', 'en'}
+    allowed_targets = {"hi", "zh-CN", "en"}
     if dest_mapped not in allowed_targets:
-        logger.error(f"BLOCKED: Target language '{dest_mapped}' not in allowed set: {allowed_targets}")
+        logger.error(
+            f"BLOCKED: Target language '{dest_mapped}' not in allowed set: {allowed_targets}"
+        )
         return text
-    
+
     logger.info(f"Translating: {src} -> {dest} (mapped: {src_mapped} -> {dest_mapped})")
     logger.info(f"Text preview: {text[:50]}...")
-    
+
     if _BACKEND == "deep-translator":
         try:
-            # Method 1: Try with explicit source and target
+            # Translation with explicit source and target
             if src_mapped == "auto":
-                translator = _dt_cls(source='auto', target=dest_mapped)
+                translator = _dt_cls(source="auto", target=dest_mapped)
             else:
                 translator = _dt_cls(source=src_mapped, target=dest_mapped)
-            
+
             translated = translator.translate(text)
-            
-            # CRITICAL VALIDATION: Check for Spanish contamination
-            if dest_mapped == 'en' and translated:
-                # Spanish detection patterns
-                spanish_patterns = [
-                    'para ', ' para', 'para.',
-                    'del ', ' del', 'del.',
-                    'con ', ' con', 'con.',
-                    'por ', ' por', 'por.',
-                    'puede ', ' puede',
-                    'ción', 'sión',
-                    'las ', ' las',
-                    'los ', ' los',
-                    'una ', ' una',
-                    'este ', ' este',
-                    'esta ', ' esta',
-                    'muy ', ' muy'
-                ]
-                
-                text_lower = translated.lower()
-                spanish_matches = sum(1 for pattern in spanish_patterns if pattern in text_lower)
-                
-                if spanish_matches >= 2:
-                    logger.error(f"SPANISH DETECTED in English translation!")
-                    logger.error(f"Original: {text[:100]}")
-                    logger.error(f"Result: {translated[:100]}")
-                    logger.error(f"Spanish patterns found: {spanish_matches}")
-                    
-                    # Method 2: Retry with explicit English target and different approach
-                    logger.info("Retrying with different deep-translator configuration...")
-                    try:
-                        # Try with more explicit configuration
-                        if src_mapped == 'hi':
-                            retry_translator = _dt_cls(source='hindi', target='english')
-                        elif src_mapped == 'zh-CN':
-                            retry_translator = _dt_cls(source='chinese (simplified)', target='english')
-                        else:
-                            retry_translator = _dt_cls(source='auto', target='english')
-                        
-                        retry_result = retry_translator.translate(text)
-                        
-                        if retry_result:
-                            # Check if retry fixed the Spanish issue
-                            retry_lower = retry_result.lower()
-                            retry_spanish = sum(1 for pattern in spanish_patterns if pattern in retry_lower)
-                            
-                            if retry_spanish < spanish_matches:
-                                logger.info("Retry reduced Spanish contamination - using retry result")
-                                return retry_result
-                            else:
-                                logger.error("Retry still contains Spanish - returning original text")
-                                return text
-                        
-                    except Exception as retry_e:
-                        logger.error(f"Retry translation failed: {retry_e}")
-                    
-                    # Method 3: If both attempts fail, return original
-                    logger.error("Both translation attempts produced Spanish - returning original text")
-                    return text
-            
-            # If no Spanish detected or not translating to English, return result
+
+            # NOTE: Spanish validation DISABLED
+            # System prompts in rag_system.py already handle Spanish filtering
+
             if translated:
                 logger.info(f"Translation successful: {translated[:50]}...")
                 return translated
             else:
                 logger.warning("Translation returned empty result")
                 return text
-            
+
         except Exception as e:
             logger.error(f"deep-translator failed: {src_mapped} -> {dest_mapped} -> {e}")
             return text
-    
+
     else:
         logger.warning("No translation backend available; returning original text.")
         return text
@@ -170,32 +110,33 @@ def translate_text(text: str, src: str = "auto", dest: str = "en") -> str:
 # ============================================================================
 # LLM-as-Judge Evaluation Functions
 # ============================================================================
-
 def evaluate_with_llm_judge(
     question_native: str,
     question_english: str,
-    reference_text: str,
+    reference_text: Any,
     answer_native: str,
     answer_english: str,
     approach: str,
-    model: str = "gpt-4o"
+    model: str = "gpt-4o",
+    use_claude: bool = False,
 ) -> Optional[Dict]:
     """
     Evaluate a RAG response using LLM-as-a-Judge
-    
-    Args:
-        question_native: Original question in target language (Hindi/Chinese)
-        question_english: English translation of question
-        reference_text: Retrieved chunks from RAG (combined)
-        answer_native: Generated answer in target language (Hindi/Chinese)
-        answer_english: English translation of answer
-        approach: "Multilingual Embeddings" or "Translation Pipeline"
-        model: GPT model to use for evaluation
-    
-    Returns:
-        dict: Evaluation results with scores and labels
+
+    Supports:
+    - OpenAI (default)
+    - Anthropic Claude (if model contains 'claude' OR use_claude=True)
     """
-    
+
+    # --- normalize reference_text so notebook CSVs don't break us ---
+    if reference_text is None:
+        reference_text_str = ""
+    elif isinstance(reference_text, str):
+        reference_text_str = reference_text
+    else:
+        # list / dict / whatever → stringify
+        reference_text_str = json.dumps(reference_text, ensure_ascii=False)
+
     PROMPT = f"""You are an expert medical information evaluator assessing the quality of AI-generated healthcare responses.
 
 [BEGIN DATA]
@@ -210,7 +151,7 @@ def evaluate_with_llm_judge(
 
 ************
 [Reference text (Retrieved chunks from RAG system)]: 
-{reference_text}
+{reference_text_str}
 
 ************
 [Generated Answer in native language]: 
@@ -267,6 +208,69 @@ Respond ONLY with valid JSON in this exact format:
   "key_issues": ["List specific problems if any"]
 }}"""
 
+    # ------------------------------------------------------------------
+    # decide: Claude or OpenAI
+    # ------------------------------------------------------------------
+    want_claude = use_claude or ("claude" in (model or "").lower())
+
+    # ------------------------------------------------------
+    # 1. CLAUDE PATH
+    # ------------------------------------------------------
+    if want_claude:
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not api_key:
+            logger.error("ANTHROPIC_API_KEY not set")
+            return None
+
+        try:
+            from anthropic import Anthropic
+        except ImportError:
+            logger.error("anthropic package not installed. pip install anthropic")
+            return None
+
+        client = Anthropic(api_key=api_key)
+        try:
+            msg = client.messages.create(
+                model=model,
+                max_tokens=900,
+                temperature=0.0,
+                system="You are an expert medical information evaluator. Respond only with valid JSON.",
+                messages=[{"role": "user", "content": PROMPT}],
+            )
+
+            # Claude 3+ returns list of content blocks
+            text_parts = []
+            for block in msg.content:
+                if getattr(block, "type", None) == "text":
+                    text_parts.append(block.text)
+            raw = "".join(text_parts).strip()
+
+            # try direct JSON
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError:
+                # try to extract { ... }
+                start = raw.find("{")
+                end = raw.rfind("}")
+                if start != -1 and end != -1 and end > start:
+                    try:
+                        return json.loads(raw[start : end + 1])
+                    except Exception:
+                        logger.error("Claude returned non-JSON, even after slicing")
+                        logger.error(raw)
+                        return None
+                else:
+                    logger.error("Claude did not return JSON")
+                    logger.error(raw)
+                    return None
+
+        except Exception as e:
+            logger.error(f"LLM-as-judge (Claude) failed: {e}")
+            return None
+
+    # ------------------------------------------------------
+    # 2. OPENAI PATH
+    # ------------------------------------------------------
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         logger.error("OPENAI_API_KEY not set")
@@ -274,46 +278,43 @@ Respond ONLY with valid JSON in this exact format:
 
     try:
         import openai
-        if hasattr(openai, 'OpenAI'):
+
+        if hasattr(openai, "OpenAI"):
+            # new SDK
             from openai import OpenAI
+
             client = OpenAI(api_key=api_key)
             response = client.chat.completions.create(
                 model=model,
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are an expert medical information evaluator. Respond only with valid JSON."
+                        "content": "You are an expert medical information evaluator. Respond only with valid JSON.",
                     },
-                    {
-                        "role": "user",
-                        "content": PROMPT
-                    }
+                    {"role": "user", "content": PROMPT},
                 ],
                 temperature=0.0,
-                response_format={"type": "json_object"}
+                response_format={"type": "json_object"},
             )
             result = json.loads(response.choices[0].message.content)
             return result
         else:
-            # Old SDK
+            # old SDK
             openai.api_key = api_key
             response = openai.ChatCompletion.create(
                 model=model,
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are an expert medical information evaluator. Respond only with valid JSON."
+                        "content": "You are an expert medical information evaluator. Respond only with valid JSON.",
                     },
-                    {
-                        "role": "user",
-                        "content": PROMPT
-                    }
+                    {"role": "user", "content": PROMPT},
                 ],
-                temperature=0.0
+                temperature=0.0,
             )
             result = json.loads(response.choices[0].message.content)
             return result
-            
+
     except json.JSONDecodeError as e:
         logger.error(f"Error parsing JSON response: {e}")
         return None
