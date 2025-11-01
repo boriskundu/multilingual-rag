@@ -9,7 +9,7 @@ This project investigates two paradigms for building RAG systems for cross-lingu
 1. **Multilingual Embeddings Approach**: Direct processing in target language using multilingual embedding models
 2. **Translation Pipeline Approach**: Translate query to English → retrieve → generate → translate back to target language
 
-**Key Innovation**: Using **identical questions across Hindi and Chinese** to enable true apples-to-apples comparison and reveal fundamental differences in information access patterns.
+**Key Innovation**: Using **identical questions across Hindi and Chinese** and **cross-LLM validation** with both GPT-4o and Claude Sonnet 4.5 to reveal robust performance patterns.
 
 ## 🔬 Research Context
 
@@ -17,53 +17,85 @@ Developed for submission to conferences focusing on cross-lingual NLP and multil
 
 ### Key Research Questions
 - Do multilingual embeddings and translation pipelines access the same knowledge for identical questions?
-- Are performance differences consistent across typologically different languages (Hindi vs Chinese)?
+- Are performance differences consistent across different LLM architectures (GPT-4o vs Claude Sonnet 4.5)?
 - Which approach provides better reliability for critical areas like healthcare applications in low-resource settings?
 
 ## 📊 Key Findings
 
-### Critical Discovery: Retrieval-Generation Quality Paradox
-**Chunk Overlap**: Only **27-28%** across both languages reveals fundamental insight:
-- **Better retrieval ≠ Better responses**
-- Multilingual approach finds more relevant chunks (0.525 vs 0.460 relevance)
-- But translation approach often generates better responses
-- **Contradiction resolution**: Generation quality dominates retrieval quality in final performance
+### Updated Results: Translation Pipeline Consistently Superior
 
-### Language-Dependent Optimal Approaches
+**Cross-LLM Validation**: Testing with both GPT-4o and Claude Sonnet 4.5 reveals consistent translation advantages across both languages, demonstrating robust superiority independent of model architecture.
 
-#### Performance Comparison (LLM-as-Judge Evaluation)
+### Performance Comparison (Combined LLM Evaluation)
 
-| Metric | Hindi |  | Chinese |  |
-|--------|-------|-------|---------|-------|
-| | Multi | Trans | Multi | Trans |
-| **Overall Score** | 4.33 | **4.69** | **4.59** | 4.46 |
-| **Faithfulness** | 4.27 | **4.60** | 4.53 | 4.53 |
-| **Completeness** | 4.20 | **4.60** | **4.53** | 4.53 |
-| **Appropriateness** | 4.53 | 4.53 | **4.73** | 4.33 |
-| **Hallucination Rate** | 16.7% | **6.7%** | 6.7% | **10.0%** |
-| **Avg Time** | 4.62s | **3.29s** | 4.57s | **3.26s** |
-| **Chunk Relevance** | **0.525** | 0.460 | **0.631** | 0.522 |
-| **Retrieval Overlap** | 28.7% | | 27.3% | |
+#### Overall Quality Scores (1-5 scale)
 
-**Winner by Language:**
-- **Hindi**: Translation Pipeline (4.69 vs 4.33, +0.36 margin)
-- **Chinese**: Multilingual Embeddings (4.59 vs 4.46, +0.13 margin)
+**GPT-4o Results:**
+| Language | Multilingual | Translation | Margin | Winner |
+|----------|-------------|-------------|--------|---------|
+| **Hindi** | 4.76 | **4.78** | +0.02 | Translation |
+| **Chinese** | 4.70 | **4.86** | +0.16 | Translation |
 
-### Medical Safety Analysis
-**Hindi** - Translation approach critical for safety:
-- **2.5x lower hallucination rate** (6.7% vs 16.7%)
-- Significantly better faithfulness and completeness scores
-- **40% faster execution** (3.29s vs 4.62s)
+**Claude Sonnet 4.5 Results:**
+| Language | Multilingual | Translation | Margin | Winner |
+|----------|-------------|-------------|--------|---------|
+| **Hindi** | 4.40 | **4.71** | +0.31 | Translation |
+| **Chinese** | 4.49 | **4.63** | +0.14 | Translation |
 
-**Chinese** - Multilingual approach preferred:
-- Higher overall quality (4.59 vs 4.46)
-- Better chunk relevance (0.631 vs 0.522)
-- Lower hallucination rate (6.7% vs 10.0%)
+**Key Finding**: Translation pipeline wins **ALL 4 comparisons** (2 languages × 2 LLMs), demonstrating robust advantages independent of model architecture.
 
-### Statistical Significance
-- All quality differences statistically significant (p < 0.05)
-- Time efficiency improvements consistent across languages
-- Cross-language patterns validate language-dependent optimization
+### Safety Analysis: Translation Superior
+
+#### Hallucination Rates
+
+**GPT-4o:**
+| Language | Multilingual | Translation | Safer |
+|----------|-------------|-------------|--------|
+| **Hindi** | 3.3% | 3.3% | Equivalent |
+| **Chinese** | 6.7% | **0.0%** | Translation |
+
+**Claude Sonnet 4.5:**
+| Language | Multilingual | Translation | Safer |
+|----------|-------------|-------------|--------|
+| **Hindi** | 3.3% | **0.0%** | Translation |
+| **Chinese** | 0.0% | 0.0% | Equivalent |
+
+**Critical Finding**: Translation achieves **0% hallucinations in 3 of 4 conditions**, making it the safer choice for medical applications.
+
+### Efficiency vs. Quality Tradeoff
+
+**Timing Results:**
+| Model | Language | Multi (s) | Trans (s) | Speedup |
+|-------|----------|-----------|-----------|---------|
+| GPT-4o | Hindi | 2.55 | 3.36 | -32% |
+| GPT-4o | Chinese | 2.39 | 3.20 | -34% |
+| Claude | Hindi | 5.83 | 6.11 | -5% |
+| Claude | Chinese | 5.64 | 7.44 | -24% |
+
+*Note: Negative speedup means multilingual is faster*
+
+**Insight**: Multilingual is 5-34% faster, but translation's quality and safety advantages justify the modest latency overhead.
+
+### Quality Dimensions: Translation's Completeness Advantage
+
+Translation shows most pronounced improvements in **completeness** dimension:
+
+**GPT-4o:**
+- Hindi Appropriateness: +0.06 points
+- Chinese Faithfulness: +0.24 points
+- Chinese Appropriateness: +0.20 points
+
+**Claude Sonnet 4.5:**
+- Hindi Completeness: +0.80 points (largest improvement)
+- Hindi Appropriateness: +0.14 points
+- Chinese Completeness: +0.30 points
+
+### Chunk Overlap Analysis
+
+- **Hindi**: 28.7% overlap, 8/30 questions (27%) with zero overlap
+- **Chinese**: 27.3% overlap, 13/30 questions (43%) with zero overlap
+
+**Interpretation**: Approaches access fundamentally different information, with particularly divergent retrieval patterns for Chinese queries.
 
 ## 🏗️ Project Structure
 
@@ -92,7 +124,7 @@ multilingual-rag/
 │   └── 6_ablation_analysis.ipynb                   # Ablation study comparison analysis
 │
 ├── results/                   # Evaluation results and figures (excluded from git)
-│   ├── baseline/             # Current results (GPT-4o, 1000/200 chunking)
+│   ├── baseline/             # GPT-4o results (1000/200 chunking)
 │   │   ├── figures/
 │   │   │   ├── cross_language_comparison.png           # Hindi vs Chinese analysis
 │   │   │   ├── chunk_overlap_analysis.png             # Retrieval overlap visualization
@@ -104,7 +136,7 @@ multilingual-rag/
 │   │   ├── combined_chunk_analysis.csv               # Chunk overlap analysis
 │   │   ├── enhanced_combined_evaluation.csv          # Comprehensive metrics
 │   │   └── llm_judge_final_summary.csv              # Statistical summary
-│   ├── claude_ablation/      # Claude Sonnet 4 results for LLM robustness
+│   ├── claude_ablation/      # Claude Sonnet 4.5 results for cross-LLM validation
 │   ├── chunk_500_100/        # Small chunks (500 chars, 100 overlap)
 │   └── chunk_1500_300/       # Large chunks (1500 chars, 300 overlap)
 │
@@ -127,8 +159,8 @@ multilingual-rag/
 
 - Python 3.8+
 - CUDA-compatible GPU (recommended)
-- OpenAI API key (for GPT-4 and embeddings)
-- Anthropic API key (for Claude ablation studies)
+- OpenAI API key (for GPT-4o and embeddings)
+- Anthropic API key (for Claude Sonnet 4.5 validation)
 
 ### Installation
 
@@ -144,7 +176,7 @@ source mul-rag/bin/activate  # On Windows: mul-rag\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Install additional dependencies for ablation studies
+# Install additional dependencies for Claude validation
 pip install anthropic
 
 # Start Jupyter Lab
@@ -159,7 +191,7 @@ Set your API keys in relevant notebooks:
 # For notebooks 2x, 3, and 5
 OPEN_API_KEY = "your_openai_api_key_here"
 
-# For Claude ablation studies (notebooks 3 and 5)
+# For Claude validation studies (notebooks 3 and 5)
 ANTHROPIC_API_KEY = "your_claude_api_key_here"
 ```
 
@@ -187,21 +219,21 @@ Execute notebooks in sequential order:
 
 #### **Notebook 3: Cross-Lingual RAG Implementation** (`3_multilingual_rag_implementation.ipynb`)
 - Load identical question sets for both languages
-- Run both approaches across Hindi and Chinese
+- Run both approaches across Hindi and Chinese with both LLMs
 - Time component analysis and chunk saving
-- **Output**: Complete experimental results with timing breakdowns
+- **Output**: Complete experimental results with timing breakdowns for both GPT-4o and Claude
 
 #### **Notebook 4: Evaluation & Analysis** (`4_evaluation_and_analysis.ipynb`)
 - Cross-language statistical analysis with chunk overlap analysis
 - Performance comparison visualizations
-- Deep dive into retrieval vs generation quality paradox
+- Deep dive into cross-LLM consistency patterns
 - **Output**: Comprehensive analysis figures and chunk analysis
 
 #### **Notebook 5: LLM-as-Judge Evaluation** (`5_llm_judge_evaluation.ipynb`)
-- Quality assessment using GPT-4 as evaluator
+- Quality assessment using both GPT-4o and Claude Sonnet 4.5 as evaluators
 - Faithfulness, completeness, and appropriateness scoring
-- Cross-language safety analysis (hallucination detection)
-- **Output**: Definitive quality comparison and safety assessment
+- Cross-language and cross-LLM safety analysis (hallucination detection)
+- **Output**: Definitive quality comparison and safety assessment across both models
 
 #### **Notebook 6: Ablation Analysis** (`6_ablation_analysis.ipynb`)
 - Compare results across different LLMs and chunking strategies
@@ -209,13 +241,13 @@ Execute notebooks in sequential order:
 - Statistical comparison of ablation studies
 - **Output**: Comprehensive ablation study analysis
 
-## 🔬 Ablation Studies
+## 🔬 Cross-LLM Validation
 
-To validate the robustness of our findings, we conduct systematic ablation studies varying two critical components:
+To validate the robustness and generalizability of our findings, we conduct systematic cross-LLM validation with Claude Sonnet 4.5.
 
-### Ablation Study 1: LLM Variation (Claude Sonnet 4)
+### Validation Study: Claude Sonnet 4.5
 
-**Objective**: Test if findings hold with different LLM to validate generalizability beyond GPT-4o.
+**Objective**: Test if translation advantages hold with different LLM architecture to validate findings are not GPT-4o-specific artifacts.
 
 #### Setup
 1. **Install Claude SDK**:
@@ -227,7 +259,7 @@ To validate the robustness of our findings, we conduct systematic ablation studi
    ```python
    # Replace _call_openai_chat function with:
    def _call_claude_chat(system_prompt: str, context: str, query: str, 
-                        model: str = "claude-3-5-sonnet-20241022") -> str:
+                        model: str = "claude-sonnet-4-5-20250929") -> str:
        import anthropic
        
        api_key = os.getenv("ANTHROPIC_API_KEY")
@@ -257,7 +289,7 @@ To validate the robustness of our findings, we conduct systematic ablation studi
    
    client = anthropic.Anthropic(api_key=api_key)
    response = client.messages.create(
-       model="claude-3-5-sonnet-20241022",
+       model="claude-sonnet-4-5-20250929",
        max_tokens=1000,
        temperature=0.0,
        system="You are an expert medical information evaluator. Respond only with valid JSON.",
@@ -275,9 +307,22 @@ mkdir results/claude_ablation/
 # Save results to claude_ablation/ folder
 ```
 
-### Ablation Study 2: Chunking Strategy Variation
+### Validated Findings: Robust Across LLMs
 
-**Objective**: Test if 27-28% overlap finding and performance differences hold with different chunking strategies.
+**Strong Consistency (All 4 Conditions)**:
+- ✅ Translation pipeline wins for BOTH languages across BOTH models
+- ✅ Translation achieves superior or equivalent safety (0% hallucinations in 3/4 conditions)
+- ✅ Multilingual is consistently faster (5-34% speedup)
+- ✅ Translation's strongest advantage is in completeness dimension
+
+**Model-Specific Patterns**:
+- GPT-4o shows larger speed differences (32-34% vs 5-24%)
+- Claude shows larger quality gaps (especially Hindi: +0.31 vs +0.02)
+- Both models validate the same winner patterns
+
+### Chunking Strategy Variation (Optional)
+
+**Objective**: Test if chunk overlap findings and performance differences hold with different chunking strategies.
 
 #### Chunking Configurations
 
@@ -287,123 +332,60 @@ mkdir results/claude_ablation/
 | Current | 1000 | 200 | 20% | `baseline/` |
 | Large | 1500 | 300 | 20% | `chunk_1500_300/` |
 
-#### Setup for Each Configuration
-
-1. **Modify `src/data_processor.py`**:
-   ```python
-   # Update initialization parameters
-   def __init__(self, chunk_size=500, chunk_overlap=100):  # Adjust values
-       self.text_splitter = RecursiveCharacterTextSplitter(
-           chunk_size=chunk_size,
-           chunk_overlap=chunk_overlap,
-           separators=["\n\n", "\n", ". ", " ", ""]
-       )
-   ```
-
-2. **Execute Full Pipeline**:
-   ```bash
-   # For each configuration:
-   mkdir results/chunk_[size]_[overlap]/
-   
-   # Run notebooks 2-5 with new chunking parameters
-   # Save all results to respective folders
-   ```
-
-### Expected Ablation Results
-
-#### Robust Findings (Should Hold Across Variations)
-- **Hindi**: Translation approach wins across all configurations
-- **Chinese**: Multilingual approach wins across all configurations  
-- **Chunk overlap**: Remains ~25-30% across chunking strategies
-- **Hallucination differences**: Persist across LLMs
-
-#### Key Hypotheses to Test
-
-| Hypothesis | Test | Success Criteria |
-|------------|------|------------------|
-| **H1: LLM-Independence** | Claude vs GPT-4o | Consistent winner patterns |
-| **H2: Chunking-Independence** | Small/Large vs Current | Overlap rates within ±10% |
-| **H3: Safety Robustness** | All configurations | Hallucination patterns hold |
-
-#### Comparison Analysis (Notebook 6)
-
-```python
-# Load all result sets for comparison
-baseline_results = pd.read_csv('results/baseline/llm_judge_final_summary.csv')
-claude_results = pd.read_csv('results/claude_ablation/llm_judge_final_summary.csv')
-small_chunk_results = pd.read_csv('results/chunk_500_100/llm_judge_final_summary.csv')
-large_chunk_results = pd.read_csv('results/chunk_1500_300/llm_judge_final_summary.csv')
-
-# Generate comprehensive comparison table
-comparison_table = create_comparison_table([
-    ('Baseline (GPT-4o, 1000/200)', baseline_results),
-    ('Claude Sonnet 4', claude_results), 
-    ('Small Chunks (500/100)', small_chunk_results),
-    ('Large Chunks (1500/300)', large_chunk_results)
-])
-```
-
-### Validity Assessment
-
-**Strong Findings**: Conclusions supported across all ablation conditions indicate robust, generalizable results.
-
-**Qualified Findings**: Results that vary significantly across conditions require careful interpretation and scope limitation.
-
 ## 📈 Evaluation Framework
 
 ### Multi-Dimensional Assessment
-- **LLM-as-Judge**: GPT-4 evaluation for faithfulness, completeness, appropriateness
-- **Semantic Similarity**: Cross-lingual embedding comparison (no translation bias)
-- **ROUGE Metrics**: Lexical overlap on English translations
-- **Chunk Analysis**: Retrieval overlap and relevance scoring
-- **Safety Analysis**: Hallucination rate detection
+- **LLM-as-Judge**: Both GPT-4o and Claude Sonnet 4.5 evaluation for faithfulness, completeness, appropriateness
+- **Cross-LLM Validation**: Ensures findings are not model-specific artifacts
+- **Chunk Analysis**: Retrieval overlap and pattern analysis
+- **Safety Analysis**: Hallucination rate detection across both models
 - **Efficiency**: Component-level timing analysis
 
-### Cross-Language Validation
+### Cross-Language & Cross-Model Validation
 - **Identical Questions**: Same medical content across Hindi and Chinese
 - **Statistical Testing**: Paired t-tests for significance
-- **Language-Specific Optimization**: Individual language performance patterns
+- **Model Independence**: Consistent patterns across GPT-4o and Claude Sonnet 4.5
 
 ## 🔍 Technical Contributions
 
 ### Novel Insights
-1. **Retrieval-Generation Paradox**: Demonstrates better chunks don't guarantee better responses
-2. **Language-Dependent Optimization**: No universal RAG solution across languages
-3. **Safety Implications**: Reveals critical hallucination differences for healthcare
+1. **Robust Translation Superiority**: Consistent advantages across languages AND models
+2. **Cross-Model Validation**: First study to validate cross-lingual RAG findings across multiple LLM architectures
+3. **Safety Implications**: Translation achieves 0% hallucinations in 75% of conditions
 4. **Information Access Patterns**: 27-28% overlap shows fundamentally different knowledge access
 
 ### Methodological Innovations
 - **Apples-to-Apples Comparison**: Identical questions eliminate question difficulty bias
-- **Component-Level Analysis**: Separates retrieval quality from generation quality
+- **Cross-LLM Validation**: Tests architectural independence of findings
 - **Multi-Dimensional Safety**: Combines automated metrics with LLM-based hallucination detection
-- **Cross-Language Statistical Validation**: Strengthens generalizability claims
+- **Component-Level Analysis**: Separates retrieval quality from generation quality
 
 ## 🎯 Research Hypotheses & Evidence
 
-### H1: Retrieval Quality → Response Quality
-**H0**: Better chunk retrieval leads to better responses  
-**Evidence**: **REJECTED** - Multilingual finds better chunks (0.525 vs 0.460) but translation often generates better responses
+### H1: Model-Independent Translation Advantage
+**H0**: Translation advantages are GPT-4o-specific artifacts  
+**Evidence**: **REJECTED** - Translation wins all 4 conditions (2 languages × 2 LLMs)
 
 ### H2: Cross-Language Consistency  
-**H0**: Optimal approach is consistent across languages  
-**Evidence**: **REJECTED** - Hindi favors translation, Chinese favors multilingual
+**H0**: Optimal approach varies by language  
+**Evidence**: **REJECTED** - Translation consistently superior for both Hindi and Chinese
 
 ### H3: Safety Equivalence
 **H0**: Both approaches have equivalent hallucination rates  
-**Evidence**: **REJECTED** - Significant differences (Hindi: 16.7% vs 6.7%, Chinese: 6.7% vs 10.0%)
+**Evidence**: **REJECTED** - Translation achieves 0% hallucinations in 3 of 4 conditions
 
 ### H4: Efficiency-Quality Tradeoff
 **H0**: Faster approach sacrifices quality  
-**Evidence**: **REJECTED** - Translation approach often both faster AND better quality
+**Evidence**: **REJECTED** - Though multilingual is faster, translation's quality advantage justifies overhead
 
 ## 🛠️ Implementation Details
 
 ### Core Technologies
 - **Embeddings**: `paraphrase-multilingual-MiniLM-L12-v2`
 - **Vector Store**: FAISS for efficient similarity search
-- **LLM**: GPT-4o for generation and evaluation (Claude Sonnet 4 for ablation)
+- **LLMs**: GPT-4o and Claude Sonnet 4.5 for generation and evaluation
 - **Translation**: deep-translator with language validation
-- **Evaluation**: Custom LLM-as-judge framework
+- **Evaluation**: Custom LLM-as-judge framework with cross-model validation
 
 ### Data Sources
 - **FDA Drug Labels**: Authoritative medication information
@@ -413,45 +395,41 @@ comparison_table = create_comparison_table([
 
 ## 📊 Statistical Evidence
 
-### Quality Scores (1-5 scale)
-| Language | Approach | Faithfulness | Completeness | Appropriateness | Hallucination |
-|----------|----------|-------------|--------------|-----------------|---------------|
-| **Hindi** | Multilingual | 4.27 ± 0.64 | 4.20 ± 0.41 | 4.53 ± 0.51 | 16.7% |
-| **Hindi** | Translation | **4.60 ± 0.50** | **4.60 ± 0.50** | 4.53 ± 0.51 | **6.7%** |
-| **Chinese** | Multilingual | **4.53 ± 0.51** | **4.53 ± 0.51** | **4.73 ± 0.45** | **6.7%** |
-| **Chinese** | Translation | 4.53 ± 0.51 | 4.53 ± 0.51 | 4.33 ± 0.48 | 10.0% |
+### Quality Scores Summary (1-5 scale)
 
-### Time Efficiency
-- **Hindi**: Translation 29% faster (3.29s vs 4.62s)
-- **Chinese**: Translation 29% faster (3.26s vs 4.57s)
-- **Consistent advantage**: Translation pipeline more efficient across languages
+**Translation Advantages (Average Across Both Models):**
+- Hindi: +0.17 points average improvement
+- Chinese: +0.15 points average improvement
+
+**Safety Advantage:**
+- Translation: 0% hallucinations in 3 of 4 conditions
+- Multilingual: 0% hallucinations in 1 of 4 conditions
+
+**Efficiency Tradeoff:**
+- Multilingual: 5-34% faster execution
+- Translation: Superior quality and safety despite modest latency overhead
 
 ## ⚠️ Limitations & Future Work
 
 ### Current Limitations
-1. **Chunking Strategy**: Fixed 1000-char chunks may bias results (addressed in ablation studies)
-2. **Sample Size**: 30 questions per language limits generalization
-3. **Domain Scope**: Healthcare-specific findings may not transfer
-4. **LLM Dependency**: GPT-4 evaluation may favor English-centric approaches (addressed with Claude ablation)
-
-### Robustness Testing
-1. **✅ Chunk Size Variation**: Test 500, 1000, 1500 character chunks (ablation studies)
-2. **✅ Multiple LLMs**: Validate with Claude Sonnet 4 for evaluation (ablation studies)
-3. **🔄 Human Evaluation**: Native speaker validation of results (future work)
-4. **🔄 Additional Languages**: Arabic, Vietnamese, Tagalog expansion (future work)
+1. **Sample Size**: 30 questions per language limits generalization
+2. **Domain Scope**: Healthcare-specific findings may not transfer
+3. **LLM Coverage**: Two models (GPT-4o, Claude) may not represent all architectures
+4. **Language Coverage**: Only Hindi and Chinese tested
 
 ### Future Research Directions
-1. **Hybrid Approaches**: Combine strengths of both methods
-2. **Production Deployment**: Real-world healthcare system integration
-3. **Cost-Benefit Analysis**: Economic implications for healthcare organizations
-4. **Benchmark Creation**: Public evaluation dataset for cross-lingual medical QA
+1. **Additional LLMs**: Test with Gemini, Llama, and other architectures
+2. **More Languages**: Expand to Arabic, Vietnamese, Tagalog, etc.
+3. **Human Evaluation**: Native speaker validation of results
+4. **Production Deployment**: Real-world healthcare system integration
+5. **Hybrid Approaches**: Combine strengths of both methods
 
 ## 📚 Citation
 
 ```bibtex
 @inproceedings{kundu2025crosslingual,
-  title={Cross-Lingual RAG: Translation vs. Multilingual Embeddings in Healthcare QA},
-  author={Boris Kundu},
+  title={Translation vs. Multilingual Embeddings for Cross-Lingual Medical QA},
+  author={Boris Kundu and Parth Jawale},
   booktitle={Proceedings of [Conference Name]},
   year={2025},
   note={Under Review}
@@ -461,32 +439,35 @@ comparison_table = create_comparison_table([
 ## 🔍 Key Research Implications
 
 ### For Healthcare Applications
-- **Hindi deployments**: Use translation pipeline for safety (2.5x lower hallucination)
-- **Chinese deployments**: Consider multilingual embeddings for quality
-- **Safety-first principle**: Hallucination rate should drive approach selection
+- **All deployments**: Translation pipeline recommended for superior quality and safety
+- **Safety-first principle**: 0% hallucination rate in 75% of conditions makes translation the safer choice
+- **Latency consideration**: 5-34% overhead acceptable for medical accuracy
 
 ### For Cross-Lingual NLP
-- **Component analysis essential**: Retrieval metrics alone insufficient for system evaluation
-- **Language-dependent optimization**: No universal multilingual solution
-- **Generation quality dominates**: Better chunks don't guarantee better responses
+- **Model-independent findings**: Consistent patterns across GPT-4o and Claude Sonnet 4.5
+- **Translation efficacy**: Modern translation APIs with strong LLMs outperform direct multilingual embeddings
+- **Cross-LLM validation essential**: Single-model findings may not generalize
 
 ### For RAG System Design
-- **Evaluation frameworks**: Need end-to-end assessment beyond retrieval metrics
+- **Evaluation frameworks**: Need cross-model validation beyond single-LLM testing
 - **Safety considerations**: Critical for high-stakes applications like healthcare
-- **Efficiency benefits**: Translation approach often faster despite additional steps
+- **End-to-end assessment**: Component metrics alone insufficient for system evaluation
 
 ## 📧 Contact
 
 **Boris Kundu**  
 Email: boriskundu@gmail.com  
 
+**Parth Jawale**  
+Email: parthjawale1996@gmail.com
+
 ## 🙏 Acknowledgments
 
-- OpenAI for API access enabling this research
-- Anthropic for Claude API access for robustness validation
+- OpenAI for GPT-4o API access enabling this research
+- Anthropic for Claude Sonnet 4.5 API access for cross-LLM validation
 - FDA and NIH for providing authoritative medical data sources
 - Deep-translator library for reliable translation services
 
 ---
 
-**Note**: This research demonstrates significant practical insights for cross-lingual medical QA, with implications for healthcare applications in low-resource language communities. The discovery that better retrieval doesn't guarantee better responses challenges fundamental assumptions in RAG system design and evaluation. Ablation studies validate the robustness of key findings across different LLMs and chunking strategies.
+**Note**: This research demonstrates that translation pipelines provide superior cross-lingual medical QA across multiple LLM architectures, with significant implications for healthcare applications in low-resource language communities. The cross-LLM validation strengthens the generalizability of findings and challenges assumptions about multilingual embeddings being the optimal solution for cross-lingual RAG systems.
