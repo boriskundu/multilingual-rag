@@ -471,3 +471,7 @@ Email: parthjawale1996@gmail.com
 ---
 
 **Note**: This research demonstrates that translation pipelines provide superior cross-lingual medical QA across multiple LLM architectures, with significant implications for healthcare applications in low-resource language communities. The cross-LLM validation strengthens the generalizability of findings and challenges assumptions about multilingual embeddings being the optimal solution for cross-lingual RAG systems.
+
+## 🪪 License
+This project is licensed under the [MIT License](LICENSE).  
+© 2025 Boris Kundu and Parth Jawale. All rights reserved.
